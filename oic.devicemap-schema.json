@@ -1,0 +1,59 @@
+{
+  "id": "http://openconnectivity.org/iotdatamodels/schemas/oic.devicemap-schema.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description" : "Copyright (c) 2016 Open Connectivity Foundation, Inc. All rights reserved.",
+  "title": "OCF Device Map Schema",
+  "definitions": {
+    "deviceinformation": {
+      "type": "object",
+      "properties": {
+        "devicename": {
+          "type": "string",
+          "description": "Natural language name of the device"
+        },
+        "devicetype": {
+          "type": "string",
+          "description": "OCF defined device id in the form oic.d.*",
+          "pattern": "oic.d.*"
+        }
+      }
+    },
+    "resourceinformation": {
+      "type": "object",
+      "properties": {
+        "resourcetypetitle": {
+          "type": "string",
+          "description": "Natural language name of the resource"
+        },
+        "resourcetypeid": {
+          "type": "string",
+          "description": "OCF defined resource type id in the form oic.r.*",
+          "pattern": "oic.r.*"
+        }
+      }
+    },
+    "resourcearray": {
+      "type": "object",
+      "properties": {
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/resourceinformation"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "devicemapentry": {
+      "type": "object",
+      "allOf": [
+        {"$ref": "#/definitions/deviceinformation"},
+        {"$ref": "#/definitions/resourcearray"}
+      ]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/devicemapentry"
+  }
+}

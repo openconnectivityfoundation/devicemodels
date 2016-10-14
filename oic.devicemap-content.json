@@ -1,0 +1,206 @@
+[
+  {
+    "devicename": "Air Conditioner",
+    "devicetype": "oic.d.airconditioner",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
+    ]
+  },
+  {
+    "devicename": "Air Purifier",
+    "devicetype": "oic.d.airpurifier",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+    ]
+  },
+  {
+    "devicename": "Blind",
+    "devicetype": "oic.d.blind",
+    "resources": [
+      {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
+    ]
+  },
+  {
+    "devicename": "Camera",
+    "devicetype": "oic.d.camera",
+    "resources": [
+      {"resourcetypetitle": "Media", "resourcetypeid": "oic.r.media"}
+    ]
+  },
+  {
+    "devicename": "Dishwasher",
+    "devicetype": "oic.d.dishwasher",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ]
+  },
+  {
+    "devicename": "Door",
+    "devicetype": "oic.d.door",
+    "resources": [
+      {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
+    ]
+  },
+  {
+    "devicename": "Dryer",
+    "devicetype": "oic.d.dryer",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ]
+  },
+  {
+    "devicename": "Fan",
+    "devicetype": "oic.d.fan",
+    "resources": [
+      {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+    ]
+  },
+  {
+    "devicename": "Garage Door",
+    "devicetype": "oic.d.garagedoor",
+    "resources": [
+      {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"}
+    ]
+  },
+  {
+    "devicename": "Generic Sensor",
+    "devicetype": "oic.d.sensor",
+    "resources": [
+      {"resourcetypetitle": "Any Resource Type that supports and exposes in “/oic/res” the oic.if.s interface.",
+       "resourcetypeid": "oic.r.<x>"}
+     ]
+   },
+   {
+     "devicename": "Light",
+     "devicetype": "oic.d.light",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
+     "devicename": "Oven",
+     "devicetype": "oic.d.oven",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ]
+   },
+   {
+     "devicename": "Printer",
+     "devicetype": "oic.d.printer",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+     ]
+   },
+   {
+     "devicename": "Printer Multi-Function",
+     "devicetype": "oic.d.multifunctionprinter",
+     "resources": [
+       {"resourcetypetitle": "Binary switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Operational State (Printer)", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Operational State (Scanner)", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Automatic Document Feeder", "resourcetypeid": "oic.r.automaticdocumentfeeder"}
+     ]
+   },
+   {
+     "devicename": "Receiver",
+     "devicetype": "oic.d.receiver",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"},
+       {"resourcetypetitle": "Media Source List", "resourcetypeid": "oic.r.media.input"},
+       {"resourcetypetitle": "Media Source List", "resourcetypeid": "oic.r.media.output"}
+
+     ]
+   },
+   {
+     "devicename": "Refrigerator",
+     "devicetype": "oic.d.refrigerator",
+     "resources": [
+       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ]
+   },
+   {
+     "devicename": "Robot Cleaner",
+     "devicetype": "oic.d.robotcleaner",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+     ]
+   },
+   {
+     "devicename": "Scanner",
+     "devicetype": "oic.d.scanner",
+     "resources": [
+       {"resourcetypetitle": "Binary switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Automatic Document Feeder", "resourcetypeid": "oic.r.automaticdocumentfeeder"}
+     ]
+   },
+   {
+     "devicename": "Security Panel",
+     "devicetype": "oic.d.securitypanel",
+     "resources": [
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+     ]
+   },
+   {
+     "devicename": "Smart Lock",
+     "devicetype": "oic.d.smartlock",
+     "resources": [
+       {"resourcetypetitle": "Lock Status", "resourcetypeid": "oic.r.lock.status"}
+     ]
+   },
+   {
+     "devicename": "Smart Plug",
+     "devicetype": "oic.d.smartplug",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
+     "devicename": "Switch",
+     "devicetype": "oic.d.switch",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
+     "devicename": "Television",
+     "devicetype": "oic.d.tv",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"},
+       {"resourcetypetitle": "Media Source List", "resourcetypeid": "oic.r.media.input"}
+     ]
+   },
+   {
+     "devicename": "Thermostat",
+     "devicetype": "oic.d.thermostat",
+     "resources": [
+       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ]
+   },
+   {
+     "devicename": "Washer",
+     "devicetype": "oic.d.washer",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+     ]
+   },
+   {
+     "devicename": "Water Valve",
+     "devicetype": "oic.d.watervalve",
+     "resources": [
+       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
+     ]
+   }
+]
