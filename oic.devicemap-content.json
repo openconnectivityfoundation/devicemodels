@@ -15,6 +15,13 @@
     ]
   },
   {
+    "devicename": "Air Quality Monitor",
+    "devicetype": "oic.d.airqualitymonitor",
+    "resources": [
+      {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"}
+    ]
+  },
+  {
     "devicename": "Blind",
     "devicetype": "oic.d.blind",
     "resources": [
@@ -26,6 +33,38 @@
     "devicetype": "oic.d.camera",
     "resources": [
       {"resourcetypetitle": "Media", "resourcetypeid": "oic.r.media"}
+    ]
+  },
+  {
+    "devicename": "Clothes Washer Dryer",
+    "devicetype": "oic.d.washerdryer",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+    ]
+  },
+  {
+    "devicename": "Cooker Hood",
+    "devicetype": "oic.d.cookerhood",
+    "resources": [
+      {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ]
+  },
+  {
+    "devicename": "Cooktop",
+    "devicetype": "oic.d.cooktop",
+    "resources": [
+      {"resourcetypetitle": "Heating Zone Collection", "resourcetypeid": "oic.r.heatingzonecollection"}
+    ]
+  },
+  {
+    "devicename": "Dehumidifier",
+    "devicetype": "oic.d.dehumidifier",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
     ]
   },
   {
@@ -44,7 +83,7 @@
     ]
   },
   {
-    "devicename": "Dryer",
+    "devicename": "Dryer (Laundry)",
     "devicetype": "oic.d.dryer",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
@@ -56,6 +95,21 @@
     "devicetype": "oic.d.fan",
     "resources": [
       {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+    ]
+  },
+  {
+    "devicename": "Food Probe",
+    "devicetype": "oic.d.foodprobe",
+    "resources": [
+      {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"}
+    ]
+  },
+  {
+    "devicename": "Freezer",
+    "devicetype": "oic.d.freezer",
+    "resources": [
+      {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
     ]
   },
   {
@@ -71,6 +125,13 @@
     "resources": [
       {"resourcetypetitle": "Any Resource Type that supports and exposes in “/oic/res” the oic.if.s interface.",
        "resourcetypeid": "oic.r.<x>"}
+     ]
+   },
+   {
+     "devicename": "Humidifier",
+     "devicetype": "oic.d.humidifier",
+     "resources": [
+       {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
    },
    {
@@ -151,6 +212,13 @@
      ]
    },
    {
+     "devicename": "Set Top Box",
+     "devicetype": "oic.d.stb",
+     "resources": [
+       {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
      "devicename": "Smart Lock",
      "devicetype": "oic.d.smartlock",
      "resources": [
@@ -189,7 +257,7 @@
      ]
    },
    {
-     "devicename": "Washer",
+     "devicename": "Washer (Laundry)",
      "devicetype": "oic.d.washer",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
