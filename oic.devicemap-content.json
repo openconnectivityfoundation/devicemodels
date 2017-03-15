@@ -29,6 +29,13 @@
     ]
   },
   {
+    "devicename": "Bridge",
+    "devicetype": "oic.d.bridge",
+    "resources": [
+      {"resourcetypetitle": "Secure Mode", "resourcetypeid": "oic.r.securemode"}
+    ]
+  },
+  {
     "devicename": "Camera",
     "devicetype": "oic.d.camera",
     "resources": [
