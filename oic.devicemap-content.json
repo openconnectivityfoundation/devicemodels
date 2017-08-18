@@ -1,5 +1,13 @@
 [
   {
+    "devicename": "Active Speaker",
+    "devicetype": "oic.d.speaker",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"}
+    ]
+  },
+  {
     "devicename": "Air Conditioner",
     "devicetype": "oic.d.airconditioner",
     "resources": [
@@ -19,6 +27,13 @@
     "devicetype": "oic.d.airqualitymonitor",
     "resources": [
       {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"}
+    ]
+  },
+  {
+    "devicename": "Battery",
+    "devicetype": "oic.d.battery",
+    "resources": [
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.battery"}
     ]
   },
   {
@@ -45,6 +60,14 @@
   {
     "devicename": "Clothes Washer Dryer",
     "devicetype": "oic.d.washerdryer",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+    ]
+  },
+  {
+    "devicename": "Coffee Machine",
+    "devicetype": "oic.d.coffeemachine",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
@@ -98,6 +121,30 @@
     ]
   },
   {
+    "devicename": "Electric Vehicle Charger",
+    "devicetype": "oic.d.electricvehiclecharger",
+    "resources": [
+      {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.battery"},
+      {"resourcetypetitle": "Vehicle Connector", "resourcetypeid": "oic.r.vehicleconnector"}
+    ]
+  },
+  {
+    "devicename": "Electric Meter",
+    "devicetype": "oic.d.electricmeter",
+    "resources": [
+      {"resourcetypetitle":"Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"}
+    ]
+  },
+  {
+    "devicename": "Energy Generator",
+    "devicetype": "oic.d.energygenerator",
+    "resources": [
+      {"resourcetypetitle":"Energy Generation", "resourcetypeid": "oic.r.energy.generation"}
+    ]
+  },
+  {
     "devicename": "Fan",
     "devicetype": "oic.d.fan",
     "resources": [
@@ -132,6 +179,14 @@
     "resources": [
       {"resourcetypetitle": "Any Resource Type that supports and exposes in “/oic/res” the oic.if.s interface.",
        "resourcetypeid": "oic.r.<x>"}
+     ]
+   },
+   {
+     "devicename": "Grinder",
+     "devicetype": "oic.d.grinder",
+     "resources": [
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Grinder Settings", "resourcetypeid": "oic.r.grinder"}
      ]
    },
    {
@@ -272,8 +327,24 @@
      ]
    },
    {
+     "devicename": "Water Heater",
+     "devicetype": "oic.d.waterheater",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ]
+   },
+   {
      "devicename": "Water Valve",
      "devicetype": "oic.d.watervalve",
+     "resources": [
+       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
+     ]
+   },
+   {
+     "devicename": "Window",
+     "devicetype": "oic.d.window",
      "resources": [
        {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
      ]
