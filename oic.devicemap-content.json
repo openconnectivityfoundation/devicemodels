@@ -33,7 +33,7 @@
     "devicename": "Battery",
     "devicetype": "oic.d.battery",
     "resources": [
-      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.battery"}
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
     ]
   },
   {
@@ -126,8 +126,8 @@
     "resources": [
       {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
-      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.battery"},
-      {"resourcetypetitle": "Vehicle Connector", "resourcetypeid": "oic.r.vehicleconnector"}
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
+      {"resourcetypetitle": "Vehicle Connector", "resourcetypeid": "oic.r.vehicle.connector"}
     ]
   },
   {
