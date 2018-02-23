@@ -1,0 +1,671 @@
+[
+  {
+    "filename": "AccelerationResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.acceleration"
+    ],
+    "title": "Acceleration Sensor"
+  },
+  {
+    "filename": "ActivityCountResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.activity.count"
+    ],
+    "title": "Activity Count"
+  },
+  {
+    "filename": "AirFlowControlResURI.swagger.json",
+    "rt": [
+      "oic.r.airflowcontrol"
+    ],
+    "title": "Air Flow Control"
+  },
+  {
+    "filename": "AirFlowResURI.swagger.json",
+    "rt": [
+      "oic.r.airflow"
+    ],
+    "title": "Air Flow"
+  },
+  {
+    "filename": "AirQualityBaselineResURI.swagger.json",
+    "rt": [
+      "oic.r.airqualitycollection",
+      "oic.wk.col"
+    ],
+    "title": "Air Quality Collection"
+  },
+  {
+    "filename": "AirQualityResURI.swagger.json",
+    "rt": [
+      "oic.r.airquality"
+    ],
+    "title": "Air Quality"
+  },
+  {
+    "filename": "AltimeterResURI.swagger.json",
+    "rt": [
+      "oic.r.altimeter"
+    ],
+    "title": "Altimeter"
+  },
+  {
+    "filename": "AtmosphericPressureResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.atmosphericpressure"
+    ],
+    "title": "Atmospheric Pressure Sensor"
+  },
+  {
+    "filename": "AudioResURI.swagger.json",
+    "rt": [
+      "oic.r.audio"
+    ],
+    "title": "Audio Controls"
+  },
+  {
+    "filename": "AutoFocusResURI.swagger.json",
+    "rt": [
+      "oic.r.autofocus"
+    ],
+    "title": "Auto Focus"
+  },
+  {
+    "filename": "AutomaticDocumentFeederResURI.swagger.json",
+    "rt": [
+      "oic.r.automaticdocumentfeeder"
+    ],
+    "title": "Automatic Document Feeder"
+  },
+  {
+    "filename": "AutoWhiteBalanceResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.autowhitebalance"
+    ],
+    "title": "Auto White Balance"
+  },
+  {
+    "filename": "BatteryMaterialResURI.swagger.json",
+    "rt": [
+      "oic.r.batterymaterial"
+    ],
+    "title": "Battery Material"
+  },
+  {
+    "filename": "BatteryResURI.swagger.json",
+    "rt": [
+      "oic.r.energy.battery"
+    ],
+    "title": "Battery"
+  },
+  {
+    "filename": "BinarySwitchResURI.swagger.json",
+    "rt": [
+      "oic.r.switch.binary"
+    ],
+    "title": "Binary Switch"
+  },
+  {
+    "filename": "BrewingResURI.swagger.json",
+    "rt": [
+      "oic.r.brewing"
+    ],
+    "title": "Brewing"
+  },
+  {
+    "filename": "BrightnessResURI.swagger.json",
+    "rt": [
+      "oic.r.light.brightness"
+    ],
+    "title": "Brightness"
+  },
+  {
+    "filename": "ButtonResURI.swagger.json",
+    "rt": [
+      "oic.r.button"
+    ],
+    "title": "Button Switch"
+  },
+  {
+    "filename": "CarbonDioxideResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.carbondioxide"
+    ],
+    "title": "Carbon Dioxide Sensor"
+  },
+  {
+    "filename": "CarbonMonoxideResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.carbonmonoxide"
+    ],
+    "title": "Carbon Monoxide Sensor"
+  },
+  {
+    "filename": "ClockResURI.swagger.json",
+    "rt": [
+      "oic.r.clock"
+    ],
+    "title": "Clock"
+  },
+  {
+    "filename": "ColourChromaResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.chroma"
+    ],
+    "title": "Colour Chroma"
+  },
+  {
+    "filename": "ColourHueSaturationResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.hs"
+    ],
+    "title": "Colour Hue and Saturation"
+  },
+  {
+    "filename": "ColourRGBResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.rgb"
+    ],
+    "title": "Colour RGB"
+  },
+  {
+    "filename": "ColourSaturationResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.saturation"
+    ],
+    "title": "Colour Saturation"
+  },
+  {
+    "filename": "ColourSpaceCoordinatesResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.csc"
+    ],
+    "title": "Colour Space Coordinates"
+  },
+  {
+    "filename": "ColourTemperatureResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.colourtemperature"
+    ],
+    "title": "Colour Temperature"
+  },
+  {
+    "filename": "ConsumableResURI.swagger.json",
+    "rt": [
+      "oic.r.consumable"
+    ],
+    "title": "Consumable"
+  },
+  {
+    "filename": "ConsumablesBaselineResURI.swagger.json",
+    "rt": [
+      "oic.r.consumablecollection",
+      "oic.wk.col"
+    ],
+    "title": "Consumables"
+  },
+  {
+    "filename": "ContactResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.contact"
+    ],
+    "title": "Contact Sensor"
+  },
+  {
+    "filename": "DelayDefrostResURI.swagger.json",
+    "rt": [
+      "oic.r.delaydefrost"
+    ],
+    "title": "Delay Defrost"
+  },
+  {
+    "filename": "DimmingResURI.swagger.json",
+    "rt": [
+      "oic.r.light.dimming"
+    ],
+    "title": "Dimming"
+  },
+  {
+    "filename": "DoorResURI.swagger.json",
+    "rt": [
+      "oic.r.door"
+    ],
+    "title": "Door"
+  },
+  {
+    "filename": "DRLCResURI.swagger.json",
+    "rt": [
+      "oic.r.energy.drlc"
+    ],
+    "title": "Demand Response Load Control (DRLC)."
+  },
+  {
+    "filename": "EcomodeResURI.swagger.json",
+    "rt": [
+      "oic.r.ecomode"
+    ],
+    "title": "Eco Mode"
+  },
+  {
+    "filename": "EnergyConsumptionResURI.swagger.json",
+    "rt": [
+      "oic.r.energy.consumption"
+    ],
+    "title": "Energy Consumption"
+  },
+  {
+    "filename": "EnergyGenerationResURI.swagger.json",
+    "rt": [
+      "oic.r.energy.generation"
+    ],
+    "title": "Energy Generation"
+  },
+  {
+    "filename": "EnergyOverloadResURI.swagger.json",
+    "rt": [
+      "oic.r.energy.overload"
+    ],
+    "title": "Energy Overload/Circuit Breaker"
+  },
+  {
+    "filename": "EnergyResURI.swagger.json",
+    "rt": [
+      "oic.r.energy.electrical"
+    ],
+    "title": "Energy"
+  },
+  {
+    "filename": "EnergyUsageResURI.swagger.json",
+    "rt": [
+      "oic.r.energy.usage"
+    ],
+    "title": "Energy Usage"
+  },
+  {
+    "filename": "FoamingResURI.swagger.json",
+    "rt": [
+      "oic.r.foaming"
+    ],
+    "title": "Foaming"
+  },
+  {
+    "filename": "GenericSensorResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor"
+    ],
+    "title": "Generic Sensor"
+  },
+  {
+    "filename": "GeolocationResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.geolocation"
+    ],
+    "title": "Geolocation"
+  },
+  {
+    "filename": "GlassBreakResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.glassbreak"
+    ],
+    "title": "Glass Break Sensor"
+  },
+  {
+    "filename": "GrinderResURI.swagger.json",
+    "rt": [
+      "oic.r.grinder"
+    ],
+    "title": "Grinder"
+  },
+  {
+    "filename": "HeartRateZoneResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.heart.zone"
+    ],
+    "title": "Heart Rate Zone"
+  },
+  {
+    "filename": "HeatingZoneBaselineResURI.swagger.json",
+    "rt": [
+      "oic.r.heatingzonecollection",
+      "oic.wk.col"
+    ],
+    "title": "Heating Zone Collection"
+  },
+  {
+    "filename": "HeatingZoneResURI.swagger.json",
+    "rt": [
+      "oic.r.heatingzone"
+    ],
+    "title": "Heating Zone"
+  },
+  {
+    "filename": "HeightResURI.swagger.json",
+    "rt": [
+      "oic.r.height"
+    ],
+    "title": "Height"
+  },
+  {
+    "filename": "HumidityResURI.swagger.json",
+    "rt": [
+      "oic.r.humidity"
+    ],
+    "title": "Humidity"
+  },
+  {
+    "filename": "IceMakerResURI.swagger.json",
+    "rt": [
+      "oic.r.icemaker"
+    ],
+    "title": "Ice Maker"
+  },
+  {
+    "filename": "IlluminanceSensorResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.illuminance"
+    ],
+    "title": "Illuminance Sensor"
+  },
+  {
+    "filename": "LiquidLevelResURI.swagger.json",
+    "rt": [
+      "oic.r.liquid.level"
+    ],
+    "title": "Liquid Level"
+  },
+  {
+    "filename": "LockCodeResURI.swagger.json",
+    "rt": [
+      "oic.r.lock.code"
+    ],
+    "title": "Lock Code"
+  },
+  {
+    "filename": "LockStatusResURI.swagger.json",
+    "rt": [
+      "oic.r.lock.status"
+    ],
+    "title": "Lock"
+  },
+  {
+    "filename": "MagneticFieldDirectionResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.magneticfielddirection"
+    ],
+    "title": "Magnetic Field Direction Sensor"
+  },
+  {
+    "filename": "MediaResURI.swagger.json",
+    "rt": [
+      "oic.r.media"
+    ],
+    "title": "Media"
+  },
+  {
+    "filename": "mediaSourceInputResURI.swagger.json",
+    "rt": [
+      "oic.r.media.input"
+    ],
+    "title": "Media Source Input"
+  },
+  {
+    "filename": "mediaSourceListResURI.swagger.json",
+    "rt": [
+      "oic.r.mediasourcelist"
+    ],
+    "title": "Media Source List"
+  },
+  {
+    "filename": "mediaSourceOutputResURI.swagger.json",
+    "rt": [
+      "oic.r.media.output"
+    ],
+    "title": "Media Source Output"
+  },
+  {
+    "filename": "mediaSourceResURI.swagger.json",
+    "rt": [
+      "oic.r.mediasource"
+    ],
+    "title": "Media Source"
+  },
+  {
+    "filename": "ModeResURI.swagger.json",
+    "rt": [
+      "oic.r.mode"
+    ],
+    "title": "Mode"
+  },
+  {
+    "filename": "MotionResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.motion"
+    ],
+    "title": "Motion Sensor"
+  },
+  {
+    "filename": "MovementResURI.swagger.json",
+    "rt": [
+      "oic.r.movement.linear"
+    ],
+    "title": "Movement"
+  },
+  {
+    "filename": "NightModeResURI.swagger.json",
+    "rt": [
+      "oic.r.nightmode"
+    ],
+    "title": "Night Mode"
+  },
+  {
+    "filename": "OpenLevelResURI.swagger.json",
+    "rt": [
+      "oic.r.openlevel"
+    ],
+    "title": "Open Level"
+  },
+  {
+    "filename": "OperationalStateResURI.swagger.json",
+    "rt": [
+      "oic.r.operational.state"
+    ],
+    "title": "Operational State"
+  },
+  {
+    "filename": "PanTiltZoomResURI.swagger.json",
+    "rt": [
+      "oic.r.ptz"
+    ],
+    "title": "Pan Tilt Zoom Movement"
+  },
+  {
+    "filename": "PresenceResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.presence"
+    ],
+    "title": "Presence Sensor"
+  },
+  {
+    "filename": "RampTimeResURI.swagger.json",
+    "rt": [
+      "oic.r.light.ramptime"
+    ],
+    "title": "Ramp Time"
+  },
+  {
+    "filename": "RefrigerationResURI.swagger.json",
+    "rt": [
+      "oic.r.refrigeration"
+    ],
+    "title": "Refrigeration"
+  },
+  {
+    "filename": "SelectableLevelsResURI.swagger.json",
+    "rt": [
+      "oic.r.selectablelevels"
+    ],
+    "title": "Selectable Levels"
+  },
+  {
+    "filename": "SignalStrengthResURI.swagger.json",
+    "rt": [
+      "oic.r.signalstrength"
+    ],
+    "title": "Signal Strength"
+  },
+  {
+    "filename": "SleepSensorResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.sleep"
+    ],
+    "title": "Sleep Sensor"
+  },
+  {
+    "filename": "SmokeSensorResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.smoke"
+    ],
+    "title": "Smoke Sensor"
+  },
+  {
+    "filename": "SpeechTTSResURI.swagger.json",
+    "rt": [
+      "oic.r.speech.tts"
+    ],
+    "title": "Speech Synthesis-TTS"
+  },
+  {
+    "filename": "TemperatureResURI.swagger.json",
+    "rt": [
+      "oic.r.temperature"
+    ],
+    "title": "Temperature"
+  },
+  {
+    "filename": "ThreeAxisResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.threeaxis"
+    ],
+    "title": "Three Axis Sensor"
+  },
+  {
+    "filename": "TimePeriodResURI.swagger.json",
+    "rt": [
+      "oic.r.time.period"
+    ],
+    "title": "Time Period"
+  },
+  {
+    "filename": "TouchResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.touch"
+    ],
+    "title": "Touch Sensor"
+  },
+  {
+    "filename": "UVRadiationResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.radiation.uv"
+    ],
+    "title": "UV Radiation"
+  },
+  {
+    "filename": "ValueConditionalResURI.swagger.json",
+    "rt": [
+      "oic.r.value.conditional"
+    ],
+    "title": "Value Conditional"
+  },
+  {
+    "filename": "VehicleConnectorResURI.swagger.json",
+    "rt": [
+      "oic.r.vehicle.connector"
+    ],
+    "title": "Vehicle Connector"
+  },
+  {
+    "filename": "WaterResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.water"
+    ],
+    "title": "Water Sensor"
+  },
+  {
+    "filename": "WeightResURI.swagger.json",
+    "rt": [
+      "oic.r.weight"
+    ],
+    "title": "Weight"
+  },
+  {
+    "filename": "oic.r.devconf.swagger.json",
+    "rt": [
+      "oic.r.devconf"
+    ],
+    "title": "Device Configuration"
+  },
+  {
+    "filename": "oic.r.easysetup.swagger.json",
+    "rt": [
+      "oic.r.easysetup",
+      "oic.wk.col"
+    ],
+    "title": "Easy Setup Collection Batch Interface"
+  },
+  {
+    "filename": "oic.r.wificonf.swagger.json",
+    "rt": [
+      "oic.r.wificonf"
+    ],
+    "title": "Wi-Fi Configuration Resource Baseline Interface"
+  },
+  {
+    "filename": "oic.r.icon.swagger.json",
+    "rt": [
+      "oic.r.icon"
+    ],
+    "title": "Icon"
+  },
+  {
+    "filename": "oic.wk.col.swagger.json",
+    "rt": [
+      "oic.wk.col"
+    ],
+    "title": "OCF Collection"
+  },
+  {
+    "filename": "oic.wk.con.p.swagger.json",
+    "rt": [
+      "oic.wk.con.p"
+    ],
+    "title": "Platform Configuration"
+  },
+  {
+    "filename": "oic.wk.con.swagger.json",
+    "rt": [
+      "oic.wk.con"
+    ],
+    "title": "Device Configuration"
+  },
+  {
+    "filename": "oic.wk.mnt.swagger.json",
+    "rt": [
+      "oic.wk.mnt"
+    ],
+    "title": "Maintenance"
+  },
+  {
+    "filename": "oic.wk.rd.swagger.json",
+    "rt": [
+      "oic.wk.rd"
+    ],
+    "title": "Resource directory resource"
+  },
+  {
+    "filename": "scenes.swagger.json",
+    "rt": [
+      "oic.wk.scenemember"
+    ],
+    "title": "Scenes (Top level)"
+  }
+]

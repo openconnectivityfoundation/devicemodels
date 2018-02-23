@@ -1,0 +1,36 @@
+{
+  "id": "http://openconnectivity.org/iotdatamodels/schemas/oic.devicemap-schema.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description" : "Copyright (c) 2018 Open Connectivity Foundation, Inc. All rights reserved.",
+  "title": "OCF resource Map Schema",
+  "definitions": {
+    "resourceInformation": {
+      "type": "object",
+      "properties": {
+        "filename": {
+          "type": "string",
+          "description": "the file name where the information is extracted from"
+        },
+        "title": {
+          "type": "string",
+          "description": "title of the file, extracted from info::title"
+        }
+        ,
+        "rt": {
+          "type": "array",
+          "description": "resource type array",
+          "items" : {
+            "type" : "string",
+            "pattern": "oic.r.*|oic.wk.*"
+          },
+          "minItems" : 1
+        }
+      },
+      "required" : ["filename", "title", "rt"]
+    }
+  },
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/resourceInformation"
+  }
+}
