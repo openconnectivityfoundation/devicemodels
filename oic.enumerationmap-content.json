@@ -1,0 +1,93 @@
+{
+  "supportedenumerations": ["aborted","active","airDry","armedAway","armedInstant","armedMaximum","armedNightStay","armedStay","brewing","cancelled","completed","down","dry","disabled","enabled","filterMaterial","grinding","idle","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow","keepwarm","notsupported","pause","pending","pendingHeld","preWash","processing","rinse","stopped","spin","testing","toner","tonerBlack","tonerCyan","tonerMagenta","tonerYellow","wash","wrinklePrevent"],
+  "perresourceenumerations": [
+    {
+      "resourcetype": "oic.r.mode",
+      "enumsupport": [
+        {
+          "targetdevicetype": "oic.d.securitypanel",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["active","armedAway","armedInstant", "armedMaximum","armedNightStay","armedStay"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["active","armedAway","armedInstant", "armedMaximum","armedNightStay","armedStay"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.operational.state",
+      "enumsupport": [
+        {
+          "targetdevicetype": "oic.d.printer",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["pending","pendingHeld","processing", "cancelled","aborted","completed"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["idle","processing","stopped"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.multifunctionPrinter",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["pending","pendingHeld","processing", "cancelled","aborted","completed"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["idle","processing","stopped"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.scanner",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["pending","processing", "cancelled","aborted","completed"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["idle","processing","stopped","testing","down"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.consumable",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "typeofconsumable",
+              "supportedenumeration": ["toner","tonerBlack","tonerCyan", "tonerMagenta","tonerYellow","filterMaterial","ink","inkBlack","inkCyan","inkMagenta","inkYellow","inkTricolour"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.consumablecollection",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "supportedconsumables",
+              "supportedenumeration": ["toner","tonerBlack","tonerCyan", "tonerMagenta","tonerYellow","filterMaterial","ink","inkBlack","inkCyan","inkMagenta","inkYellow","inkTricolour"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
