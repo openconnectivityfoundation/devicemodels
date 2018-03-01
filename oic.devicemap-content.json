@@ -1,5 +1,16 @@
 [
   {
+    "devicename": "3D Printer",
+    "devicetype": "oic.d.3dprinter",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "3D Printing", "resourcetypeid": "oic.r.printer.3d"},
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+      {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Printer Queue", "resourcetypeid": "oic.r.printer.queue"}
+    ]
+  },
+  {
     "devicename": "Active Speaker",
     "devicetype": "oic.d.speaker",
     "resources": [
@@ -197,6 +208,13 @@
      ]
    },
    {
+     "devicename": "Kettle",
+     "devicetype": "oic.d.kettle",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
      "devicename": "Light",
      "devicetype": "oic.d.light",
      "resources": [
@@ -292,6 +310,15 @@
      "devicetype": "oic.d.smartplug",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
+     "devicename": "Steam Closet",
+     "devicetype": "oic.d.smartplug",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
      ]
    },
    {

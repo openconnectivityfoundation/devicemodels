@@ -1,5 +1,5 @@
 {
-  "supportedenumerations": ["aborted","active","airDry","armedAway","armedInstant","armedMaximum","armedNightStay","armedStay","brewing","cancelled","completed","down","dry","disabled","enabled","filterMaterial","grinding","idle","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow","keepwarm","notsupported","pause","pending","pendingHeld","preWash","processing","rinse","stopped","spin","testing","toner","tonerBlack","tonerCyan","tonerMagenta","tonerYellow","wash","wrinklePrevent"],
+  "supportedenumerations": ["aborted","active","airDry","armedAway","armedInstant","armedMaximum","armedNightStay","armedStay","boiling","brewing","cancelled","completed","down","dry","disabled","enabled","filterMaterial","grinding","idle","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow","keepwarm","notsupported","pause","pending","pendingHeld","preWash","processing","rinse","stopped","spin","testing","toner","tonerBlack","tonerCyan","tonerMagenta","tonerYellow","wash","wrinklePrevent"],
   "perresourceenumerations": [
     {
       "resourcetype": "oic.r.mode",
