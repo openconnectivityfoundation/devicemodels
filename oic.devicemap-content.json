@@ -2,6 +2,7 @@
   {
     "devicename": "3D Printer",
     "devicetype": "oic.d.3dprinter",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "3D Printing", "resourcetypeid": "oic.r.printer.3d"},
@@ -13,6 +14,7 @@
   {
     "devicename": "Active Speaker",
     "devicetype": "oic.d.speaker",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"}
@@ -21,6 +23,7 @@
   {
     "devicename": "Air Conditioner",
     "devicetype": "oic.d.airconditioner",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
@@ -29,6 +32,7 @@
   {
     "devicename": "Air Purifier",
     "devicetype": "oic.d.airpurifier",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
     ]
@@ -36,6 +40,7 @@
   {
     "devicename": "Air Quality Monitor",
     "devicetype": "oic.d.airqualitymonitor",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"}
     ]
@@ -43,6 +48,7 @@
   {
     "devicename": "Battery",
     "devicetype": "oic.d.battery",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
     ]
@@ -50,13 +56,71 @@
   {
     "devicename": "Blind",
     "devicetype": "oic.d.blind",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
     ]
   },
   {
+    "devicename": "Blood Pressure Monitor",
+    "devicetype": "oic.d.bloodpressuremonitor",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Blood pressure monitor Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.bloodpressuremonitor-am",
+        "resources": [
+          {"resourcetypetitle": "Blood pressure", "resourcetypeid": "oic.r.blood.pressure"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Pulse rate", "resourcetypeid": "oic.r.pulserate"}
+        ]
+      }
+    ]
+  },
+  {
+    "devicename": "Body Scale",
+    "devicetype": "oic.d.bodyscale",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Body scale Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.bodyscale-am",
+        "resources": [
+          {"resourcetypetitle": "Weight", "resourcetypeid": "oic.r.weight"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Body Mass Index (BMI)", "resourcetypeid": "oic.r.bmi"},
+          {"resourcetypetitle": "Height", "resourcetypeid": "oic.r.height"},
+          {"resourcetypetitle": "Body Fat", "resourcetypeid": "oic.r.body.fat"},
+          {"resourcetypetitle": "Body Water", "resourcetypeid": "oic.r.body.water"},
+          {"resourcetypetitle": "Body Soft Lean Mass", "resourcetypeid": "oic.r.body.slm"},
+          {"resourcetypetitle": "Body Fat Free Mass", "resourcetypeid": "oic.r.body.ffm"}
+        ]
+      }
+    ]
+  },
+  {
+    "devicename": "Body Thermometer",
+    "devicetype": "oic.d.bodythermometer",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Body thermometer Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.bodythermometer-am",
+        "resources": [
+          {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Body Location for temperature", "resourcetypeid": "oic.r.body.location.temperature"}
+        ]
+      }
+    ]
+  },
+  {
     "devicename": "Bridge",
     "devicetype": "oic.d.bridge",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Secure Mode", "resourcetypeid": "oic.r.securemode"}
     ]
@@ -64,6 +128,7 @@
   {
     "devicename": "Camera",
     "devicetype": "oic.d.camera",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Media", "resourcetypeid": "oic.r.media"}
     ]
@@ -71,6 +136,7 @@
   {
     "devicename": "Clothes Washer Dryer",
     "devicetype": "oic.d.washerdryer",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
@@ -79,6 +145,7 @@
   {
     "devicename": "Coffee Machine",
     "devicetype": "oic.d.coffeemachine",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
@@ -87,6 +154,7 @@
   {
     "devicename": "Cooker Hood",
     "devicetype": "oic.d.cookerhood",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
@@ -96,6 +164,7 @@
   {
     "devicename": "Cooktop",
     "devicetype": "oic.d.cooktop",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Heating Zone Collection", "resourcetypeid": "oic.r.heatingzonecollection"}
     ]
@@ -103,6 +172,7 @@
   {
     "devicename": "Dehumidifier",
     "devicetype": "oic.d.dehumidifier",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
@@ -111,6 +181,7 @@
   {
     "devicename": "Dishwasher",
     "devicetype": "oic.d.dishwasher",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
@@ -119,6 +190,7 @@
   {
     "devicename": "Door",
     "devicetype": "oic.d.door",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
     ]
@@ -126,6 +198,7 @@
   {
     "devicename": "Dryer (Laundry)",
     "devicetype": "oic.d.dryer",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
@@ -134,6 +207,7 @@
   {
     "devicename": "Electric Vehicle Charger",
     "devicetype": "oic.d.electricvehiclecharger",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
@@ -144,6 +218,7 @@
   {
     "devicename": "Electric Meter",
     "devicetype": "oic.d.electricmeter",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle":"Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"}
     ]
@@ -151,6 +226,7 @@
   {
     "devicename": "Energy Generator",
     "devicetype": "oic.d.energygenerator",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle":"Energy Generation", "resourcetypeid": "oic.r.energy.generation"}
     ]
@@ -158,6 +234,7 @@
   {
     "devicename": "Fan",
     "devicetype": "oic.d.fan",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
     ]
@@ -165,6 +242,7 @@
   {
     "devicename": "Food Probe",
     "devicetype": "oic.d.foodprobe",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"}
     ]
@@ -172,6 +250,7 @@
   {
     "devicename": "Freezer",
     "devicetype": "oic.d.freezer",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
@@ -180,6 +259,7 @@
   {
     "devicename": "Garage Door",
     "devicetype": "oic.d.garagedoor",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"}
     ]
@@ -187,14 +267,40 @@
   {
     "devicename": "Generic Sensor",
     "devicetype": "oic.d.sensor",
+    "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Any Resource Type that supports and exposes in “/oic/res” the oic.if.s interface.",
        "resourcetypeid": "oic.r.<x>"}
      ]
    },
    {
+     "devicename": "Glucose Meter",
+     "devicetype": "oic.d.glucosemeter",
+     "vertical":   "Healthcare",
+     "atomicmeasurements": [
+       {
+         "atomicmeasurementname": "Glucose meter Atomic Measurement",
+         "atomicmeasurementype":  "oic.r.glucosemeter-am",
+         "resources": [
+           {"resourcetypetitle": "Glucose", "resourcetypeid": "oic.r.glucose"}
+         ],
+         "optionalresources": [
+           {"resourcetypetitle": "Context Carbohydrates", "resourcetypeid": "oic.r.glucose.carb"},
+           {"resourcetypetitle": "Context Exercise", "resourcetypeid": "oic.r.glucose.exercise"},
+           {"resourcetypetitle": "Hemoglobin Bound to Glucose A1c Form (HbA1c)", "resourcetypeid": "oic.r.glucose.hba1c"},
+           {"resourcetypetitle": "Context Health", "resourcetypeid": "oic.r.glucose.health"},
+           {"resourcetypetitle": "Context Meal", "resourcetypeid": "oic.r.glucose.meal"},
+           {"resourcetypetitle": "Context Medication", "resourcetypeid": "oic.r.glucose.medication"},
+           {"resourcetypetitle": "Context Sample Location", "resourcetypeid": "oic.r.glucose.samplelocation"},
+           {"resourcetypetitle": "Context Tester", "resourcetypeid": "oic.r.glucose.tester"}
+         ]
+       }
+     ]
+   },
+   {
      "devicename": "Grinder",
      "devicetype": "oic.d.grinder",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
        {"resourcetypetitle": "Grinder Settings", "resourcetypeid": "oic.r.grinder"}
@@ -203,6 +309,7 @@
    {
      "devicename": "Humidifier",
      "devicetype": "oic.d.humidifier",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
@@ -210,6 +317,7 @@
    {
      "devicename": "Kettle",
      "devicetype": "oic.d.kettle",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
@@ -217,6 +325,7 @@
    {
      "devicename": "Light",
      "devicetype": "oic.d.light",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
@@ -224,6 +333,7 @@
    {
      "devicename": "Oven",
      "devicetype": "oic.d.oven",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
@@ -233,6 +343,7 @@
    {
      "devicename": "Printer",
      "devicetype": "oic.d.printer",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
@@ -241,6 +352,7 @@
    {
      "devicename": "Printer Multi-Function",
      "devicetype": "oic.d.multifunctionprinter",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State (Printer)", "resourcetypeid": "oic.r.operational.state"},
@@ -251,6 +363,7 @@
    {
      "devicename": "Receiver",
      "devicetype": "oic.d.receiver",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"},
@@ -262,6 +375,7 @@
    {
      "devicename": "Refrigerator",
      "devicetype": "oic.d.refrigerator",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
@@ -270,6 +384,7 @@
    {
      "devicename": "Robot Cleaner",
      "devicetype": "oic.d.robotcleaner",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
@@ -278,6 +393,7 @@
    {
      "devicename": "Scanner",
      "devicetype": "oic.d.scanner",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
@@ -287,6 +403,7 @@
    {
      "devicename": "Security Panel",
      "devicetype": "oic.d.securitypanel",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
      ]
@@ -294,6 +411,7 @@
    {
      "devicename": "Set Top Box",
      "devicetype": "oic.d.stb",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
@@ -301,6 +419,7 @@
    {
      "devicename": "Smart Lock",
      "devicetype": "oic.d.smartlock",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Lock Status", "resourcetypeid": "oic.r.lock.status"}
      ]
@@ -308,6 +427,7 @@
    {
      "devicename": "Smart Plug",
      "devicetype": "oic.d.smartplug",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
@@ -315,15 +435,17 @@
    {
      "devicename": "Steam Closet",
      "devicetype": "oic.d.smartplug",
+     "vertical":   "Smart Home",
      "resources": [
-       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
-       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
      ]
    },
    {
      "devicename": "Switch",
      "devicetype": "oic.d.switch",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
@@ -331,6 +453,7 @@
    {
      "devicename": "Television",
      "devicetype": "oic.d.tv",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"},
@@ -340,6 +463,7 @@
    {
      "devicename": "Thermostat",
      "devicetype": "oic.d.thermostat",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
@@ -348,6 +472,7 @@
    {
      "devicename": "Virtual Device",
      "devicetype": "oic.d.virtual",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Device", "resourcetypeid": "oic.wk.d"}
      ]
@@ -355,6 +480,7 @@
    {
      "devicename": "Washer (Laundry)",
      "devicetype": "oic.d.washer",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
@@ -363,6 +489,7 @@
    {
      "devicename": "Water Heater",
      "devicetype": "oic.d.waterheater",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
@@ -372,6 +499,7 @@
    {
      "devicename": "Water Valve",
      "devicetype": "oic.d.watervalve",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
      ]
@@ -379,6 +507,7 @@
    {
      "devicename": "Window",
      "devicetype": "oic.d.window",
+     "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
      ]
