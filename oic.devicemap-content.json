@@ -331,6 +331,15 @@
      ]
    },
    {
+     "devicename": "Optical augmented RFID Reader",
+     "devicetype": "oic.d.rfid",
+     "vertical":   "Industrial",
+     "resources": [
+       {"resourcetypetitle": "Optical RFID Tag", "resourcetypeid": "oic.r.orfid.tag"},
+       {"resourcetypetitle": "Optical  RFID Station", "resourcetypeid": "oic.r.orfid.station"}
+     ]
+   },
+   {
      "devicename": "Oven",
      "devicetype": "oic.d.oven",
      "vertical":   "Smart Home",
