@@ -73,7 +73,9 @@
           {"resourcetypetitle": "Blood pressure", "resourcetypeid": "oic.r.blood.pressure"}
         ],
         "optionalresources": [
-          {"resourcetypetitle": "Pulse rate", "resourcetypeid": "oic.r.pulserate"}
+          {"resourcetypetitle": "Pulse rate", "resourcetypeid": "oic.r.pulserate"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
         ]
       }
     ]
@@ -95,7 +97,9 @@
           {"resourcetypetitle": "Body Fat", "resourcetypeid": "oic.r.body.fat"},
           {"resourcetypetitle": "Body Water", "resourcetypeid": "oic.r.body.water"},
           {"resourcetypetitle": "Body Soft Lean Mass", "resourcetypeid": "oic.r.body.slm"},
-          {"resourcetypetitle": "Body Fat Free Mass", "resourcetypeid": "oic.r.body.ffm"}
+          {"resourcetypetitle": "Body Fat Free Mass", "resourcetypeid": "oic.r.body.ffm"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
         ]
       }
     ]
@@ -112,7 +116,9 @@
           {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
         ],
         "optionalresources": [
-          {"resourcetypetitle": "Body Location for temperature", "resourcetypeid": "oic.r.body.location.temperature"}
+          {"resourcetypetitle": "Body Location for temperature", "resourcetypeid": "oic.r.body.location.temperature"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
         ]
       }
     ]
@@ -292,7 +298,9 @@
            {"resourcetypetitle": "Context Meal", "resourcetypeid": "oic.r.glucose.meal"},
            {"resourcetypetitle": "Context Medication", "resourcetypeid": "oic.r.glucose.medication"},
            {"resourcetypetitle": "Context Sample Location", "resourcetypeid": "oic.r.glucose.samplelocation"},
-           {"resourcetypetitle": "Context Tester", "resourcetypeid": "oic.r.glucose.tester"}
+           {"resourcetypetitle": "Context Tester", "resourcetypeid": "oic.r.glucose.tester"},
+           {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+           {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
          ]
        }
      ]
