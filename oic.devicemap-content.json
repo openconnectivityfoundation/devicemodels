@@ -490,9 +490,6 @@
      "devicename": "Virtual Device",
      "devicetype": "oic.d.virtual",
      "vertical":   "Smart Home",
-     "resources": [
-       {"resourcetypetitle": "Device", "resourcetypeid": "oic.wk.d"}
-     ]
    },
    {
      "devicename": "Washer (Laundry)",
