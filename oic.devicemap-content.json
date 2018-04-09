@@ -322,7 +322,6 @@
      "devicename": "Virtual Device",
      "devicetype": "oic.d.virtual",
      "resources": [
-       {"resourcetypetitle": "Device", "resourcetypeid": "oic.wk.d"}
      ]
    },
    {
