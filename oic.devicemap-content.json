@@ -451,7 +451,7 @@
    },
    {
      "devicename": "Steam Closet",
-     "devicetype": "oic.d.smartplug",
+     "devicetype": "oic.d.steamcloset",
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
