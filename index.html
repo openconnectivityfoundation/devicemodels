@@ -1,0 +1,69 @@
+<!doctype html>
+
+<!--
+table selection:
+http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-table-and-send-values-onclick-of-a-button
+-->
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+    <title>OCF Device Type overview</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript"
+        src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+
+<div class=page>
+ 
+  <h1>OCF Device type overview </h1>
+
+   <!--
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="active"><a href="#">Browse</a></li>
+    </ul>
+    -->
+    
+  
+  <script type="text/javascript" src="http://sjc-web10-lnx.cisco.com:1086/service.js"></script>
+  <table id="example" class="display" width="100%" cellspacing="0" data-page-length='20'>
+        <thead>
+            <tr>
+                <th>Device Name</th>
+                <th>Device Type</th>
+                <th>vertical</th>
+                <th>Required Resources (title)</th>
+                <th>Required Resources (types)</th>
+            </tr>
+        </thead>
+    </table>
+    
+    <script>
+        $('#example').DataTable( {
+        "ajax": {
+            "url": "https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json",
+            "dataSrc": ""
+        },
+        "columns": [
+            { "data": "devicename" },
+            { "data": "devicetype" },
+            { "data": "vertical" },
+            { "data": "resources[].resourcetypetitle" },
+            { "data": "resources[].resourcetypeid" }
+        ]
+    } );
+  
+       
+	</script>
+</div>
