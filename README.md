@@ -9,4 +9,4 @@ THIS SOFTWARE IS PROVIDED BY THE Open Connectivity Foundation, INC. "AS IS" AND 
 
 to search on the device types:
 
-https://openconnectivityfoundation.github.io/devicemodels/index.html
+https://openconnectivityfoundation.github.io/devicemodels/docs/index.html
