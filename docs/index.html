@@ -50,20 +50,80 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
     </table>
     
     <script>
-        $('#example').DataTable( {
+               $('#example').DataTable( {
         "ajax": {
             "url": "https://openconnectivityfoundation.github.io/devicemodels/oic.devicemap-content.json",
             "dataSrc": ""
         },
         "columns": [
-            { "data": "devicename" },
-            { "data": "devicetype" },
-            { "data": "vertical" },
-            { "data": "resources[].resourcetypetitle" },
-            { "data": "resources[].resourcetypeid" }
+          { "data": "devicename" },
+          { "data": "devicetype" },
+          { "data": "vertical" },
+          { "data": null,
+            // required resources title
+            "render" : function ( data, type, row ) {
+                try {
+                    // resources
+                    var returnstring=""
+                    for (var i=0; i < data.resources.length; i++)
+                    {
+                        returnstring = returnstring + data.resources[i].resourcetypetitle + " "
+                    }
+                    return returnstring;
+                    //return "xxx"
+                }
+                catch (err)
+                {
+                    try {
+                        // atomic measurement
+                        var returnstring=""
+                        for (var i=0; i < data.atomicmeasurements.length; i++)
+                        {
+                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementname + " "
+                        }
+                        return returnstring;
+                    }
+                    catch (err)
+                    {
+                       return "err"
+                    }
+                }
+                return ""
+            }
+          },
+          { "data": null,
+             // required resources types
+            "render" : function ( data, type, row ) {
+                try {
+                    // resources
+                    var returnstring=""
+                    for (var i=0; i < data.resources.length; i++)
+                    {
+                        returnstring = returnstring + data.resources[i].resourcetypeid + " "
+                    }
+                    return returnstring;
+                }
+                catch (err)
+                {
+                    try {
+                        // atomic measurement
+                        var returnstring=""
+                        for (var i=0; i < data.atomicmeasurements.length; i++)
+                        {
+                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementype + " "
+                        }
+                        return returnstring;
+                    }
+                    catch (err)
+                    {
+                       return "err"
+                    }
+                }
+                return ""
+            }
+          }
         ]
+        
     } );
-  
-       
 	</script>
 </div>
