@@ -1,5 +1,12 @@
 [
   {
+    "filename": "3DPrinterResURI.swagger.json",
+    "rt": [
+      "oic.r.printer.3d"
+    ],
+    "title": "3D Printer"
+  },
+  {
     "filename": "AccelerationResURI.swagger.json",
     "rt": [
       "oic.r.sensor.acceleration"
@@ -104,6 +111,83 @@
       "oic.r.switch.binary"
     ],
     "title": "Binary Switch"
+  },
+  {
+    "filename": "BloodPressureResURI.swagger.json",
+    "rt": [
+      "oic.r.blood.pressure"
+    ],
+    "title": "Blood Pressure"
+  },
+  {
+    "filename": "BloodPressureMonitorAMResURI.swagger.json",
+    "rt": [
+      "oic.r.bloodpressuremonitor-am"
+    ],
+    "title": "Blood Pressure Monitor Atomic Measurement"
+  },
+  {
+    "filename": "BMIResURI.swagger.json",
+    "rt": [
+      "oic.r.bmi"
+    ],
+    "title": "BMI"
+  },
+  {
+    "filename": "BodyFatResURI.swagger.json",
+    "rt": [
+      "oic.r.body.fat"
+    ],
+    "title": "Body Fat"
+  },
+  {
+    "filename": "BodyFatFreeMassResURI.swagger.json",
+    "rt": [
+      "oic.r.body.ffm"
+    ],
+    "title": "Body Fat Free Mass"
+  },
+  {
+    "filename": "BodyLocationResURI.swagger.json",
+    "rt": [
+      "oic.r.body.location"
+    ],
+    "title": "Body Location"
+  },
+  {
+    "filename": "BodyLocationTemperatureResURI.swagger.json",
+    "rt": [
+      "oic.r.body.location.temperature"
+    ],
+    "title": "Body Location Temperature"
+  },
+  {
+    "filename": "BodyScaleAMResURI.swagger.json",
+    "rt": [
+      "oic.r.bodyscale-am"
+    ],
+    "title": "Body Scale Atomic Measurement"
+  },
+  {
+    "filename": "BodySoftLeanMassResURI.swagger.json",
+    "rt": [
+      "oic.r.body.slm"
+    ],
+    "title": "Body Soft Lean Mass"
+  },
+  {
+    "filename": "BodyThermometerAMResURI.swagger.json",
+    "rt": [
+      "oic.r.bodythermometer-am"
+    ],
+    "title": "Body Thermometer Atomic Measurement"
+  },
+  {
+    "filename": "BodyWaterResURI.swagger.json",
+    "rt": [
+      "oic.r.body.water"
+    ],
+    "title": "Body Water"
   },
   {
     "filename": "BrewingResURI.swagger.json",
@@ -282,6 +366,13 @@
     "title": "Energy Usage"
   },
   {
+    "filename": "ExerciseResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.exercise"
+    ],
+    "title": "Exercise for Glucose Meter"
+  },
+  {
     "filename": "FoamingResURI.swagger.json",
     "rt": [
       "oic.r.foaming"
@@ -308,6 +399,69 @@
       "oic.r.sensor.glassbreak"
     ],
     "title": "Glass Break Sensor"
+  },
+  {
+    "filename": "GlucoseResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose"
+    ],
+    "title": "Glucose"
+  },
+  {
+    "filename": "GlucoseCarbResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.carb"
+    ],
+    "title": "Context Carbohydrates for Glucose Meter"
+  },
+  {
+    "filename": "GlucoseHbA1cResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.hba1c"
+    ],
+    "title": "Haemoglobin Bound to Glucose A1c Form (HbA1c) for Glucose Meter"
+  },
+  {
+    "filename": "GlucoseHealthResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.health"
+    ],
+    "title": "Context Health for Glucose Meter"
+  },
+  {
+    "filename": "GlucoseMealResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.meal"
+    ],
+    "title": "Context Meal for Glucose Meter"
+  },
+  {
+    "filename": "GlucoseMedicationResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.medication"
+    ],
+    "title": "Context Medication for Glucose Meter"
+  },
+  {
+    "filename": "GlucoseMeterAMResURI.swagger.json",
+    "rt": [
+      "oic.r.glucosemeter-am"
+    ],
+    "title": "Glucose Meter Atomic Measurement"
+  },
+  {
+    "filename": "GlucoseSampleLocationResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.samplelocation"
+    ],
+    "title": "Context Sample Location for Glucose Meter"
+  },
+  {
+    "filename": "GlucoseTesterResURI.swagger.json",
+    "rt": [
+      "oic.r.glucose.tester"
+    ],
+    "title": "Context Tester for Glucose Meter"
   },
   {
     "filename": "GrinderResURI.swagger.json",
@@ -472,6 +626,20 @@
     "title": "Operational State"
   },
   {
+    "filename": "ORFIDStationResURI.swagger.json",
+    "rt": [
+      "oic.r.orfid.station"
+    ],
+    "title": "Optical RFID Station"
+  },
+  {
+    "filename": "ORFIDTagResURI.swagger.json",
+    "rt": [
+      "oic.r.orfid.tag"
+    ],
+    "title": "Optical RFID Tag"
+  },
+  {
     "filename": "PanTiltZoomResURI.swagger.json",
     "rt": [
       "oic.r.ptz"
@@ -479,11 +647,32 @@
     "title": "Pan Tilt Zoom Movement"
   },
   {
+    "filename": "PowerSourceResURI.swagger.json",
+    "rt": [
+      "oic.r.powersource"
+    ],
+    "title": "Power Source"
+  },
+  {
     "filename": "PresenceResURI.swagger.json",
     "rt": [
       "oic.r.sensor.presence"
     ],
     "title": "Presence Sensor"
+  },
+  {
+    "filename": "PrintQueueResURI.swagger.json",
+    "rt": [
+      "oic.r.printer.queue"
+    ],
+    "title": "Print Queue"
+  },
+  {
+    "filename": "PulseRateResURI.swagger.json",
+    "rt": [
+      "oic.r.pulserate"
+    ],
+    "title": "Pulse Rate"
   },
   {
     "filename": "RampTimeResURI.swagger.json",
@@ -505,6 +694,13 @@
       "oic.r.selectablelevels"
     ],
     "title": "Selectable Levels"
+  },
+  {
+    "filename": "SensorPropsResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.props"
+    ],
+    "title": "Sensor Properties"
   },
   {
     "filename": "SignalStrengthResURI.swagger.json",
@@ -556,11 +752,25 @@
     "title": "Time Period"
   },
   {
+    "filename": "TimeStampResURI.swagger.json",
+    "rt": [
+      "oic.r.time.stamp"
+    ],
+    "title": "Time Stamp"
+  },
+  {
     "filename": "TouchResURI.swagger.json",
     "rt": [
       "oic.r.sensor.touch"
     ],
     "title": "Touch Sensor"
+  },
+  {
+    "filename": "UserIDResURI.swagger.json",
+    "rt": [
+      "oic.r.userid"
+    ],
+    "title": "User ID"
   },
   {
     "filename": "UVRadiationResURI.swagger.json",
