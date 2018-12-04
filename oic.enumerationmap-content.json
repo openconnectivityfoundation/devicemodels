@@ -1,5 +1,5 @@
 {
-  "supportedenumerations": ["aborted","active","airDry","armedAway","armedInstant","armedMaximum","armedNightStay","armedStay","boiling","brewing","cancelled","completed","down","dry","disabled","enabled","filterMaterial","grinding","idle","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow","keepwarm","notsupported","pause","pending","pendingHeld","preWash","processing","rinse","stopped","spin","testing","toner","tonerBlack","tonerCyan","tonerMagenta","tonerYellow","wash","wrinklePrevent"],
+  "supportedenumerations": ["aborted","active","airDry","armedAway","armedInstant","armedMaximum","armedNightStay","armedStay","aroma","artificalintelligence","auto","boiling","brewing","cancelled","circulating","cleaning","clothes","completed","cool","delicate","disabled","down","dry","dual","enabled","extended","fan","fast","filterMaterial","focused","grinding","heating","heavy","idle","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow","keepwarm","normal","notsupported","pause","pending","pendingHeld","permapress","preWash","processing","pure","quick","quiet","rinse","sectored","silent","sleep","smart","spot","steam","stopped","spin","testing","toner","tonerBlack","tonerCyan","tonerMagenta","tonerYellow","warm","wash","wet","wind","wrinklePrevent","zigzag"],
   "perresourceenumerations": [
     {
       "resourcetype": "oic.r.mode",
