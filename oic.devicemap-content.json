@@ -126,10 +126,7 @@
   {
     "devicename": "Bridge",
     "devicetype": "oic.d.bridge",
-    "vertical":   "Smart Home",
-    "resources": [
-      {"resourcetypetitle": "Secure Mode", "resourcetypeid": "oic.r.securemode"}
-    ]
+    "vertical":   "Smart Home"
   },
   {
     "devicename": "Camera",
