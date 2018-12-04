@@ -241,9 +241,8 @@
     "devicename": "Energy Monitor",
     "devicetype": "oic.d.energymonitor",
     "vertical":   "Smart Home",
-    "optionalresources": [
-      {"resourcetypetitle":"Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
-      {"resourcetypetitle":"Gas Consumption", "resourcetypeid": "oic.r.gas.consumption"}
+    "resources": [
+      {"resourcetypetitle":"Any consumption resource type", "resourcetypeid": "oic.r.*.consumption"}
     ]
   },
   {
