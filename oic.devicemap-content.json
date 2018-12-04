@@ -238,6 +238,15 @@
     ]
   },
   {
+    "devicename": "Energy Monitor",
+    "devicetype": "oic.d.energymonitor",
+    "vertical":   "Smart Home",
+    "optionalresources": [
+      {"resourcetypetitle":"Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle":"Gas Consumption", "resourcetypeid": "oic.r.gas.consumption"}
+    ]
+  },
+  {
     "devicename": "Fan",
     "devicetype": "oic.d.fan",
     "vertical":   "Smart Home",
