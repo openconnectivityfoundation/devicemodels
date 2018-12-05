@@ -126,7 +126,10 @@
   {
     "devicename": "Bridge",
     "devicetype": "oic.d.bridge",
-    "vertical":   "Smart Home"
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle": "VOD List", "resourcetypeid": "oic.r.vodlist"}
+    ]
   },
   {
     "devicename": "Camera",
