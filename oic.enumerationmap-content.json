@@ -88,6 +88,32 @@
           ]
         }
       ]
+    },
+    {
+      "resourcetype": "oic.r.iaszone",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "zonetype",
+              "supportedenumeration": ["standardcie","motionsensor","contactsensor","firesensor","watersensor","cosensor","ped","vibrationsensor","remotecontrol","keyfob","keypad","swd","glassbreaksensor","secuirityrepeater","vendorspecific","invalid"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.windowcovering",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "windowcoveringtype",
+              "supportedenumeration": ["rollershade","rollershade2","rollershadeext","rollershadeext2","drapery","awning","shutter","tiltblind","tiltblind2mode","projectorscreen"]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
