@@ -26,7 +26,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 
 
 <div class=page>
- 
+
   <h1>OCF Device type overview </h1>
 
    <!--
@@ -34,8 +34,8 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
       <li class="active"><a href="#">Browse</a></li>
     </ul>
     -->
-    
-  
+
+
   <script type="text/javascript" src="http://sjc-web10-lnx.cisco.com:1086/service.js"></script>
   <table id="example" class="display" width="100%" cellspacing="0" data-page-length='20'>
         <thead>
@@ -45,10 +45,12 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 <th>vertical</th>
                 <th>Required Resources (title)</th>
                 <th>Required Resources (types)</th>
+                <th>Recommended Resources (title)</th>
+                <th>Recommended Resources (types)</th>
             </tr>
         </thead>
     </table>
-    
+
     <script>
                $('#example').DataTable( {
         "ajax": {
@@ -121,9 +123,48 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 return ""
             }
+          },
+          { "data": null,
+            // recommended resources title
+            "render" : function ( data, type, row ) {
+                try {
+                    // resources
+                    var returnstring=""
+                    for (var i=0; i < data.recommendedresources.length; i++)
+                    {
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle + " "
+                    }
+                    return returnstring;
+                    //return "xxx"
+                }
+                catch (err)
+                {
+                  return "err"
+                }
+                return ""
+            }
+          },
+          { "data": null,
+             // recommended resources types
+            "render" : function ( data, type, row ) {
+                try {
+                    // resources
+                    var returnstring=""
+                    for (var i=0; i < data.recommendedresources.length; i++)
+                    {
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypeid + " "
+                    }
+                    return returnstring;
+                }
+                catch (err)
+                {
+                  return "err"
+                }
+                return ""
+            }
           }
         ]
-        
+
     } );
 	</script>
 </div>

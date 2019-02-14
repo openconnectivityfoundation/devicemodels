@@ -484,6 +484,13 @@
      "resources": [
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Presence Sensor", "resourcetypeid": "oic.r.sensor.presence"}
      ]
    },
    {
