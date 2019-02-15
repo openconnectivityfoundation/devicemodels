@@ -28,7 +28,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 <div class=page>
 
   <h1>OCF Device Type overview </h1>
-  <p><i>NOTE:</i> All OCF defined Resources may optionally be exposed by any Device Type</p>
+  <p><i>NOTE:</i> All OCF defined <a href="https://openconnectivityfoundation.github.io/devicemodels/docs/resource.html">Resources</a> may optionally be exposed by any Device Type</p>
 
    <!--
     <ul class="nav nav-tabs" role="tablist">
@@ -133,7 +133,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.recommendedresources.length; i++)
                     {
-                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle + ", "
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle + " "
                     }
                     return returnstring;
                     //return "xxx"
@@ -153,7 +153,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.recommendedresources.length; i++)
                     {
-                        returnstring = returnstring + data.recommendedresources[i].resourcetypeid + ", "
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypeid + " "
                     }
                     return returnstring;
                 }

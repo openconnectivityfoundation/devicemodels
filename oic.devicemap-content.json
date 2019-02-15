@@ -336,6 +336,11 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Colour Space Co-ordinates", "resourcetypeid": "oic.r.colour.csc"},
+       {"resourcetypetitle": "Dimming", "resourcetypeid": "oic.r.light.dimming"},
+       {"resourcetypetitle": "Ramp Time", "resourcetypeid": "oic.r.light.ramptime"}
      ]
    },
    {
@@ -475,6 +480,13 @@
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"},
        {"resourcetypetitle": "Media Source List", "resourcetypeid": "oic.r.media.input"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Brightness", "resourcetypeid": "oic.r.light.brightness"},
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+       {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"},
+       {"resourcetypetitle": "Media Source Outputs", "resourcetypeid": "oic.r.meda.output"}
      ]
    },
    {
