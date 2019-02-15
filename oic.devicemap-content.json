@@ -486,7 +486,10 @@
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Airflow Conntrol", "resourcetypeid": "oic.r.airflowcontrol"},
+       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
        {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
