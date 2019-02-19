@@ -70,7 +70,10 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.resources.length; i++)
                     {
-                        returnstring = returnstring + data.resources[i].resourcetypetitle + ", "
+                        returnstring = returnstring + data.resources[i].resourcetypetitle
+                        if (i+1 < data.resources.length) {
+                          returnstring = returnstring + ", "
+                        }
                     }
                     return returnstring;
                     //return "xxx"
@@ -102,7 +105,10 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.resources.length; i++)
                     {
-                        returnstring = returnstring + data.resources[i].resourcetypeid + ", "
+                        returnstring = returnstring + data.resources[i].resourcetypeid
+                        if (i+1 < data.resources.length) {
+                          returnstring = returnstring + ", "
+                        }
                     }
                     return returnstring;
                 }
@@ -133,7 +139,10 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.recommendedresources.length; i++)
                     {
-                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle + ", "
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle
+                        if (i+1 < data.recommendedresources.length) {
+                          returnstring = returnstring + ", "
+                        }
                     }
                     return returnstring;
                     //return "xxx"
