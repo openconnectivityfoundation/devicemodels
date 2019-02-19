@@ -43,11 +43,11 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
             <tr>
                 <th>Device Name</th>
                 <th>Device Type</th>
-                <th>vertical</th>
-                <th>Required Resources (title)</th>
-                <th>Required Resources (types)</th>
-                <th>Recommended Resources (title)</th>
-                <th>Recommended Resources (types)</th>
+                <th>Vertical</th>
+                <th>Required Resources (Title)</th>
+                <th>Required Resources (Types)</th>
+                <th>Recommended Resources (Title)</th>
+                <th>Recommended Resources (Types)</th>
             </tr>
         </thead>
     </table>
@@ -70,7 +70,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.resources.length; i++)
                     {
-                        returnstring = returnstring + data.resources[i].resourcetypetitle + " "
+                        returnstring = returnstring + data.resources[i].resourcetypetitle + ", "
                     }
                     return returnstring;
                     //return "xxx"
@@ -102,7 +102,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.resources.length; i++)
                     {
-                        returnstring = returnstring + data.resources[i].resourcetypeid + " "
+                        returnstring = returnstring + data.resources[i].resourcetypeid + ", "
                     }
                     return returnstring;
                 }
@@ -133,7 +133,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.recommendedresources.length; i++)
                     {
-                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle + " "
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle + ", "
                     }
                     return returnstring;
                     //return "xxx"
@@ -153,7 +153,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.recommendedresources.length; i++)
                     {
-                        returnstring = returnstring + data.recommendedresources[i].resourcetypeid + " "
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypeid + ", "
                     }
                     return returnstring;
                 }
