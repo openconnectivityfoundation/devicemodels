@@ -35,6 +35,9 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"}
     ]
   },
   {
@@ -146,6 +149,9 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"}
     ]
   },
   {
@@ -191,6 +197,9 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"}
     ]
   },
   {
@@ -208,6 +217,9 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"}
     ]
   },
   {
@@ -219,6 +231,9 @@
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
       {"resourcetypetitle": "Vehicle Connector", "resourcetypeid": "oic.r.vehicle.connector"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"}
     ]
   },
   {
@@ -401,6 +416,9 @@
      "resources": [
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"}
      ]
    },
    {
@@ -410,6 +428,9 @@
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"}
      ]
    },
    {
@@ -436,6 +457,9 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Media Source Outputs", "resourcetypeid": "oic.r.media.output"}
      ]
    },
    {
@@ -521,6 +545,9 @@
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"}
      ]
    },
    {
