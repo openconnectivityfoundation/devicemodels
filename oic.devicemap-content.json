@@ -18,6 +18,9 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"},
     ]
   },
   {
@@ -27,6 +30,12 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
+      {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+      {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
     ]
   },
   {
