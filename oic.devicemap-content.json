@@ -20,7 +20,7 @@
       {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"}
     ],
     "recommendedresources": [
-      {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"},
+      {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"}
     ]
   },
   {
