@@ -11,6 +11,7 @@
       {"resourcetypetitle": "Printer Queue", "resourcetypeid": "oic.r.printer.queue"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Consumables Collection", "resourcetypeid": "oic.r.consumablecollection"}
     ]
   },
@@ -36,7 +37,10 @@
     ],
     "recommendedresources": [
       {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
     ]
@@ -49,7 +53,10 @@
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
     ],
     "recommendedresources": [
-      {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"}
+      {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"},
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -60,7 +67,10 @@
       {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"}
     ],
     "recommendedresources": [
-      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -82,6 +92,7 @@
       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Window Covering", "resourcetypeid": "oic.r.windowcovering"}
     ]
   },
@@ -179,8 +190,11 @@
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
@@ -196,6 +210,7 @@
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Brewing", "resourcetypeid": "oic.r.brewing"},
       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
       {"resourcetypetitle": "Foaming", "resourcetypeid": "oic.r.foaming"},
@@ -209,8 +224,11 @@
     "devicetype": "oic.d.cookerhood",
     "vertical":   "Smart Home",
     "resources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
     ]
   },
@@ -222,6 +240,9 @@
       {"resourcetypetitle": "Heating Zone Collection", "resourcetypeid": "oic.r.heatingzonecollection"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"},
       {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
     ]
@@ -235,8 +256,11 @@
       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"},
-      {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"}
+      {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -248,7 +272,10 @@
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"},
       {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
     ]
@@ -276,8 +303,11 @@
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
     ]
   },
@@ -292,7 +322,10 @@
       {"resourcetypetitle": "Vehicle Connector", "resourcetypeid": "oic.r.vehicle.connector"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
     ]
   },
@@ -348,8 +381,11 @@
       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Delay Defrost", "resourcetypeid": "oic.r.delaydefrost"},
       {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
       {"resourcetypetitle": "Ice Maker", "resourcetypeid": "oic.r.icemaker"},
       {"resourcetypetitle": "Refigeration", "resourcetypeid": "oic.r.refrigeration"}
@@ -363,6 +399,7 @@
       {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
     ]
   },
@@ -421,8 +458,11 @@
        {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
        {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
      ]
    },
@@ -473,7 +513,10 @@
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
        {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
@@ -488,6 +531,7 @@
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Automatic Document Feeder", "resourcetypeid": "oic.r.automaticdocumentfeeder"},
        {"resourcetypetitle": "Consumables Collection", "resourcetypeid": "oic.r.consumablecollection"},
        {"resourcetypetitle": "Printer Queue", "resourcetypeid": "oic.r.printer.queue"}
@@ -504,6 +548,7 @@
        {"resourcetypetitle": "Operational State (Scanner)", "resourcetypeid": "oic.r.operational.state"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Consumables Collection", "resourcetypeid": "oic.r.consumablecollection"},
        {"resourcetypetitle": "Printer Queue", "resourcetypeid": "oic.r.printer.queue"}
      ]
@@ -532,10 +577,13 @@
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Audio", "resourcetypeid": "oic.r.audio"},
        {"resourcetypetitle": "Delay Defrost", "resourcetypeid": "oic.r.delaydefrost"},
        {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
        {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
        {"resourcetypetitle": "Ice Maker", "resourcetypeid": "oic.r.icemaker"},
        {"resourcetypetitle": "Refrigeration", "resourcetypeid": "oic.r.refrigeration"}
@@ -550,9 +598,12 @@
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
        {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
        {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
    },
@@ -574,6 +625,7 @@
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
        {"resourcetypetitle": "IAS Zone Collection", "resourcetypeid": "oic.r.iaszone"}
      ]
@@ -586,6 +638,8 @@
        {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"},
        {"resourcetypetitle": "Media Source Outputs", "resourcetypeid": "oic.r.media.output"}
      ]
@@ -609,6 +663,7 @@
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
@@ -623,6 +678,9 @@
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
      ]
    },
@@ -647,9 +705,12 @@
        {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Brightness", "resourcetypeid": "oic.r.light.brightness"},
        {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
        {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Media Source Outputs", "resourcetypeid": "oic.r.meda.output"},
        {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
@@ -664,6 +725,7 @@
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Airflow Conntrol", "resourcetypeid": "oic.r.airflowcontrol"},
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
@@ -689,8 +751,11 @@
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
        {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
@@ -707,7 +772,10 @@
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
      ],
      "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
    },
