@@ -740,7 +740,12 @@
      "devicename": "Virtual Device",
      "devicetype": "oic.d.virtual",
      "vertical":   "Smart Home",
-     "resources": []
+     "resources": [
+       {"resourcetypetitle": "Depends on the Device Type being bridged", "resourcetypeid": ""}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Depends on the Device Type being bridged", "resourcetypeid": ""}
+     ]
    },
    {
      "devicename": "Washer (Laundry)",
