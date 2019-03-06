@@ -7,11 +7,11 @@
     "title": "3D Printer"
   },
   {
-    "filename": "AccelerationResURI.swagger.json",
+    "filename": "Activity.swagger.json",
     "rt": [
-      "oic.r.sensor.acceleration"
+      "oic.r.activity"
     ],
-    "title": "Acceleration Sensor"
+    "title": "Activity"
   },
   {
     "filename": "ActivityCountResURI.swagger.json",
@@ -19,6 +19,21 @@
       "oic.r.sensor.activity.count"
     ],
     "title": "Activity Count"
+  },
+  {
+    "filename": "ActivityCountResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.activity.count"
+    ],
+    "title": "Activity Count"
+  },
+  {
+    "filename": "ActivityTrackerAM.swagger.json",
+    "rt": [
+      "oic.r.activitytracker-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Activity Tracker Atomic Measurement"
   },
   {
     "filename": "AirFlowControlResURI.swagger.json",
@@ -48,6 +63,13 @@
       "oic.r.airquality"
     ],
     "title": "Air Quality"
+  },
+  {
+    "filename": "Alarm.swagger.json",
+    "rt": [
+      "oic.r.alarm"
+    ],
+    "title": "Alarm"
   },
   {
     "filename": "AltimeterResURI.swagger.json",
