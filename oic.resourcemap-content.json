@@ -122,7 +122,8 @@
   {
     "filename": "BloodPressureMonitorAMResURI.swagger.json",
     "rt": [
-      "oic.r.bloodpressuremonitor-am"
+      "oic.r.bloodpressuremonitor-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Blood Pressure Monitor Atomic Measurement"
   },
@@ -178,7 +179,8 @@
   {
     "filename": "BodyThermometerAMResURI.swagger.json",
     "rt": [
-      "oic.r.bodythermometer-am"
+      "oic.r.bodythermometer-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Body Thermometer Atomic Measurement"
   },
@@ -287,6 +289,49 @@
       "oic.wk.col"
     ],
     "title": "Consumables"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterAM.swagger.json",
+    "rt": [
+      "oic.r.cgm-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Continuous Glucose Meter (CGM) Atomic Measurement"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterCalibrate.swagger.json",
+    "rt": [
+      "oic.r.cgm.calibrate"
+    ],
+    "title": "Calibrate for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterSamplingInterval.swagger.json",
+    "rt": [
+      "oic.r.cgm.samplinginterval"
+    ],
+    "title": "Sampling Interval for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterSensor.swagger.json",
+    "rt": [
+      "oic.r.cgm.sensor"
+    ],
+    "title": "Sensor for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterStatus.swagger.json",
+    "rt": [
+      "oic.r.cgm.status"
+    ],
+    "title": "Status for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterThreshold.swagger.json",
+    "rt": [
+      "oic.r.cgm.threshold"
+    ],
+    "title": "Threshold for Continuous Glucose Meter (CGM)"
   },
   {
     "filename": "ContactResURI.swagger.json",
@@ -445,7 +490,8 @@
   {
     "filename": "GlucoseMeterAMResURI.swagger.json",
     "rt": [
-      "oic.r.glucosemeter-am"
+      "oic.r.glucosemeter-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Glucose Meter Atomic Measurement"
   },
@@ -480,7 +526,8 @@
   {
     "filename": "HeartRateMonitorAM.swagger.json",
     "rt": [
-      "oic.r.heartratemonitor-am"
+      "oic.r.heartratemonitor-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Heart Rate Monitor Atomic Measurement"
   },
