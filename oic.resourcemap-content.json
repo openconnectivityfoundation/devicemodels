@@ -682,6 +682,27 @@
     "title": "Print Queue"
   },
   {
+    "filename": "PulsatileCharacteristic.swagger.json",
+    "rt": [
+      "oic.r.pulsatilecharacteristic"
+    ],
+    "title": "Pulsatile Characteristic for Pulse Oximeter"
+  },
+  {
+    "filename": "PulsatileOccurrence.swagger.json",
+    "rt": [
+      "oic.r.pulsatileoccurrence"
+    ],
+    "title": "Pulsatile Occurrence for Pulse Oximeter"
+  },
+  {
+    "filename": "PulseOximeterAM.swagger.json",
+    "rt": [
+      "oic.r.pulseoximeter-am"
+    ],
+    "title": "Pulse Oximeter Atomic Measurement"
+  },
+  {
     "filename": "PulseRateResURI.swagger.json",
     "rt": [
       "oic.r.pulserate"
@@ -743,6 +764,13 @@
       "oic.r.speech.tts"
     ],
     "title": "Speech Synthesis-TTS"
+  },
+  {
+    "filename": "SpO2.swagger.json",
+    "rt": [
+      "oic.r.spo2"
+    ],
+    "title": "SpO2 for Pulse Oximeter"
   },
   {
     "filename": "TemperatureResURI.swagger.json",
