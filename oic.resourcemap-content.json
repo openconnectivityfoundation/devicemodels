@@ -471,6 +471,20 @@
     "title": "Grinder"
   },
   {
+    "filename": "HeartRate.swagger.json",
+    "rt": [
+      "oic.r.heartrate"
+    ],
+    "title": "Heart Rate"
+  },
+  {
+    "filename": "HeartRateMonitorAM.swagger.json",
+    "rt": [
+      "oic.r.heartratemonitor-am"
+    ],
+    "title": "Heart Rate Monitor Atomic Measurement"
+  },
+  {
     "filename": "HeartRateZoneResURI.swagger.json",
     "rt": [
       "oic.r.sensor.heart.zone"
