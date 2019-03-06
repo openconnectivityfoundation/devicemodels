@@ -814,6 +814,21 @@
     "title": "Signal Strength"
   },
   {
+    "filename": "Sleep.swagger.json",
+    "rt": [
+      "oic.r.sleep"
+    ],
+    "title": "Sleep"
+  },
+  {
+    "filename": "SleepMonitorAM.swagger.json",
+    "rt": [
+      "oic.r.sleepmonitor-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Sleep Monitor Atomic Measurement"
+  },
+  {
     "filename": "SleepSensorResURI.swagger.json",
     "rt": [
       "oic.r.sensor.sleep"
