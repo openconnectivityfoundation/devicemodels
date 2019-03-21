@@ -224,12 +224,14 @@
     "devicetype": "oic.d.cookerhood",
     "vertical":   "Smart Home",
     "resources": [
-      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
-      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
-      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -409,7 +411,7 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Any Resource Type that supports and exposes in “/oic/res” the oic.if.s interface.",
-       "resourcetypeid": "oic.r.<x>"}
+       "resourcetypeid": "oic.r.&lt;x&gt;"}
      ]
    },
    {
