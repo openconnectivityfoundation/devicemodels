@@ -163,7 +163,10 @@
     "devicetype": "oic.d.bridge",
     "vertical":   "Smart Home",
     "resources": [
-      {"resourcetypetitle": "Secure Mode", "resourcetypeid": "oic.r.securemode"}
+      {"resourcetypetitle": "Depends on the Ecosystem being bridged", "resourcetypeid": ""}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Depends on the Ecosystem being bridged", "resourcetypeid": ""}
     ]
   },
   {
