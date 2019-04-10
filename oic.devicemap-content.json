@@ -501,7 +501,7 @@
    },
    {
      "devicename": "Optical augmented RFID Reader",
-     "devicetype": "oic.d.rfid",
+     "devicetype": "oic.d.orfid",
      "vertical":   "Industrial",
      "resources": [
        {"resourcetypetitle": "Optical RFID Tag", "resourcetypeid": "oic.r.orfid.tag"},
