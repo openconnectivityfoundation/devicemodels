@@ -18,7 +18,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 
 <title>OCF Device Type overview</title>
 <a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64" align="right"></a>
-	
+
 </head>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
@@ -99,7 +99,14 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                         var returnstring=""
                         for (var i=0; i < data.atomicmeasurements.length; i++)
                         {
-                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementname + " "
+                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementname + " containing "
+														for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
+				                    {
+				                        returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypetitle
+				                        if (j+1 < data.atomicmeasurements[i].resources.length) {
+				                          returnstring = returnstring + ", "
+				                        }
+				                    }
                         }
                         return returnstring;
                     }
@@ -133,7 +140,14 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                         var returnstring=""
                         for (var i=0; i < data.atomicmeasurements.length; i++)
                         {
-                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementype + " "
+                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementype + " containing "
+														for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
+				                    {
+				                        returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypeid
+				                        if (j+1 < data.atomicmeasurements[i].resources.length) {
+				                          returnstring = returnstring + ", "
+				                        }
+				                    }
                         }
                         return returnstring;
                     }
@@ -163,7 +177,25 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 catch (err)
                 {
-                  return ""
+									try {
+											// atomic measurement
+											var returnstring=""
+											for (var i=0; i < data.atomicmeasurements.length; i++)
+											{
+												for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
+												{
+														returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypetitle
+														if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
+															returnstring = returnstring + ", "
+														}
+												}
+											}
+											return returnstring;
+									}
+									catch (err)
+									{
+										 return ""
+									}
                 }
                 return ""
             }
@@ -185,7 +217,25 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 catch (err)
                 {
-                  return ""
+									try {
+										// atomic measurement
+										var returnstring=""
+										for (var i=0; i < data.atomicmeasurements.length; i++)
+										{
+											for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
+											{
+												returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypeid
+												if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
+													returnstring = returnstring + ", "
+												}
+											}
+										}
+										return returnstring;
+									}
+									catch (err)
+									{
+										return ""
+									}
                 }
                 return ""
             }
