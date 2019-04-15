@@ -102,16 +102,15 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                         var returnstring=""
                         for (var i=0; i < data.atomicmeasurements.length; i++)
                         {
-                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementname + " containing "
-														for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
-				                    {
-				                        returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypetitle
-				                        if (j+1 < data.atomicmeasurements[i].resources.length) {
-				                          returnstring = returnstring + ", "
-				                        }
-				                    }
-                        }
-                        return returnstring;
+                          returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementname + " containing "
+                          for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
+                          {
+                            returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypetitle
+                            if (j+1 < data.atomicmeasurements[i].resources.length) {
+                              returnstring = returnstring + ", "
+                            }
+                          }
+                        }return returnstring;
                     }
                     catch (err)
                     {
@@ -138,21 +137,21 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 catch (err)
                 {
-                    try {
-                        // atomic measurement
-                        var returnstring=""
-                        for (var i=0; i < data.atomicmeasurements.length; i++)
+                  try {
+                    // atomic measurement
+                    var returnstring=""
+                    for (var i=0; i < data.atomicmeasurements.length; i++)
+                    {
+                        returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementype + " containing "
+                        for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
                         {
-                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementype + " containing "
-														for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
-				                    {
-				                        returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypeid
-				                        if (j+1 < data.atomicmeasurements[i].resources.length) {
-				                          returnstring = returnstring + ", "
-				                        }
-				                    }
+                          returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypeid
+                          if (j+1 < data.atomicmeasurements[i].resources.length) {
+                            returnstring = returnstring + ", "
+                          }
                         }
-                        return returnstring;
+                      }
+                      return returnstring;
                     }
                     catch (err)
                     {
@@ -180,25 +179,25 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 catch (err)
                 {
-									try {
-											// atomic measurement
-											var returnstring=""
-											for (var i=0; i < data.atomicmeasurements.length; i++)
-											{
-												for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
-												{
-														returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypetitle
-														if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
-															returnstring = returnstring + ", "
-														}
-												}
-											}
-											return returnstring;
-									}
-									catch (err)
-									{
-										 return ""
-									}
+                  try {
+                    // atomic measurement
+                    var returnstring=""
+                    for (var i=0; i < data.atomicmeasurements.length; i++)
+                    {
+                      for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
+                      {
+                        returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypetitle
+                        if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
+                          returnstring = returnstring + ", "
+                        }
+                      }
+                    }
+                    return returnstring;
+                  }
+                  catch (err)
+                  {
+                    return ""
+                  }
                 }
                 return ""
             }
@@ -220,25 +219,25 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 catch (err)
                 {
-									try {
-										// atomic measurement
-										var returnstring=""
-										for (var i=0; i < data.atomicmeasurements.length; i++)
-										{
-											for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
-											{
-												returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypeid
-												if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
-													returnstring = returnstring + ", "
-												}
-											}
-										}
-										return returnstring;
-									}
-									catch (err)
-									{
-										return ""
-									}
+                  try {
+                    // atomic measurement
+                    var returnstring=""
+                    for (var i=0; i < data.atomicmeasurements.length; i++)
+                    {
+                      for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
+                      {
+                        returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypeid
+                        if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
+                          returnstring = returnstring + ", "
+                        }
+                      }
+                    }
+                    return returnstring;
+                  }
+                  catch (err)
+                  {
+                    return ""
+                  }
                 }
                 return ""
             }
@@ -246,5 +245,5 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
         ]
 
     } );
-	</script>
+  </script>
 </div>
