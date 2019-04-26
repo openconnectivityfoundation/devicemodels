@@ -129,6 +129,9 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "VOD List", "resourcetypeid": "oic.r.vodlist"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Depends on the Ecosystem being bridged", "resourcetypeid": ""}
     ]
   },
   {
