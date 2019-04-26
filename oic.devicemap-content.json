@@ -358,6 +358,14 @@
     ]
   },
   {
+    "devicename": "Energy Monitor",
+    "devicetype": "oic.d.energymonitor",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle":"Any consumption resource type", "resourcetypeid": "oic.r.<x>.consumption"}
+    ]
+  },
+  {
     "devicename": "Fan",
     "devicetype": "oic.d.fan",
     "vertical":   "Smart Home",
