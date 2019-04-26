@@ -75,6 +75,18 @@
         }
       }
     },
+    "recommendedresourcearray": {
+      "type": "object",
+      "properties": {
+        "recommendedresources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/resourceinformation"
+          },
+          "minItems": 0
+        }
+      }
+    },
     "amarray": {
       "type": "object",
       "properties": {
@@ -92,6 +104,7 @@
       "allOf": [
         {"$ref": "#/definitions/deviceinformation"},
         {"$ref": "#/definitions/resourcearray"},
+        {"$ref": "#/definitions/recommendedresourcearray"},
         {"$ref": "#/definitions/amarray"}
       ]
     }

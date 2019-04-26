@@ -6,49 +6,72 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 -->
 
 <head>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
-    <title>OCF Device Type overview</title>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+
+<title>OCF Device Type overview</title>
+<a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64" align="right"></a>
+
 </head>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
 
 <script type="text/javascript"
-        src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript"
-        src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+        src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
 
 <div class=page>
- 
-  <h1>OCF Device type overview </h1>
 
-   <!--
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="active"><a href="#">Browse</a></li>
-    </ul>
-    -->
-    
-  
+  <h1>OCF Device Type overview </h1>
+  <p><i>NOTE:</i> All OCF defined Resources may optionally be exposed by any Device Type.</p>
+
+<ul class="nav nav-tabs"  role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Devices</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="resource.html">Resources</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="resource-enum.html">Resources with Enumerations</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="enum.html">Enumerations</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="specs.html">Specification Info</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="https://github.com/openconnectivityfoundation/devicemodels">Github</a>
+  </li>
+</ul>
+
+
+
   <script type="text/javascript" src="http://sjc-web10-lnx.cisco.com:1086/service.js"></script>
   <table id="example" class="display" width="100%" cellspacing="0" data-page-length='20'>
         <thead>
             <tr>
                 <th>Device Name</th>
                 <th>Device Type</th>
-                <th>vertical</th>
-                <th>Required Resources (title)</th>
-                <th>Required Resources (types)</th>
+                <th>Vertical</th>
+                <th>Required Resources (Title)</th>
+                <th>Required Resources (Types)</th>
+                <th>Recommended Resources (Title)</th>
+                <th>Recommended Resources (Types)</th>
             </tr>
         </thead>
     </table>
-    
+
     <script>
                $('#example').DataTable( {
         "ajax": {
@@ -67,7 +90,10 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.resources.length; i++)
                     {
-                        returnstring = returnstring + data.resources[i].resourcetypetitle + " "
+                        returnstring = returnstring + data.resources[i].resourcetypetitle
+                        if (i+1 < data.resources.length) {
+                          returnstring = returnstring + ", "
+                        }
                     }
                     return returnstring;
                     //return "xxx"
@@ -79,9 +105,15 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                         var returnstring=""
                         for (var i=0; i < data.atomicmeasurements.length; i++)
                         {
-                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementname + " "
-                        }
-                        return returnstring;
+                          returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementname + " containing "
+                          for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
+                          {
+                            returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypetitle
+                            if (j+1 < data.atomicmeasurements[i].resources.length) {
+                              returnstring = returnstring + ", "
+                            }
+                          }
+                        }return returnstring;
                     }
                     catch (err)
                     {
@@ -99,20 +131,30 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                     var returnstring=""
                     for (var i=0; i < data.resources.length; i++)
                     {
-                        returnstring = returnstring + data.resources[i].resourcetypeid + " "
+                        returnstring = returnstring + data.resources[i].resourcetypeid
+                        if (i+1 < data.resources.length) {
+                          returnstring = returnstring + ", "
+                        }
                     }
                     return returnstring;
                 }
                 catch (err)
                 {
-                    try {
-                        // atomic measurement
-                        var returnstring=""
-                        for (var i=0; i < data.atomicmeasurements.length; i++)
+                  try {
+                    // atomic measurement
+                    var returnstring=""
+                    for (var i=0; i < data.atomicmeasurements.length; i++)
+                    {
+                        returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementype + " containing "
+                        for (var j=0; j < data.atomicmeasurements[i].resources.length; j++)
                         {
-                            returnstring = returnstring + data.atomicmeasurements[i].atomicmeasurementype + " "
+                          returnstring = returnstring + data.atomicmeasurements[i].resources[j].resourcetypeid
+                          if (j+1 < data.atomicmeasurements[i].resources.length) {
+                            returnstring = returnstring + ", "
+                          }
                         }
-                        return returnstring;
+                      }
+                      return returnstring;
                     }
                     catch (err)
                     {
@@ -121,9 +163,90 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
                 }
                 return ""
             }
+          },
+          { "data": null,
+            // recommended resources title
+            "render" : function ( data, type, row ) {
+                try {
+                    // resources
+                    var returnstring=""
+                    for (var i=0; i < data.recommendedresources.length; i++)
+                    {
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypetitle
+                        if (i+1 < data.recommendedresources.length) {
+                          returnstring = returnstring + ", "
+                        }
+                    }
+                    return returnstring;
+                    //return "xxx"
+                }
+                catch (err)
+                {
+                  try {
+                    // atomic measurement
+                    var returnstring=""
+                    for (var i=0; i < data.atomicmeasurements.length; i++)
+                    {
+                      for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
+                      {
+                        returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypetitle
+                        if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
+                          returnstring = returnstring + ", "
+                        }
+                      }
+                    }
+                    return returnstring;
+                  }
+                  catch (err)
+                  {
+                    return ""
+                  }
+                }
+                return ""
+            }
+          },
+          { "data": null,
+             // recommended resources types
+            "render" : function ( data, type, row ) {
+                try {
+                    // resources
+                    var returnstring=""
+                    for (var i=0; i < data.recommendedresources.length; i++)
+                    {
+                        returnstring = returnstring + data.recommendedresources[i].resourcetypeid
+                        if (i+1 < data.recommendedresources.length) {
+                          returnstring = returnstring + ", "
+                        }
+                    }
+                    return returnstring;
+                }
+                catch (err)
+                {
+                  try {
+                    // atomic measurement
+                    var returnstring=""
+                    for (var i=0; i < data.atomicmeasurements.length; i++)
+                    {
+                      for (var j=0; j < data.atomicmeasurements[i].optionalresources.length; j++)
+                      {
+                        returnstring = returnstring + data.atomicmeasurements[i].optionalresources[j].resourcetypeid
+                        if (j+1 < data.atomicmeasurements[i].optionalresources.length) {
+                          returnstring = returnstring + ", "
+                        }
+                      }
+                    }
+                    return returnstring;
+                  }
+                  catch (err)
+                  {
+                    return ""
+                  }
+                }
+                return ""
+            }
           }
         ]
-        
+
     } );
-	</script>
+  </script>
 </div>
