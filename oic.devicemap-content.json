@@ -16,6 +16,14 @@
     ]
   },
   {
+    "devicename": "Access Management Service",
+    "devicetype": "oic.d.ams",
+    "vertical":   "Framework",
+    "resources": [
+      {"resourcetypetitle": "None required", "resourcetypeid": ""}
+    ]
+  },
+  {
     "devicename": "Active Speaker",
     "devicetype": "oic.d.speaker",
     "vertical":   "Smart Home",
@@ -253,6 +261,14 @@
     ]
   },
   {
+    "devicename": "Credential Management Service",
+    "devicetype": "oic.d.cms",
+    "vertical":   "Framework",
+    "resources": [
+      {"resourcetypetitle": "None required", "resourcetypeid": ""}
+    ]
+  },
+  {
     "devicename": "Dehumidifier",
     "devicetype": "oic.d.dehumidifier",
     "vertical":   "Smart Home",
@@ -266,6 +282,14 @@
       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
+    ]
+  },
+  {
+    "devicename": "Device Ownership Transfer Service",
+    "devicetype": "oic.d.dots",
+    "vertical":   "Framework",
+    "resources": [
+      {"resourcetypetitle": "None required", "resourcetypeid": ""}
     ]
   },
   {
@@ -299,6 +323,7 @@
       {"resourcetypetitle": "Lock Status", "resourcetypeid": "oic.r.lock.status"}
     ]
   },
+
   {
     "devicename": "Dryer (Laundry)",
     "devicetype": "oic.d.dryer",
