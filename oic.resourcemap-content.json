@@ -507,6 +507,20 @@
     "title": "Humidity"
   },
   {
+    "filename": "IASZoneInfoResURI.swagger.json",
+    "rt": [
+      "oic.r.iaszoneinfo"
+    ],
+    "title": "IAS Zone Info"
+  },
+  {
+    "filename": "IASZoneCollectionResURI.swagger.json",
+    "rt": [
+      "oic.r.iaszone"
+    ],
+    "title": "IAS Zone Collection"
+  },
+  {
     "filename": "IceMakerResURI.swagger.json",
     "rt": [
       "oic.r.icemaker"
@@ -806,5 +820,12 @@
       "oic.r.weight"
     ],
     "title": "Weight"
+  },
+  {
+    "filename": "WindowCoveringResURI.swagger.json",
+    "rt": [
+      "oic.r.windowcovering"
+    ],
+    "title": "Window Covering"
   }
 ]
