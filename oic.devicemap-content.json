@@ -9,6 +9,10 @@
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
       {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"},
       {"resourcetypetitle": "Printer Queue", "resourcetypeid": "oic.r.printer.queue"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Consumables Collection", "resourcetypeid": "oic.r.consumablecollection"}
     ]
   },
   {
@@ -18,6 +22,9 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"}
     ]
   },
   {
@@ -27,6 +34,15 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
     ]
   },
   {
@@ -35,6 +51,12 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"},
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -43,6 +65,12 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -51,6 +79,9 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Battery Material", "resourcetypeid": "oic.r.batterymaterial"}
     ]
   },
   {
@@ -59,6 +90,10 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Window Covering", "resourcetypeid": "oic.r.windowcovering"}
     ]
   },
   {
@@ -128,7 +163,10 @@
     "devicetype": "oic.d.bridge",
     "vertical":   "Smart Home",
     "resources": [
-      {"resourcetypetitle": "Secure Mode", "resourcetypeid": "oic.r.securemode"}
+      {"resourcetypetitle": "Depends on the Ecosystem being bridged", "resourcetypeid": ""}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Depends on the Ecosystem being bridged", "resourcetypeid": ""}
     ]
   },
   {
@@ -137,6 +175,13 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Media", "resourcetypeid": "oic.r.media"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Auto-Focus", "resourcetypeid": "oic.r.autofocus"},
+      {"resourcetypetitle": "Auto-White Balance", "resourcetypeid": "oic.r.colour.autowhitebalance"},
+      {"resourcetypetitle": "Brightness", "resourcetypeid": "oic.r.light.brightness"},
+      {"resourcetypetitle": "Night Mode", "resourcetypeid": "oic.r.nightmode"},
+      {"resourcetypetitle": "Pan Tilt Zoom", "resourcetypeid": "oic.r.ptz"}
     ]
   },
   {
@@ -146,6 +191,17 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+      {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+      {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
     ]
   },
   {
@@ -155,6 +211,15 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Brewing", "resourcetypeid": "oic.r.brewing"},
+      {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+      {"resourcetypetitle": "Foaming", "resourcetypeid": "oic.r.foaming"},
+      {"resourcetypetitle": "Grinder", "resourcetypeid": "oic.r.grinder"},
+      {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
     ]
   },
   {
@@ -165,6 +230,11 @@
       {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -173,6 +243,13 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Heating Zone Collection", "resourcetypeid": "oic.r.heatingzonecollection"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"},
+      {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
     ]
   },
   {
@@ -182,6 +259,13 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"},
+      {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -191,6 +275,14 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"},
+      {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
     ]
   },
   {
@@ -199,6 +291,12 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Contact Sensor", "resourcetypeid": "oic.r.sensor.contact"},
+      {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"},
+      {"resourcetypetitle": "Lock Code", "resourcetypeid": "oic.r.lock.code"},
+      {"resourcetypetitle": "Lock Status", "resourcetypeid": "oic.r.lock.status"}
     ]
   },
   {
@@ -208,6 +306,14 @@
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+      {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
     ]
   },
   {
@@ -215,10 +321,17 @@
     "devicetype": "oic.d.electricvehiclecharger",
     "vertical":   "Smart Home",
     "resources": [
-      {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
       {"resourcetypetitle": "Vehicle Connector", "resourcetypeid": "oic.r.vehicle.connector"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
     ]
   },
   {
@@ -227,6 +340,9 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle":"Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
     ]
   },
   {
@@ -235,6 +351,18 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle":"Energy Generation", "resourcetypeid": "oic.r.energy.generation"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Energy Overload", "resourcetypeid": "oic.r.energy.overload"},
+      {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"}
+    ]
+  },
+  {
+    "devicename": "Energy Monitor",
+    "devicetype": "oic.d.energymonitor",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle":"Any consumption resource type", "resourcetypeid": "oic.r.<x>.consumption"}
     ]
   },
   {
@@ -243,6 +371,10 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
+      {"resourcetypetitle": "Pan Tilt Zoom", "resourcetypeid": "oic.r.ptz"}
     ]
   },
   {
@@ -260,6 +392,16 @@
     "resources": [
       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Delay Defrost", "resourcetypeid": "oic.r.delaydefrost"},
+      {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"},
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+      {"resourcetypetitle": "Ice Maker", "resourcetypeid": "oic.r.icemaker"},
+      {"resourcetypetitle": "Refigeration", "resourcetypeid": "oic.r.refrigeration"}
     ]
   },
   {
@@ -268,6 +410,10 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
     ]
   },
   {
@@ -276,7 +422,7 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Any Resource Type that supports and exposes in “/oic/res” the oic.if.s interface.",
-       "resourcetypeid": "oic.r.<x>"}
+       "resourcetypeid": "oic.r.&lt;x&gt;"}
      ]
    },
    {
@@ -312,6 +458,9 @@
      "resources": [
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
        {"resourcetypetitle": "Grinder Settings", "resourcetypeid": "oic.r.grinder"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
      ]
    },
    {
@@ -320,6 +469,14 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
+       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
      ]
    },
    {
@@ -328,6 +485,11 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
    },
    {
@@ -336,11 +498,18 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Colour Hue Saturation", "resourcetypeid": "oic.r.colour.hs"},
+       {"resourcetypetitle": "Colour Space Co-ordinates", "resourcetypeid": "oic.r.colour.csc"},
+       {"resourcetypetitle": "Colour Temperature", "resourcetypeid": "oic.r.colour.colourtemperature"},
+       {"resourcetypetitle": "Dimming", "resourcetypeid": "oic.r.light.dimming"},
+       {"resourcetypetitle": "Ramp Time", "resourcetypeid": "oic.r.light.ramptime"}
      ]
    },
    {
      "devicename": "Optical augmented RFID Reader",
-     "devicetype": "oic.d.rfid",
+     "devicetype": "oic.d.orfid",
      "vertical":   "Industrial",
      "resources": [
        {"resourcetypetitle": "Optical RFID Tag", "resourcetypeid": "oic.r.orfid.tag"},
@@ -355,6 +524,15 @@
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
    },
    {
@@ -364,6 +542,12 @@
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Automatic Document Feeder", "resourcetypeid": "oic.r.automaticdocumentfeeder"},
+       {"resourcetypetitle": "Consumables Collection", "resourcetypeid": "oic.r.consumablecollection"},
+       {"resourcetypetitle": "Printer Queue", "resourcetypeid": "oic.r.printer.queue"}
      ]
    },
    {
@@ -371,10 +555,15 @@
      "devicetype": "oic.d.multifunctionprinter",
      "vertical":   "Smart Home",
      "resources": [
+       {"resourcetypetitle": "Automatic Document Feeder", "resourcetypeid": "oic.r.automaticdocumentfeeder"},
        {"resourcetypetitle": "Binary switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State (Printer)", "resourcetypeid": "oic.r.operational.state"},
-       {"resourcetypetitle": "Operational State (Scanner)", "resourcetypeid": "oic.r.operational.state"},
-       {"resourcetypetitle": "Automatic Document Feeder", "resourcetypeid": "oic.r.automaticdocumentfeeder"}
+       {"resourcetypetitle": "Operational State (Scanner)", "resourcetypeid": "oic.r.operational.state"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Consumables Collection", "resourcetypeid": "oic.r.consumablecollection"},
+       {"resourcetypetitle": "Printer Queue", "resourcetypeid": "oic.r.printer.queue"}
      ]
    },
    {
@@ -386,7 +575,10 @@
        {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"},
        {"resourcetypetitle": "Media Source List", "resourcetypeid": "oic.r.media.input"},
        {"resourcetypetitle": "Media Source List", "resourcetypeid": "oic.r.media.output"}
-
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Media", "resourcetypeid": "oic.r.media"}
      ]
    },
    {
@@ -396,6 +588,18 @@
      "resources": [
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Audio", "resourcetypeid": "oic.r.audio"},
+       {"resourcetypetitle": "Delay Defrost", "resourcetypeid": "oic.r.delaydefrost"},
+       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+       {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+       {"resourcetypetitle": "Ice Maker", "resourcetypeid": "oic.r.icemaker"},
+       {"resourcetypetitle": "Refrigeration", "resourcetypeid": "oic.r.refrigeration"}
      ]
    },
    {
@@ -405,6 +609,15 @@
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
+       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
    },
    {
@@ -423,6 +636,11 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "IAS Zone Collection", "resourcetypeid": "oic.r.iaszone"}
      ]
    },
    {
@@ -431,6 +649,12 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle":"Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"},
+       {"resourcetypetitle": "Media Source Outputs", "resourcetypeid": "oic.r.media.output"}
      ]
    },
    {
@@ -439,6 +663,9 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Lock Status", "resourcetypeid": "oic.r.lock.status"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Lock Code", "resourcetypeid": "oic.r.lock.code"}
      ]
    },
    {
@@ -447,6 +674,11 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
    },
    {
@@ -457,6 +689,12 @@
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
      ]
    },
    {
@@ -465,6 +703,9 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Dimming", "resourcetypeid": "oic.r.light.dimming"}
      ]
    },
    {
@@ -474,7 +715,17 @@
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Audio Controls", "resourcetypeid": "oic.r.audio"},
-       {"resourcetypetitle": "Media Source List", "resourcetypeid": "oic.r.media.input"}
+       {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Brightness", "resourcetypeid": "oic.r.light.brightness"},
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Media Source Outputs", "resourcetypeid": "oic.r.meda.output"},
+       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
    },
    {
@@ -484,13 +735,30 @@
      "resources": [
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Airflow Conntrol", "resourcetypeid": "oic.r.airflowcontrol"},
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Presence Sensor", "resourcetypeid": "oic.r.sensor.presence"}
      ]
    },
    {
      "devicename": "Virtual Device",
      "devicetype": "oic.d.virtual",
      "vertical":   "Smart Home",
-     "resources": []
+     "resources": [
+       {"resourcetypetitle": "Depends on the Device Type being bridged", "resourcetypeid": ""}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Depends on the Device Type being bridged", "resourcetypeid": ""}
+     ]
    },
    {
      "devicename": "Washer (Laundry)",
@@ -499,6 +767,17 @@
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
    },
    {
@@ -509,6 +788,13 @@
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
    },
    {
@@ -525,6 +811,11 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Open Level", "resourcetypeid": "oic.r.openlevel"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Contact Sensor", "resourcetypeid": "oic.r.sensor.contact"},
+       {"resourcetypetitle": "Glassbreak Sensor", "resourcetypeid": "oic.r.sensor.glassbreak"},
+       {"resourcetypetitle": "Lock Status", "resourcetypeid": "oic.r.lock.status"}
      ]
    }
 ]

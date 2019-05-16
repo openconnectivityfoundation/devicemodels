@@ -1,0 +1,140 @@
+<!doctype html>
+
+<!--
+table selection:
+http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-table-and-send-values-onclick-of-a-button
+-->
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script> -->
+    <title>OCF Resource with Enum overview</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript"
+        src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+
+<div class=page>
+
+  <h1>OCF Resources with Enumerations Overview </h1>
+  <a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64" align="right"></a>
+
+
+<ul class="nav nav-tabs"  role="tablist">
+  <li class="nav-item">
+    <a class="nav-link " href="index.html">Devices</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="resource.html">Resources</a>
+  </li>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="enum.html">Resources with Enumerations</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="enum.html">Enumerations</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="specs.html">Specification Info</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="https://github.com/openconnectivityfoundation/devicemodels">Github</a>
+  </li>
+</ul>
+
+
+  <script type="text/javascript" src="http://sjc-web10-lnx.cisco.com:1086/service.js"></script>
+  <table id="example" class="display" width="100%" cellspacing="0" data-page-length='20'>
+        <thead>
+            <tr>
+                <th>Device Type</th>
+                <th>Resource Type</th>
+                <th>Property Name</th>
+                <th>Enum values</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script>
+        $('#example').DataTable( {
+        "ajax": {
+            "url": "https://openconnectivityfoundation.github.io/devicemodels/oic.enumerationmap-content.json",
+            "dataSrc": function (json) {
+              var return_data = new Array();
+              var my_devicetype="Any device type";
+              var my_resourcetype="resource";
+              var my_propname="prop_unknown";
+              var my_enum="enum";
+
+              for(var i=0;i< json.perresourceenumerations.length; i++)
+              {
+                // assign var in this loop
+                my_resourcetype="resource";
+                if (typeof json.perresourceenumerations[i].resourcetype != "undefined") {
+                   my_resourcetype = json.perresourceenumerations[i].resourcetype;
+                }
+
+                for(var j=0;j< json.perresourceenumerations[i].enumsupport.length; j++)
+                {
+                  // assign var in this loop
+                  my_devicetype="Any device type";
+                  if (typeof json.perresourceenumerations[i].enumsupport[j].targetdevicetype != "undefined") {
+                    my_devicetype=json.perresourceenumerations[i].enumsupport[j].targetdevicetype;
+                  }
+
+                  for(var k=0;k < json.perresourceenumerations[i].enumsupport[j].propertydefinitions.length; k++)
+                  {
+
+                     // assign vars in this loop
+                     my_propname="prop_unknown";
+                     if (typeof json.perresourceenumerations[i].enumsupport[j].propertydefinitions[k].propertyname != "undefined") {
+                        my_propname=json.perresourceenumerations[i].enumsupport[j].propertydefinitions[k].propertyname;
+                     }
+
+                    my_enum="enum";
+                    if (typeof json.perresourceenumerations[i].enumsupport[j].propertydefinitions[k].supportedenumeration != "undefined") {
+                        my_enum=json.perresourceenumerations[i].enumsupport[j].propertydefinitions[k].supportedenumeration
+                    }
+
+                    //alert (my_devicetype  + " " + my_resourcetype + " " + my_propname + " " + my_enum);
+
+                    //alert ( my_resourcetype + " " + my_propname + " " + my_enum);
+
+                    return_data.push({
+                        'device_type' : my_devicetype,
+                        'resource_type': my_resourcetype,
+                        'property_name': my_propname,
+                        'enum_list' : my_enum
+                    });
+
+                  }
+                }
+              }
+              return return_data;
+            }
+          },
+        "columns": [
+            { "data": "device_type"},
+            { "data": "resource_type"},
+            { "data": "property_name"},
+            { "data": "enum_list[, ]"}
+        ]
+    } );
+
+
+	</script>
+</div>

@@ -211,6 +211,13 @@
     "title": "Button Switch"
   },
   {
+    "filename": "CalorificValueResURI.swagger.json",
+    "rt": [
+      "oic.r.calorificvalue"
+    ],
+    "title": "Calorific Value"
+  },
+  {
     "filename": "CarbonDioxideResURI.swagger.json",
     "rt": [
       "oic.r.sensor.carbondioxide"
@@ -296,6 +303,13 @@
     "title": "Contact Sensor"
   },
   {
+    "filename": "ConversionFactorResURI.swagger.json",
+    "rt": [
+      "oic.r.conversionfactor"
+    ],
+    "title": "Conversion Factor"
+  },
+  {
     "filename": "DelayDefrostResURI.swagger.json",
     "rt": [
       "oic.r.delaydefrost"
@@ -378,6 +392,20 @@
       "oic.r.foaming"
     ],
     "title": "Foaming"
+  },
+  {
+    "filename": "GasConsumptionResURI.swagger.json",
+    "rt": [
+      "oic.r.gas.consumption"
+    ],
+    "title": "Gas Consumption"
+  },
+  {
+    "filename": "GasUsageResURI.swagger.json",
+    "rt": [
+      "oic.r.gas.usage"
+    ],
+    "title": "Gas Usage"
   },
   {
     "filename": "GenericSensorResURI.swagger.json",
@@ -535,6 +563,20 @@
     "title": "Illuminance Sensor"
   },
   {
+    "filename": "ImpactSensorResURI.swagger.json",
+    "rt": [
+      "oic.r.impactsensor"
+    ],
+    "title": "Impact Sensor"
+  },
+  {
+    "filename": "KeyPadCharResURI.swagger.json",
+    "rt": [
+      "oic.r.keypadchar"
+    ],
+    "title": "KeyPadChar"
+  },
+  {
     "filename": "LiquidLevelResURI.swagger.json",
     "rt": [
       "oic.r.liquid.level"
@@ -624,6 +666,13 @@
       "oic.r.nightmode"
     ],
     "title": "Night Mode"
+  },
+  {
+    "filename": "OpaqueDataResURI.swagger.json",
+    "rt": [
+      "oic.r.opaquedata"
+    ],
+    "title": "Opaque Data"
   },
   {
     "filename": "OpenLevelResURI.swagger.json",
@@ -785,6 +834,13 @@
       "oic.r.userid"
     ],
     "title": "User ID"
+  },
+  {
+    "filename": "UserInfoResURI.swagger.json",
+    "rt": [
+      "oic.r.userinfo"
+    ],
+    "title": "User Info for Application Layer"
   },
   {
     "filename": "UVRadiationResURI.swagger.json",
