@@ -1,13 +1,13 @@
 {
   "supportedenumerations": [
-    "aborted","active","airDry","armedAway","armedInstant","armedMaximum",
+    "aborted","active","airClean","airDry","armedAway","armedInstant","armedMaximum",
     "armedNightStay","armedStay","aroma","artificalintelligence","auto",
     "awning","baking","babycare","boiling","brewing","cancelled","circulating","cleaning","clothes",
     "completed","contactsensor","cool","cosensor","delicate","diagnosis","disabled","down",
     "drapery","dry","dual","edge","enabled","extended","fan","fast","filterMaterial",
-    "firesensor","focused","glassbreaksensor","grinding","heating","heavy","homing","humdify",
+    "firesensor","focused","glassbreaksensor","grinding","heating","heavy","homing","humidify",
     "idle","initializing","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow",
-    "invalid","keepwarm","keyfob","keypad","macro","mapping","monitoring","monitoringInitiation",
+    "invalid","keepwarm","keyfob","keypad","macro","mapping","monitoring","monitoringInitializing",
     "monitoringMoving","monitoringPreparation","motionsensor","moving","normal",
     "notsupported","pause","ped","pending","pendingHeld","permapress","preHeat","preparation","preSteam","preWash",
     "processing","projectorscreen","pure","quick","quiet","refresh","remotecontrol","reserve", "reserving","restart"
