@@ -138,7 +138,11 @@
           "propertydefinitions": [
             {
               "propertyname": "supportedwatertypes",
-              "supportedenumeration": ["cold","hot","normal", "soda","mineral","ice"]
+              "supportedenumeration": ["cold","hot","ambient", "ice"]
+            },
+            {
+              "propertyname": "supportedadditivetypes",
+              "supportedenumeration": ["none","soda","mineral"]
             }
           ]
         }
