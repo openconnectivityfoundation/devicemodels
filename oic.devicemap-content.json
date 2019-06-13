@@ -822,6 +822,21 @@
        {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
    },
+   { 
+     "devicename": "Water Purifier", 
+     "devicetype": "oic.d.waterpurifier", 
+     "vertical":   "Smart Home", 
+     "resources": [ 
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}, 
+       {"resourcetypetitle": "Water Info", "resourcetypeid": "oic.r.waterinfo"} 
+     ], 
+     "recommendedresources": [ 
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"}, 
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
+     ] 
+   },
    {
      "devicename": "Water Valve",
      "devicetype": "oic.d.watervalve",
