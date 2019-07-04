@@ -10,12 +10,12 @@
     "glassbreaksensor","grinding","heating","heavy","idle","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow",
     "invalid","keepwarm","keyfob","keypad","main","motionsensor","nightDry","normal",
     "notsupported","pause","ped","pending","pendingHeld","permapress","preWash",
-    "processing","proofing","projectorscreen","pure","quick","quiet","ringing","remotecontrol",
+    "processing","projectorscreen","pure","quick","quiet","ringing","remotecontrol",
     "rinse","rollershade","rollershade2","rollershadeext","rollershadeext2",
     "sectored","setOption","shake","shoesDry","securityrepeater","shutter","silent","sleep","smart","soaking","spot","spray",
     "standardcie","steam","steamSoftening","stop","stopped","spin","subDevice","swd","testing","tiltblind",
     "tiltblind2mode","toner","tonerBlack","tonerCyan","tonerMagenta",
-    "tonerYellow","vendorspecific","vibrationsensor","wakeUp","warm","wash",
+    "tonerYellow","vendorspecific","vibrationsensor","wakeUp","warm","wash","waterProofing",
     "watersensor","wet","wind","wrinklePrevent","zigzag"],
   "perresourceenumerations": [
     {
