@@ -193,7 +193,7 @@
               "supportedenumeration": ["idle","processing","stopped","testing","down"]
             }
           ]
-        }
+        },
         {
            "targetdevicetype": "oic.d.steamcloset",
           "propertydefinitions": [
