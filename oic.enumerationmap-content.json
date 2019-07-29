@@ -106,13 +106,13 @@
       ]
     },
     {
-      "resourcetype": "oic.r.iaszone",
+      "resourcetype": "oic.r.iaszoneinfo",
       "enumsupport": [
         {
           "propertydefinitions": [
             {
               "propertyname": "zonetype",
-              "supportedenumeration": ["standardcie","motionsensor","contactsensor","firesensor","watersensor","cosensor","ped","vibrationsensor","remotecontrol","keyfob","keypad","swd","glassbreaksensor","secuirityrepeater","vendorspecific","invalid"]
+              "supportedenumeration": ["standardcie","motionsensor","contactsensor","firesensor","watersensor","cosensor","ped","vibrationsensor","remotecontrol","keyfob","keypad","swd","glassbreaksensor","securityrepeater","vendorspecific","invalid"]
             }
           ]
         }
