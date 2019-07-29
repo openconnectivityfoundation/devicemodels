@@ -7,11 +7,11 @@
     "title": "3D Printer"
   },
   {
-    "filename": "AccelerationResURI.swagger.json",
+    "filename": "Activity.swagger.json",
     "rt": [
-      "oic.r.sensor.acceleration"
+      "oic.r.activity"
     ],
-    "title": "Acceleration Sensor"
+    "title": "Activity"
   },
   {
     "filename": "ActivityCountResURI.swagger.json",
@@ -19,6 +19,21 @@
       "oic.r.sensor.activity.count"
     ],
     "title": "Activity Count"
+  },
+  {
+    "filename": "ActivityCountResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.activity.count"
+    ],
+    "title": "Activity Count"
+  },
+  {
+    "filename": "ActivityTrackerAM.swagger.json",
+    "rt": [
+      "oic.r.activitytracker-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Activity Tracker Atomic Measurement"
   },
   {
     "filename": "AirFlowControlResURI.swagger.json",
@@ -48,6 +63,13 @@
       "oic.r.airquality"
     ],
     "title": "Air Quality"
+  },
+  {
+    "filename": "Alarm.swagger.json",
+    "rt": [
+      "oic.r.alarm"
+    ],
+    "title": "Alarm"
   },
   {
     "filename": "AltimeterResURI.swagger.json",
@@ -122,7 +144,8 @@
   {
     "filename": "BloodPressureMonitorAMResURI.swagger.json",
     "rt": [
-      "oic.r.bloodpressuremonitor-am"
+      "oic.r.bloodpressuremonitor-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Blood Pressure Monitor Atomic Measurement"
   },
@@ -178,7 +201,8 @@
   {
     "filename": "BodyThermometerAMResURI.swagger.json",
     "rt": [
-      "oic.r.bodythermometer-am"
+      "oic.r.bodythermometer-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Body Thermometer Atomic Measurement"
   },
@@ -294,6 +318,49 @@
       "oic.wk.col"
     ],
     "title": "Consumables"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterAM.swagger.json",
+    "rt": [
+      "oic.r.cgm-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Continuous Glucose Meter (CGM) Atomic Measurement"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterCalibrate.swagger.json",
+    "rt": [
+      "oic.r.cgm.calibrate"
+    ],
+    "title": "Calibrate for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterSamplingInterval.swagger.json",
+    "rt": [
+      "oic.r.cgm.samplinginterval"
+    ],
+    "title": "Sampling Interval for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterSensor.swagger.json",
+    "rt": [
+      "oic.r.cgm.sensor"
+    ],
+    "title": "Sensor for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterStatus.swagger.json",
+    "rt": [
+      "oic.r.cgm.status"
+    ],
+    "title": "Status for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterThreshold.swagger.json",
+    "rt": [
+      "oic.r.cgm.threshold"
+    ],
+    "title": "Threshold for Continuous Glucose Meter (CGM)"
   },
   {
     "filename": "ContactResURI.swagger.json",
@@ -473,7 +540,8 @@
   {
     "filename": "GlucoseMeterAMResURI.swagger.json",
     "rt": [
-      "oic.r.glucosemeter-am"
+      "oic.r.glucosemeter-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Glucose Meter Atomic Measurement"
   },
@@ -497,6 +565,21 @@
       "oic.r.grinder"
     ],
     "title": "Grinder"
+  },
+  {
+    "filename": "HeartRate.swagger.json",
+    "rt": [
+      "oic.r.heartrate"
+    ],
+    "title": "Heart Rate"
+  },
+  {
+    "filename": "HeartRateMonitorAM.swagger.json",
+    "rt": [
+      "oic.r.heartratemonitor-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Heart Rate Monitor Atomic Measurement"
   },
   {
     "filename": "HeartRateZoneResURI.swagger.json",
@@ -731,6 +814,27 @@
     "title": "Print Queue"
   },
   {
+    "filename": "PulsatileCharacteristic.swagger.json",
+    "rt": [
+      "oic.r.pulsatilecharacteristic"
+    ],
+    "title": "Pulsatile Characteristic for Pulse Oximeter"
+  },
+  {
+    "filename": "PulsatileOccurrence.swagger.json",
+    "rt": [
+      "oic.r.pulsatileoccurrence"
+    ],
+    "title": "Pulsatile Occurrence for Pulse Oximeter"
+  },
+  {
+    "filename": "PulseOximeterAM.swagger.json",
+    "rt": [
+      "oic.r.pulseoximeter-am"
+    ],
+    "title": "Pulse Oximeter Atomic Measurement"
+  },
+  {
     "filename": "PulseRateResURI.swagger.json",
     "rt": [
       "oic.r.pulserate"
@@ -773,6 +877,21 @@
     "title": "Signal Strength"
   },
   {
+    "filename": "Sleep.swagger.json",
+    "rt": [
+      "oic.r.sleep"
+    ],
+    "title": "Sleep"
+  },
+  {
+    "filename": "SleepMonitorAM.swagger.json",
+    "rt": [
+      "oic.r.sleepmonitor-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Sleep Monitor Atomic Measurement"
+  },
+  {
     "filename": "SleepSensorResURI.swagger.json",
     "rt": [
       "oic.r.sensor.sleep"
@@ -792,6 +911,13 @@
       "oic.r.speech.tts"
     ],
     "title": "Speech Synthesis-TTS"
+  },
+  {
+    "filename": "SpO2.swagger.json",
+    "rt": [
+      "oic.r.spo2"
+    ],
+    "title": "SpO2 for Pulse Oximeter"
   },
   {
     "filename": "TemperatureResURI.swagger.json",
