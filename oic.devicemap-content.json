@@ -241,7 +241,7 @@
     ],
     "recommendedresources": [
       {"resourcetypetitle": "CGM Status", "resourcetypeid": "oic.r.cgm.status"},
-      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
     ]
   },
   {
