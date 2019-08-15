@@ -235,7 +235,7 @@
       }
     ],
     "resources": [
-      {"resourcetypetitle": "Glucose sample interval", "resourcetypeid": "oic.r.cgm.sample"},
+      {"resourcetypetitle": "Glucose Sampling Interval", "resourcetypeid": "oic.r.cgm.samplinginterval"},
       {"resourcetypetitle": "CGM Calibration", "resourcetypeid": "oic.r.cgm.calibrate"},
       {"resourcetypetitle": "CGM Threshold", "resourcetypeid": "oic.r.cgm.threshold"}
     ],
