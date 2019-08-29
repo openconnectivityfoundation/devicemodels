@@ -36,6 +36,30 @@
     ]
   },
   {
+    "devicename": "Activity Tracker",
+    "devicetype": "oic.d.activitytracker",
+    "vertical": "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Activity Tracker Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.activitytracker-am",
+        "resources": [
+          {"resourcetypetitle": "Activity", "resourcetypeid": "oic.r.activity"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Heartrate", "resourcetypeid": "oic.r.heartrate"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
+      {"resourcetypetitle": "Alarm", "resourcetypeid": "oic.r.alarm"}
+    ]
+  },
+  {
     "devicename": "Air Conditioner",
     "devicetype": "oic.d.airconditioner",
     "vertical":   "Smart Home",
@@ -190,6 +214,34 @@
       {"resourcetypetitle": "Brightness", "resourcetypeid": "oic.r.light.brightness"},
       {"resourcetypetitle": "Night Mode", "resourcetypeid": "oic.r.nightmode"},
       {"resourcetypetitle": "Pan Tilt Zoom", "resourcetypeid": "oic.r.ptz"}
+    ]
+  },
+  {
+    "devicename": "CGM (Continuous Glucose Meter)",
+    "devicetype": "oic.d.cgm",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "CGM Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.cgm-am",
+        "resources": [
+          {"resourcetypetitle": "Glucose", "resourcetypeid": "oic.r.glucose"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "CGM Sensor", "resourcetypeid": "oic.r.cgm.sensor"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ],
+    "resources": [
+      {"resourcetypetitle": "Glucose Sampling Interval", "resourcetypeid": "oic.r.cgm.samplinginterval"},
+      {"resourcetypetitle": "CGM Calibration", "resourcetypeid": "oic.r.cgm.calibrate"},
+      {"resourcetypetitle": "CGM Threshold", "resourcetypeid": "oic.r.cgm.threshold"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "CGM Status", "resourcetypeid": "oic.r.cgm.status"},
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
     ]
   },
   {
@@ -489,6 +541,24 @@
      ]
    },
    {
+     "devicename": "Heart Rate Monitor",
+     "devicetype": "oic.d.heartratemonitor",
+     "vertical":   "Healthcare",
+     "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Heart Rate Monitor Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.heartratemonitor-am",
+        "resources": [
+          {"resourcetypetitle": "Heart Rate", "resourcetypeid": "oic.r.heartrate"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ]
+   },
+   {
      "devicename": "Humidifier",
      "devicetype": "oic.d.humidifier",
      "vertical":   "Smart Home",
@@ -592,6 +662,27 @@
      ]
    },
    {
+     "devicename": "Pulse Oximeter",
+     "devicetype": "oic.d.pulseoximeter",
+     "vertical":   "Healthcare",
+     "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Pulse Oximeter Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.pulseoximeter-am",
+        "resources": [
+          {"resourcetypetitle": "SpO2", "resourcetypeid": "oic.r.spo2"},
+          {"resourcetypetitle": "Pulse Rate", "resourcetypeid": "oic.r.pulserate"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Pulsatile Occurrence", "resourcetypeid": "oic.r.pulsatileoccurrence"},
+          {"resourcetypetitle": "Pulsatile Characteristic", "resourcetypeid": "oic.r.pulsatilecharacteristic"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ]
+   },
+   {
      "devicename": "Receiver",
      "devicetype": "oic.d.receiver",
      "vertical":   "Smart Home",
@@ -681,6 +772,25 @@
        {"resourcetypetitle": "Media Source Inputs", "resourcetypeid": "oic.r.media.input"},
        {"resourcetypetitle": "Media Source Outputs", "resourcetypeid": "oic.r.media.output"}
      ]
+   },
+   {
+    "devicename": "Sleep Monitor",
+    "devicetype": "oic.d.sleepmonitor",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Sleep Monitor Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.sleepmonitor-am",
+        "resources": [
+          {"resourcetypetitle": "Sleep", "resourcetypeid": "oic.r.sleep"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Heart Rate", "resourcetypeid": "oic.r.heartrate"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ]
    },
    {
      "devicename": "Smart Lock",
@@ -821,6 +931,21 @@
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
+   },
+   { 
+     "devicename": "Water Purifier", 
+     "devicetype": "oic.d.waterpurifier", 
+     "vertical":   "Smart Home", 
+     "resources": [ 
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}, 
+       {"resourcetypetitle": "Water Info", "resourcetypeid": "oic.r.waterinfo"} 
+     ], 
+     "recommendedresources": [ 
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"}, 
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
+     ] 
    },
    {
      "devicename": "Water Valve",
