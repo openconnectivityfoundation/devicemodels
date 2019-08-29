@@ -1,18 +1,18 @@
 {
   "supportedenumerations": [
-    "aborted","active","airClean","airDry","armedAway","armedInstant","armedMaximum",
+    "aborted","active","airClean","airDry","ambient","armedAway","armedInstant","armedMaximum",
     "armedNightStay","armedStay","aroma","artificalintelligence","auto",
     "awning","baking","babycare","boiling","brewing","cancelled","circulating","cleaning","clothes",
     "completed","contactsensor","cool","cosensor","delicate","diagnosis","disabled","down",
     "drapery","dry","dual","edge","enabled","extended","fan","fast","filterMaterial",
-    "firesensor","focused","glassbreaksensor","grinding","heating","heavy","homing","humidify",
-    "idle","initializing","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow",
-    "invalid","keepwarm","keyfob","keypad","macro","mapping","monitoring","monitoringInitializing",
-    "monitoringMoving","monitoringPreparation","motionsensor","moving","normal",
+    "firesensor","focused","glassbreaksensor","grinding","heating","heavy","homing","hot","humidify",
+    "ice","idle","initializing","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow",
+    "invalid","keepwarm","keyfob","keypad","macro","mapping","mineral","monitoring","monitoringInitializing",
+    "monitoringMoving","monitoringPreparation","motionsensor","moving","none","normal",
     "notsupported","pause","ped","pending","pendingHeld","permapress","preHeat","preparation","preSteam","preWash",
     "processing","projectorscreen","pure","quick","quiet","refresh","remotecontrol","reserve", "reserving","restart"
     "rinse","rollershade","rollershade2","rollershadeext","rollershadeext2",
-    "sectored","select","securityrepeater","shutter","silent","sleep","smart","spot",
+    "sectored","select","securityrepeater","shutter","silent","sleep","smart","soda","spot",
     "standardcie","start","steam","sterilize","stopped","spin","swd","testing","tiltblind",
     "tiltblind2mode","toner","tonerBlack","tonerCyan","tonerMagenta",
     "tonerYellow","turbo","update","vendorspecific","vibrationsensor","warm","wash",
@@ -127,6 +127,23 @@
             {
               "propertyname": "windowcoveringtype",
               "supportedenumeration": ["rollershade","rollershade2","rollershadeext","rollershadeext2","drapery","awning","shutter","tiltblind","tiltblind2mode","projectorscreen"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.waterinfo",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "supportedwatertypes",
+              "supportedenumeration": ["cold","hot","ambient", "ice"]
+            },
+            {
+              "propertyname": "supportedadditivetypes",
+              "supportedenumeration": ["none","soda","mineral"]
             }
           ]
         }
