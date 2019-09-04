@@ -329,6 +329,44 @@
     ]
   },
   {
+    "devicename": "Cycling Cadence Sensor",
+    "devicetype": "oic.d.cyclingcadencesensor",
+    "vertical":   "Healthcare",
+    "resources": [
+      {"resourcetypetitle": "Cadence", "resourcetypeid": "oic.r.cadence"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"},
+      {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"}
+    ]
+  },
+  {
+    "devicename": "Cycling Power Meter",
+    "devicetype": "oic.d.cyclingpowermeter",
+    "vertical":   "Healthcare",
+    "resources": [
+      {"resourcetypetitle": "Cycling Power", "resourcetypeid": "oic.r.cyclingpower"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Cadence", "resourcetypeid": "oic.r.cadence"},
+      {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"},
+      {"resourcetypetitle": "Torque", "resourcetypeid": "oic.r.torque"},
+      {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"}
+    ]
+  },
+  {
+    "devicename": "Cycling Speed Sensor",
+    "devicetype": "oic.d.cyclingspeedsensor",
+    "vertical":   "Healthcare",
+    "resources": [
+      {"resourcetypetitle": "Speed", "resourcetypeid": "oic.r.speed"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"},
+      {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"}
+    ]
+  },
+  {
     "devicename": "Credential Management Service",
     "devicetype": "oic.d.cms",
     "vertical":   "Framework",
