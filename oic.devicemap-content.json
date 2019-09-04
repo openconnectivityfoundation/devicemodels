@@ -117,6 +117,14 @@
     ]
   },
   {
+    "devicename": "Battery",
+    "devicetype": "oic.d.battery",
+    "vertical":   "PVSystem",
+    "resources": [
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
+    ]
+  },
+  {
     "devicename": "Blind",
     "devicetype": "oic.d.blind",
     "vertical":   "Smart Home",
@@ -242,6 +250,14 @@
     "recommendedresources": [
       {"resourcetypetitle": "CGM Status", "resourcetypeid": "oic.r.cgm.status"},
       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
+    ]
+  },
+  {
+    "devicename": "Circuit Breaker",
+    "devicetype": "oic.d.circuitbreaker",
+    "vertical":   "PVSystem",
+    "resources": [
+      {"resourcetypetitle": "Circuit Breaker", "resourcetypeid": "oic.r.circuitbreaker"}
     ]
   },
   {
@@ -575,6 +591,14 @@
      ]
    },
    {
+     "devicename": "Inverter",
+     "devicetype": "oic.d.inverter",
+     "vertical":   "PVSystem",
+     "resources": [
+       {"resourcetypetitle":"Inverter", "resourcetypeid": "oic.r.inverter"}
+     ]
+   },
+   {
      "devicename": "Kettle",
      "devicetype": "oic.d.kettle",
      "vertical":   "Smart Home",
@@ -628,6 +652,14 @@
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
        {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
+     ]
+   },
+   {
+     "devicename": "PV Array System",
+     "devicetype": "oic.d.pvarraysystem",
+     "vertical":   "PVSystem",
+     "resources": [
+       {"resourcetypetitle": "PV Connection Terminal", "resourcetypeid": "oic.r.pvconnectionterminal"}
      ]
    },
    {
@@ -932,20 +964,20 @@
        {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
    },
-   { 
-     "devicename": "Water Purifier", 
-     "devicetype": "oic.d.waterpurifier", 
-     "vertical":   "Smart Home", 
-     "resources": [ 
-       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}, 
-       {"resourcetypetitle": "Water Info", "resourcetypeid": "oic.r.waterinfo"} 
-     ], 
-     "recommendedresources": [ 
+   {
+     "devicename": "Water Purifier",
+     "devicetype": "oic.d.waterpurifier",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Water Info", "resourcetypeid": "oic.r.waterinfo"}
+     ],
+     "recommendedresources": [
        {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
-       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"}, 
+       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
        {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
-     ] 
+     ]
    },
    {
      "devicename": "Water Valve",

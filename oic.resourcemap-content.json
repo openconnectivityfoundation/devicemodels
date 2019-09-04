@@ -256,6 +256,13 @@
     "title": "Carbon Monoxide Sensor"
   },
   {
+    "filename": "CircuitBreakerResURI.swagger.json",
+    "rt": [
+      "oic.r.circuitbreaker"
+    ],
+    "title": "Circuit Breaker"
+  },
+  {
     "filename": "ClockResURI.swagger.json",
     "rt": [
       "oic.r.clock"
@@ -653,6 +660,13 @@
     "title": "Impact Sensor"
   },
   {
+    "filename": "InverterResURI.swagger.json",
+    "rt": [
+      "oic.r.inverter"
+    ],
+    "title": "Inverter"
+  },
+  {
     "filename": "KeyPadCharResURI.swagger.json",
     "rt": [
       "oic.r.keypadchar"
@@ -784,6 +798,13 @@
       "oic.r.orfid.tag"
     ],
     "title": "Optical RFID Tag"
+  },
+  {
+    "filename": "PVArraySystemConnectionTerminalResURI.swagger.json",
+    "rt": [
+      "oic.r.pvconnectionterminal"
+    ],
+    "title": "PV Connection Terminal"
   },
   {
     "filename": "PanTiltZoomResURI.swagger.json",
