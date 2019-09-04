@@ -235,6 +235,13 @@
     "title": "Button Switch"
   },
   {
+    "filename": "Cadence.swagger.json",
+    "rt": [
+      "oic.r.cadence"
+    ],
+    "title": "Cadence"
+  },
+  {
     "filename": "CalorificValueResURI.swagger.json",
     "rt": [
       "oic.r.calorificvalue"
@@ -382,6 +389,13 @@
       "oic.r.conversionfactor"
     ],
     "title": "Conversion Factor"
+  },
+  {
+    "filename": "CyclingPower.swagger.json",
+    "rt": [
+      "oic.r.cyclingpower"
+    ],
+    "title": "Cycling Power"
   },
   {
     "filename": "DelayDefrostResURI.swagger.json",
@@ -934,6 +948,13 @@
     "title": "Speech Synthesis-TTS"
   },
   {
+    "filename": "Speed.swagger.json",
+    "rt": [
+      "oic.r.speed"
+    ],
+    "title": "Speed"
+  },
+  {
     "filename": "SpO2.swagger.json",
     "rt": [
       "oic.r.spo2"
@@ -967,6 +988,13 @@
       "oic.r.time.stamp"
     ],
     "title": "Time Stamp"
+  },
+  {
+    "filename": "Torque.swagger.json",
+    "rt": [
+      "oic.r.torque"
+    ],
+    "title": "Torque"
   },
   {
     "filename": "TouchResURI.swagger.json",
