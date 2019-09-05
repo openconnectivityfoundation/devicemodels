@@ -905,7 +905,7 @@
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
-       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"},
+       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
