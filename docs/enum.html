@@ -77,13 +77,12 @@ $(document).ready( function () {
             "dataSrc": function (json) {
                 var return_data = new Array();
                 for(var i=0;i< json.supportedenumerations.length; i++){
-                  //alert ( "handling: " + json.supportedenumerations[i]);
-                  //$.each(json.supportedenumerations[i], function(key,value) {
-                  //  return_data.push({'title': key,
-                  //                    'description': value});
-                  return_data.push({
-                    'title': json.supportedenumerations[i],
-                    'enum' : json.supportedenumerations[i]
+                  $.each(json.supportedenumerations[i], function(key,value) {
+                    return_data.push({'title': key,
+                                      'description': value});
+                  //return_data.push({
+                  //  'title': json.supportedenumerations[i],
+                  //  'enum' : json.supportedenumerations[i]
                   })
                 }
                 return return_data;
@@ -91,7 +90,7 @@ $(document).ready( function () {
           },
           "columns"    : [
               {'data': 'title'},
-              {'data': 'enum'}
+              {'data': 'description'}
           ]
         })
       })
