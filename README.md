@@ -9,7 +9,7 @@ THIS SOFTWARE IS PROVIDED BY THE Open Connectivity Foundation, INC. "AS IS" AND 
 
 To search which device types exist, and which resource types are mandatory for that device type:
 
-https://openconnectivityfoundation.github.io/devicemodels/docs/index.html
+https://marktrayer.github.io/devicemodels/docs/index.html
 
 To search which resource types exists:
 
