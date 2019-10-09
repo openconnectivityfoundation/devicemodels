@@ -82,7 +82,7 @@
     "supportedenumerations": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object"
       }
     },
     "perresourceenumerations": {
