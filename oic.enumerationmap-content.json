@@ -170,7 +170,7 @@
     {"wet": "unit is in wet mode or state"},
     {"wind": "unit is in wind mode"},
     {"wrinklePrevent": "unit is in winkle prevent mode"},
-    {"zigzag": "unit is in zigzag mode or state"}
+    {"zigzag": "unit is in zigzag mode or state"} 
   ],
   "perresourceenumerations": [
     {
