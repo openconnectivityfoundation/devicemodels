@@ -673,6 +673,18 @@
      ]
    },
    {
+     "devicename": "Muscle Oxygen Monitor",
+     "devicetype": "oic.d.muscleoxygenmonitor",
+     "vertical":   "Healthcare",
+     "resources": [
+       {"resourcetypetitle": "MUscle Oxygen Saturation", "resourcetypeid": "oic.r.muscleoxygensaturation"}
+      ],
+     "recommendedresources": [
+       {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+       {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+     ]
+   },
+   {
      "devicename": "Optical augmented RFID Reader",
      "devicetype": "oic.d.orfid",
      "vertical":   "Industrial",
