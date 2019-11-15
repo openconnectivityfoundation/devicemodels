@@ -36,21 +36,48 @@
     ]
   },
   {
+    "devicename": "Activity Tracker",
+    "devicetype": "oic.d.activitytracker",
+    "vertical": "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Activity Tracker Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.activitytracker-am",
+        "resources": [
+          {"resourcetypetitle": "Activity", "resourcetypeid": "oic.r.activity"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Heartrate", "resourcetypeid": "oic.r.heartrate"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
+      {"resourcetypetitle": "Alarm", "resourcetypeid": "oic.r.alarm"}
+    ]
+  },
+  {
     "devicename": "Air Conditioner",
     "devicetype": "oic.d.airconditioner",
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
-      {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"}
+      {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
     ],
     "recommendedresources": [
       {"resourcetypetitle": "Airflow Control", "resourcetypeid": "oic.r.airflowcontrol"},
       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+      {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
-      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+      {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
     ]
   },
   {
@@ -61,10 +88,13 @@
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
     ],
     "recommendedresources": [
+      {"resourcetypetitle": "Air Flow", "resourcetypeid": "oic.r.Airflow"},
       {"resourcetypetitle": "Air Quality Collection", "resourcetypeid": "oic.r.airqualitycollection"},
       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
-      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
+      {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+      {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
     ]
   },
   {
@@ -90,6 +120,14 @@
     ],
     "recommendedresources": [
       {"resourcetypetitle": "Battery Material", "resourcetypeid": "oic.r.batterymaterial"}
+    ]
+  },
+  {
+    "devicename": "Battery",
+    "devicetype": "oic.d.battery",
+    "vertical":   "PVSystem",
+    "resources": [
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
     ]
   },
   {
@@ -193,6 +231,42 @@
     ]
   },
   {
+    "devicename": "CGM (Continuous Glucose Meter)",
+    "devicetype": "oic.d.cgm",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "CGM Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.cgm-am",
+        "resources": [
+          {"resourcetypetitle": "Glucose", "resourcetypeid": "oic.r.glucose"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "CGM Sensor", "resourcetypeid": "oic.r.cgm.sensor"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ],
+    "resources": [
+      {"resourcetypetitle": "Glucose Sampling Interval", "resourcetypeid": "oic.r.cgm.samplinginterval"},
+      {"resourcetypetitle": "CGM Calibration", "resourcetypeid": "oic.r.cgm.calibrate"},
+      {"resourcetypetitle": "CGM Threshold", "resourcetypeid": "oic.r.cgm.threshold"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "CGM Status", "resourcetypeid": "oic.r.cgm.status"},
+      {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"}
+    ]
+  },
+  {
+    "devicename": "Circuit Breaker",
+    "devicetype": "oic.d.circuitbreaker",
+    "vertical":   "PVSystem",
+    "resources": [
+      {"resourcetypetitle": "Circuit Breaker", "resourcetypeid": "oic.r.circuitbreaker"}
+    ]
+  },
+  {
     "devicename": "Clothes Washer Dryer",
     "devicetype": "oic.d.washerdryer",
     "vertical":   "Smart Home",
@@ -261,6 +335,44 @@
     ]
   },
   {
+    "devicename": "Cycling Cadence Sensor",
+    "devicetype": "oic.d.cyclingcadencesensor",
+    "vertical":   "Healthcare",
+    "resources": [
+      {"resourcetypetitle": "Cadence", "resourcetypeid": "oic.r.cadence"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"},
+      {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"}
+    ]
+  },
+  {
+    "devicename": "Cycling Power Meter",
+    "devicetype": "oic.d.cyclingpowermeter",
+    "vertical":   "Healthcare",
+    "resources": [
+      {"resourcetypetitle": "Cycling Power", "resourcetypeid": "oic.r.cyclingpower"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Cadence", "resourcetypeid": "oic.r.cadence"},
+      {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"},
+      {"resourcetypetitle": "Torque", "resourcetypeid": "oic.r.torque"},
+      {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"}
+    ]
+  },
+  {
+    "devicename": "Cycling Speed Sensor",
+    "devicetype": "oic.d.cyclingspeedsensor",
+    "vertical":   "Healthcare",
+    "resources": [
+      {"resourcetypetitle": "Speed", "resourcetypeid": "oic.r.speed"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"},
+      {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"}
+    ]
+  },
+  {
     "devicename": "Credential Management Service",
     "devicetype": "oic.d.cms",
     "vertical":   "Framework",
@@ -303,8 +415,10 @@
     "recommendedresources": [
       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
       {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
+      {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"},
       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"},
       {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
     ]
@@ -330,7 +444,7 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
-      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
     ],
     "recommendedresources": [
       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
@@ -489,6 +603,24 @@
      ]
    },
    {
+     "devicename": "Heart Rate Monitor",
+     "devicetype": "oic.d.heartratemonitor",
+     "vertical":   "Healthcare",
+     "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Heart Rate Monitor Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.heartratemonitor-am",
+        "resources": [
+          {"resourcetypetitle": "Heart Rate", "resourcetypeid": "oic.r.heartrate"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ]
+   },
+   {
      "devicename": "Humidifier",
      "devicetype": "oic.d.humidifier",
      "vertical":   "Smart Home",
@@ -502,6 +634,14 @@
        {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
+     ]
+   },
+   {
+     "devicename": "Inverter",
+     "devicetype": "oic.d.inverter",
+     "vertical":   "PVSystem",
+     "resources": [
+       {"resourcetypetitle":"Inverter", "resourcetypeid": "oic.r.inverter"}
      ]
    },
    {
@@ -557,7 +697,16 @@
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
        {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
+     ]
+   },
+   {
+     "devicename": "PV Array System",
+     "devicetype": "oic.d.pvarraysystem",
+     "vertical":   "PVSystem",
+     "resources": [
+       {"resourcetypetitle": "PV Connection Terminal", "resourcetypeid": "oic.r.pvconnectionterminal"}
      ]
    },
    {
@@ -592,6 +741,27 @@
      ]
    },
    {
+     "devicename": "Pulse Oximeter",
+     "devicetype": "oic.d.pulseoximeter",
+     "vertical":   "Healthcare",
+     "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Pulse Oximeter Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.pulseoximeter-am",
+        "resources": [
+          {"resourcetypetitle": "SpO2", "resourcetypeid": "oic.r.spo2"},
+          {"resourcetypetitle": "Pulse Rate", "resourcetypeid": "oic.r.pulserate"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Pulsatile Occurrence", "resourcetypeid": "oic.r.pulsatileoccurrence"},
+          {"resourcetypetitle": "Pulsatile Characteristic", "resourcetypeid": "oic.r.pulsatilecharacteristic"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ]
+   },
+   {
      "devicename": "Receiver",
      "devicetype": "oic.d.receiver",
      "vertical":   "Smart Home",
@@ -617,9 +787,11 @@
      "recommendedresources": [
        {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Audio", "resourcetypeid": "oic.r.audio"},
+       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
        {"resourcetypetitle": "Delay Defrost", "resourcetypeid": "oic.r.delaydefrost"},
        {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
        {"resourcetypetitle": "Door", "resourcetypeid": "oic.r.door"},
+       {"resourcetypetitle": "Ecomode", "resourcetypeid": "oic.r.ecomode"},
        {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
@@ -637,11 +809,13 @@
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Battery", "resourcetypeid": "oic.r.energy.battery"},
        {"resourcetypetitle": "Clock", "resourcetypeid": "oic.r.clock"},
        {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
        {"resourcetypetitle": "Demand Response Load Control (DRLC)", "resourcetypeid": "oic.r.energy.drlc"},
        {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
        {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ]
    },
@@ -683,6 +857,25 @@
      ]
    },
    {
+    "devicename": "Sleep Monitor",
+    "devicetype": "oic.d.sleepmonitor",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Sleep Monitor Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.sleepmonitor-am",
+        "resources": [
+          {"resourcetypetitle": "Sleep", "resourcetypeid": "oic.r.sleep"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Heart Rate", "resourcetypeid": "oic.r.heartrate"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ]
+   },
+   {
      "devicename": "Smart Lock",
      "devicetype": "oic.d.smartlock",
      "vertical":   "Smart Home",
@@ -711,15 +904,15 @@
      "devicetype": "oic.d.steamcloset",
      "vertical":   "Smart Home",
      "resources": [
-       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
-       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
-       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"}
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
        {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
-       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
      ]
    },
    {
@@ -802,6 +995,7 @@
        {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"},
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"},
        {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
      ]
    },
@@ -820,6 +1014,21 @@
        {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
        {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"},
        {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"}
+     ]
+   },
+   {
+     "devicename": "Water Purifier",
+     "devicetype": "oic.d.waterpurifier",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+       {"resourcetypetitle": "Water Info", "resourcetypeid": "oic.r.waterinfo"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},
+       {"resourcetypetitle": "Consumable", "resourcetypeid": "oic.r.consumable"},
+       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+       {"resourcetypetitle": "Energy Usage", "resourcetypeid": "oic.r.energy.usage"}
      ]
    },
    {
