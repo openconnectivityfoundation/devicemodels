@@ -405,6 +405,13 @@
     "title": "Delay Defrost"
   },
   {
+    "filename": "DeoderizationResURI.swagger.json",
+    "rt": [
+      "oic.r.deoderization"
+    ],
+    "title": "Deoderization"
+  },
+  {
     "filename": "DimmingResURI.swagger.json",
     "rt": [
       "oic.r.light.dimming"
@@ -681,6 +688,13 @@
     "title": "Inverter"
   },
   {
+    "filename": "KeyCardSwitchResURI.swagger.json",
+    "rt": [
+      "oic.r.keycardswitch"
+    ],
+    "title": "KeyCard Switch"
+  },
+  {
     "filename": "KeyPadCharResURI.swagger.json",
     "rt": [
       "oic.r.keypadchar"
@@ -770,6 +784,13 @@
       "oic.r.movement.linear"
     ],
     "title": "Movement"
+  },
+  {
+    "filename": "muscleoxygensaturation.swagger.json",
+    "rt": [
+      "oic.r.muscleoxygensaturation"
+    ],
+    "title": "Muscle Oxygen Saturation"
   },
   {
     "filename": "NightModeResURI.swagger.json",
