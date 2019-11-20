@@ -405,11 +405,11 @@
     "title": "Delay Defrost"
   },
   {
-    "filename": "DeoderizationResURI.swagger.json",
+    "filename": "DeodorizationResURI.swagger.json",
     "rt": [
-      "oic.r.deoderization"
+      "oic.r.deodorization"
     ],
-    "title": "Deoderization"
+    "title": "Deodorization"
   },
   {
     "filename": "DimmingResURI.swagger.json",
