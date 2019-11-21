@@ -3,15 +3,15 @@
     "aborted","active","airClean","airDry","ambient","armedAway","armedInstant","armedMaximum","armedNightStay","armedStay",
     "aroma","artificalintelligence","auto","awning","boiling","brewing","cancelled","charging","checkingTurbidity",
     "changeCondition","circulating","cleaning","clothes","completed","convertible","convBake","convRoast","contactsensor",
-    "cool","coolDown","cosensor","delicate","disabled","down","drapery","dry","dual","enabled","energySaving","express",
-    "extended","fan","fast","filterMaterial","firesensor","focused","freezer","fridge","freezePrevent","freezePreventPending",
-    "freezePreventPause","glassbreaksensor","grinding","heating","heavy","idle","ink","inkBlack","inkCyan","inkMagenta",
-    "inkTricolour","inkYellow","invalid","keepwarm","keyfob","keypad","main","motionsensor","nightDry","normal","notsupported",
-    "pause","ped","pending","pendingHeld","permapress","preWash","processing","projectorscreen","pure","quick","quiet",
+    "cool","coolDown","cosensor","customer","delicate","disabled","down","drapery","dry","dual","enabled","energySaving","express",
+    "extended","fan","fast","filterMaterial","firesensor","focused","foot","freezer","fridge","freezePrevent","freezePreventPending",
+    "freezePreventPause","glassbreaksensor","grinding","healing","heating","heavy","idle","ink","inkBlack","inkCyan","inkMagenta",
+    "inkTricolour","inkYellow","invalid","keepwarm","keyfob","keypad","main","morning","motionsensor","night","nightDry","normal","notsupported",
+    "pause","ped","pending","pendingHeld","permapress","preWash","processing","projectorscreen","pure","quick","quiet","relax",
     "remotecontrol","ringing","rinse","rollershade","rollershade2","rollershadeext","rollershadeext2","sectored","setOption",
-    "shake","shoesDry","securityrepeater","shutter","silent","sleep","smart","soaking","spot","spray","standardcie","steam",
-    "steamSoftening","stop","stopped","spin","subDevice","swd","testing","tiltblind","tiltblind2mode","toner","tonerBlack",
-    "tonerCyan","tonerMagenta","tonerYellow","vendorspecific","vibrationsensor","wakeUp","warm","wash","waterproofing",
+    "shake","shoesDry","securityrepeater","shutter","silent","sleep","smart","soaking","spin","spot","spray","standardcie","steam",
+    "steamSoftening","stop","stopped","stretching","subDevice","swd","testing","tiltblind","tiltblind2mode","toner","tonerBlack",
+    "tonerCyan","tonerMagenta","tonerYellow","vendorspecific","vibrationsensor","waiting","wakeUp","warm","wash","waterproofing",
     "watersensor","wet","wind","wrinklePrevent","zigzag"],
   "perresourceenumerations": [
     {
@@ -66,6 +66,19 @@
             {
               "propertyname": "supportedmodes",
               "supportedenumeration": ["baking", "convBake", "convRoast"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.mattress",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["customer","foot","healing","morning","night","relax","stretching","waiting"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["customer","foot","healing","morning","night","relax","stretching","waiting"]
             }
           ]
         },
