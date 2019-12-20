@@ -112,6 +112,14 @@
     ]
   },
   {
+    "devicename": "Arc Fault Circuit Interrupter",
+    "devicetype": "oic.d.afci",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle": "Fault Interrupter Switch", "resourcetypeid": "oic.r.switch.fault"}
+    ]
+  },
+  {
     "devicename": "Battery",
     "devicetype": "oic.d.battery",
     "vertical":   "Smart Home",
@@ -600,6 +608,14 @@
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
+     "devicename": "Ground Fault Circuit Interrupter",
+     "devicetype": "oic.d.gfci",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Fault Interrupter Switch", "resourcetypeid": "oic.r.switch.fault"}
      ]
    },
    {
