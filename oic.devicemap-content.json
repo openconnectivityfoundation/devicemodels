@@ -637,6 +637,20 @@
      ]
    },
    {
+     "devicename": "Indoor Garden",
+     "devicetype": "oic.d.indoorgarden",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Water Sensor", "resourcetypeid": "oic.r.sensor.water"},
+       {"resourcetypetitle": "Temperature", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+       {"resourcetypetitle": "Illuminance Sensor", "resourcetypeid": "oic.r.illuminance"}
+     ]
+   },
+   {
      "devicename": "Inverter",
      "devicetype": "oic.d.inverter",
      "vertical":   "PVSystem",
@@ -670,6 +684,19 @@
        {"resourcetypetitle": "Colour Temperature", "resourcetypeid": "oic.r.colour.colourtemperature"},
        {"resourcetypetitle": "Dimming", "resourcetypeid": "oic.r.light.dimming"},
        {"resourcetypetitle": "Ramp Time", "resourcetypeid": "oic.r.light.ramptime"}
+     ]
+   },
+   {
+     "devicename": "Mattress",
+     "devicetype": "oic.d.mattress",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Sleep Sensor", "resourcetypeid": "oic.r.sensor.sleep"},
+       {"resourcetypetitle": "Movement", "resourcetypeid": "oic.r.movement.linear"}
      ]
    },
    {
