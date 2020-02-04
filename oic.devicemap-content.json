@@ -117,10 +117,9 @@
     "vertical":   "Smart Home",
     "resources": [
       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
-	  {"resourcetypetitle": "Linear Movement Controls", "resourcetypeid": "oic.r.movement.linear"}
+      {"resourcetypetitle": "Linear Movement Controls", "resourcetypeid": "oic.r.movement.linear"}
     ],
-    "recommendedresources": [
-	  {"resourcetypetitle": "Alerts", "resourcetypeid": "oic.r.alertcollection"},     
+    "recommendedresources": [   
       {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
     ]
   },
