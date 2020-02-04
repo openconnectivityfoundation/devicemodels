@@ -177,6 +177,71 @@
       "resourcetype": "oic.r.mode",
       "enumsupport": [
         {
+          "targetdevicetype": "oic.d.airconditioner",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "energySaving", "fan"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "energySaving", "fan"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.airpurifier",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["auto", "babyCare", "circulating", "cleaning", "dual", "humidity", "silent", "sleep"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["auto", "babyCare", "circulating", "cleaning", "dual", "humidity", "silent", "sleep"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.dishwasher",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["auto", "cleaning", "delicate", "energySaving", "express", "fast", "heavy", "normal", "quick", "refresh", "rinse", "spray", "steam", "turbo", "update"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["auto", "cleaning", "delicate", "energySaving", "express", "fast", "heavy", "normal", "quick", "refresh", "rinse", "spray", "steam", "turbo", "update"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.oven",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["baking", "convBake", "convRoast"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["baking", "convBake", "convRoast"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.robotcleaner",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+            }
+          ]
+        },
+        {
           "targetdevicetype": "oic.d.securitypanel",
           "propertydefinitions": [
             {
@@ -194,6 +259,45 @@
     {
       "resourcetype": "oic.r.operational.state",
       "enumsupport": [
+        {
+          "targetdevicetype": "oic.d.dishwasher",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "airDry", "cancelled", "completed", "down", "nightDry", "pause", "pending", "reserve", "rinse", "wash"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.dryer",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "airDry", "completed", "coolDown", "diagnosis", "down", "pause", "pending", "processing", "reserve", "wrinklePrevent"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.oven",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["cleaning", "completed", "cool", "down", "idle", "pause", "pending", "preHeat", "processing", "setOption"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["completed", "preHeat", "start"]
+            }
+          ]
+        },
         {
           "targetdevicetype": "oic.d.printer",
           "propertydefinitions": [
@@ -221,6 +325,19 @@
           ]
         },
         {
+           "targetdevicetype": "oic.d.robotcleaner",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["charging", "cleaning", "diagnosis", "homing", "idle", "initializing", "macro", "mapping", "monitoring", "monitoringInitializing", "monitoringMoving", "monitoringPreparation", "moving", "pause", "preparation", "reserving", "setOption"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["homing", "pause", "restart", "start", "wakeUp"]
+            }
+          ]
+        },
+        {
           "targetdevicetype": "oic.d.scanner",
           "propertydefinitions": [
             {
@@ -230,6 +347,32 @@
             {
               "propertyname": "machineStates",
               "supportedenumeration": ["idle","processing","stopped","testing","down"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.steamcloset",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "airDry", "completed", "diagnosis", "down", "idle", "initializing", "nightDry", "pause", "pending", "preHeat", "preSteam", "processing", "reserve", "shake", "sleep", "steam", "sterilize", "update"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop", "wakeUp"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.washer",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "changeCondition", "checkingTurbidity", "completed", "coolDown", "diagnosis", "down", "dry", "freezePrevent", "freezePreventPause", "freezePreventPending", "grinding", "idle", "pause", "pending", "preparation", "preWash", "processing", "refresh", "reserve", "rinse", "shoesDry", "sleep", "soaking", "spin", "steam", "steamSoftening", "testing", "update", "wash", "waterproofing", "wrinklePrevent"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop", "wakeUp"]
             }
           ]
         }
