@@ -63,6 +63,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
         <thead>
             <tr>
                 <th>Enum value</th>
+                <th>Enum description</th>
             </tr>
         </thead>
     </table>
@@ -73,21 +74,22 @@ $(document).ready( function () {
    "ajax": {
             "url": "https://openconnectivityfoundation.github.io/devicemodels/oic.enumerationmap-content.json",
             "dataSrc": function (json) {
-                  var return_data = new Array();
-                  for(var i=0;i< json.supportedenumerations.length; i++){
-                    return_data.push({
-                      'title': json.supportedenumerations[i],
-                      'enum' : json.supportedenumerations[i]
-                    })
-                  }
-                  return return_data;
-                }
-            },
-            "columns"    : [
-                {'data': 'title'}
-                ]
-            })
+              var return_data = new Array();
+              for(var i=0;i< json.supportedenumerations.length; i++){
+                $.each(json.supportedenumerations[i], function(key,value) {
+                  return_data.push({'title': key,
+                                    'description': value});
+                })
+              }
+              return return_data;
+            }
+          },
+          "columns"    : [
+              {'data': 'title'},
+              {'data': 'description'}
+          ]
         })
+      })
 
 	</script>
 </div>
