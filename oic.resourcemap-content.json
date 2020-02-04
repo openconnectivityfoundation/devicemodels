@@ -595,6 +595,13 @@
     "title": "Grinder"
   },
   {
+    "filename": "HVACCapacityResURI.swagger.json",
+    "rt": [
+      "oic.r.hvac.capacity"
+    ],
+    "title": "HVAC Capacity"
+  },
+  {
     "filename": "HeartRate.swagger.json",
     "rt": [
       "oic.r.heartrate"
