@@ -162,6 +162,30 @@
     ]
   },
   {
+    "devicename": "Body Composition Analyser",
+    "devicetype": "oic.d.bodycompositionanalyser",
+    "vertical":   "Healthcare",
+    "atomicmeasurements": [
+      {
+        "atomicmeasurementname": "Body Composition Analyser Atomic Measurement",
+        "atomicmeasurementype":  "oic.r.bodycompositionanalyser-am",
+        "resources": [
+          {"resourcetypetitle": "Body Fat", "resourcetypeid": "oic.r.body.fat"},
+          {"resourcetypetitle": "Height", "resourcetypeid": "oic.r.height"},
+          {"resourcetypetitle": "Weight", "resourcetypeid": "oic.r.weight"}
+        ],
+        "optionalresources": [
+          {"resourcetypetitle": "Body Mass Index (BMI)", "resourcetypeid": "oic.r.bmi"},
+          {"resourcetypetitle": "Body Water", "resourcetypeid": "oic.r.body.water"},
+          {"resourcetypetitle": "Body Soft Lean Mass", "resourcetypeid": "oic.r.body.slm"},
+          {"resourcetypetitle": "Body Fat Free Mass", "resourcetypeid": "oic.r.body.ffm"},
+          {"resourcetypetitle": "User ID", "resourcetypeid": "oic.r.userid"},
+          {"resourcetypetitle": "Observed Time", "resourcetypeid": "oic.r.time.stamp"}
+        ]
+      }
+    ]
+  },
+  {
     "devicename": "Body Scale",
     "devicetype": "oic.d.bodyscale",
     "vertical":   "Healthcare",
