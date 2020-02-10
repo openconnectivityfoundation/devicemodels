@@ -112,6 +112,18 @@
     ]
   },
   {
+    "devicename": "Airer",
+    "devicetype": "oic.d.airer",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Linear Movement", "resourcetypeid": "oic.r.movement.linear"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ]
+  },
+  {
     "devicename": "Battery",
     "devicetype": "oic.d.battery",
     "vertical":   "Smart Home",
