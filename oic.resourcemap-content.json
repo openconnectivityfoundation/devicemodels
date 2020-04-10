@@ -157,6 +157,13 @@
     "title": "BMI"
   },
   {
+    "filename": "BodyCompositionAnalyserAM.swagger.json",
+    "rt": [
+      "oic.r.bodycompositionanalyser-am"
+    ],
+    "title": "Body Composition Analyser Atomic Measurement"
+  },
+  {
     "filename": "BodyFatResURI.swagger.json",
     "rt": [
       "oic.r.body.fat"
@@ -482,6 +489,13 @@
     "title": "Exercise for Glucose Meter"
   },
   {
+    "filename": "FaultInterrupterResURI.swagger.json",
+    "rt": [
+      "oic.r.switch.fault"
+    ],
+    "title": "Fault Interrupter Switch"
+  },
+  {
     "filename": "FoamingResURI.swagger.json",
     "rt": [
       "oic.r.foaming"
@@ -744,6 +758,27 @@
     "title": "Media"
   },
   {
+    "filename": "MediaAudioResURI.swagger.json",
+    "rt": [
+      "oic.r.media.audio"
+    ],
+    "title": "Media (Audio)"
+  },
+  {
+    "filename": "MediaCoreResURI.swagger.json",
+    "rt": [
+      "oic.r.media.core"
+    ],
+    "title": "Media (Core)"
+  },
+  {
+    "filename": "MediaImageResURI.swagger.json",
+    "rt": [
+      "oic.r.media.image"
+    ],
+    "title": "Media (Image)"
+  },
+  {
     "filename": "mediaSourceInputResURI.swagger.json",
     "rt": [
       "oic.r.media.input"
@@ -770,6 +805,20 @@
       "oic.r.mediasource"
     ],
     "title": "Media Source"
+  },
+  {
+    "filename": "MediaTextResURI.swagger.json",
+    "rt": [
+      "oic.r.media.text"
+    ],
+    "title": "Media (Text)"
+  },
+  {
+    "filename": "MediaVideoResURI.swagger.json",
+    "rt": [
+      "oic.r.media.video"
+    ],
+    "title": "Media (Video)"
   },
   {
     "filename": "ModeResURI.swagger.json",
@@ -917,6 +966,13 @@
       "oic.r.refrigeration"
     ],
     "title": "Refrigeration"
+  },
+  {
+    "filename": "RestrictedSwitchResURI.swagger.json",
+    "rt": [
+      "oic.r.switch.restricted"
+    ],
+    "title": "Restricted Switch"
   },
   {
     "filename": "SelectableLevelsResURI.swagger.json",
