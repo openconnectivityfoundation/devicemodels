@@ -31,7 +31,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
 <div class=page>
 
   <h1>OCF Enumeration Overview </h1>
-  
+
     <p><i>NOTE:</i> This is the full list of enums, not listed per resource though.</p>
   <a href="https://openconnectivity.org/"><img src="OCF_POS_4C.png" alt="OCF Logo" width="300" height="64" align="right"></a>
 
@@ -43,10 +43,13 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
   <li class="nav-item">
     <a class="nav-link" href="resource.html">Resources</a>
   </li>
-    <li class="nav-item">
+  <li class="nav-item">
+    <a class="nav-link" href="resource-enum.html">Resources with Enumerations</a>
+  </li>
+  <li class="nav-item">
     <a class="nav-link active" href="enum.html">Enumerations</a>
   </li>
-    <li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="specs.html">Specification Info</a>
   </li>
   <li class="nav-item">
@@ -60,6 +63,7 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
         <thead>
             <tr>
                 <th>Enum value</th>
+                <th>Enum description</th>
             </tr>
         </thead>
     </table>
@@ -70,21 +74,22 @@ $(document).ready( function () {
    "ajax": {
             "url": "https://openconnectivityfoundation.github.io/devicemodels/oic.enumerationmap-content.json",
             "dataSrc": function (json) {
-                  var return_data = new Array();
-                  for(var i=0;i< json.supportedenumerations.length; i++){
-                    return_data.push({
-                      'title': json.supportedenumerations[i],
-                      'enum' : json.supportedenumerations[i]
-                    })
-                  }
-                  return return_data;
-                }
-            },
-            "columns"    : [
-                {'data': 'title'}
-                ]
-            })
+              var return_data = new Array();
+              for(var i=0;i< json.supportedenumerations.length; i++){
+                $.each(json.supportedenumerations[i], function(key,value) {
+                  return_data.push({'title': key,
+                                    'description': value});
+                })
+              }
+              return return_data;
+            }
+          },
+          "columns"    : [
+              {'data': 'title'},
+              {'data': 'description'}
+          ]
         })
+      })
 
 	</script>
 </div>

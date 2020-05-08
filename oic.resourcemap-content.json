@@ -7,11 +7,11 @@
     "title": "3D Printer"
   },
   {
-    "filename": "AccelerationResURI.swagger.json",
+    "filename": "Activity.swagger.json",
     "rt": [
-      "oic.r.sensor.acceleration"
+      "oic.r.activity"
     ],
-    "title": "Acceleration Sensor"
+    "title": "Activity"
   },
   {
     "filename": "ActivityCountResURI.swagger.json",
@@ -19,6 +19,21 @@
       "oic.r.sensor.activity.count"
     ],
     "title": "Activity Count"
+  },
+  {
+    "filename": "ActivityCountResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.activity.count"
+    ],
+    "title": "Activity Count"
+  },
+  {
+    "filename": "ActivityTrackerAM.swagger.json",
+    "rt": [
+      "oic.r.activitytracker-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Activity Tracker Atomic Measurement"
   },
   {
     "filename": "AirFlowControlResURI.swagger.json",
@@ -48,6 +63,13 @@
       "oic.r.airquality"
     ],
     "title": "Air Quality"
+  },
+  {
+    "filename": "Alarm.swagger.json",
+    "rt": [
+      "oic.r.alarm"
+    ],
+    "title": "Alarm"
   },
   {
     "filename": "AltimeterResURI.swagger.json",
@@ -122,7 +144,8 @@
   {
     "filename": "BloodPressureMonitorAMResURI.swagger.json",
     "rt": [
-      "oic.r.bloodpressuremonitor-am"
+      "oic.r.bloodpressuremonitor-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Blood Pressure Monitor Atomic Measurement"
   },
@@ -132,6 +155,13 @@
       "oic.r.bmi"
     ],
     "title": "BMI"
+  },
+  {
+    "filename": "BodyCompositionAnalyserAM.swagger.json",
+    "rt": [
+      "oic.r.bodycompositionanalyser-am"
+    ],
+    "title": "Body Composition Analyser Atomic Measurement"
   },
   {
     "filename": "BodyFatResURI.swagger.json",
@@ -178,7 +208,8 @@
   {
     "filename": "BodyThermometerAMResURI.swagger.json",
     "rt": [
-      "oic.r.bodythermometer-am"
+      "oic.r.bodythermometer-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Body Thermometer Atomic Measurement"
   },
@@ -211,6 +242,13 @@
     "title": "Button Switch"
   },
   {
+    "filename": "Cadence.swagger.json",
+    "rt": [
+      "oic.r.cadence"
+    ],
+    "title": "Cadence"
+  },
+  {
     "filename": "CalorificValueResURI.swagger.json",
     "rt": [
       "oic.r.calorificvalue"
@@ -230,6 +268,13 @@
       "oic.r.sensor.carbonmonoxide"
     ],
     "title": "Carbon Monoxide Sensor"
+  },
+  {
+    "filename": "CircuitBreakerResURI.swagger.json",
+    "rt": [
+      "oic.r.circuitbreaker"
+    ],
+    "title": "Circuit Breaker"
   },
   {
     "filename": "ClockResURI.swagger.json",
@@ -296,6 +341,49 @@
     "title": "Consumables"
   },
   {
+    "filename": "ContinuousGlucoseMeterAM.swagger.json",
+    "rt": [
+      "oic.r.cgm-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Continuous Glucose Meter (CGM) Atomic Measurement"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterCalibrate.swagger.json",
+    "rt": [
+      "oic.r.cgm.calibrate"
+    ],
+    "title": "Calibrate for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterSamplingInterval.swagger.json",
+    "rt": [
+      "oic.r.cgm.samplinginterval"
+    ],
+    "title": "Sampling Interval for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterSensor.swagger.json",
+    "rt": [
+      "oic.r.cgm.sensor"
+    ],
+    "title": "Sensor for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterStatus.swagger.json",
+    "rt": [
+      "oic.r.cgm.status"
+    ],
+    "title": "Status for Continuous Glucose Meter (CGM)"
+  },
+  {
+    "filename": "ContinuousGlucoseMeterThreshold.swagger.json",
+    "rt": [
+      "oic.r.cgm.threshold"
+    ],
+    "title": "Threshold for Continuous Glucose Meter (CGM)"
+  },
+  {
     "filename": "ContactResURI.swagger.json",
     "rt": [
       "oic.r.sensor.contact"
@@ -310,11 +398,25 @@
     "title": "Conversion Factor"
   },
   {
+    "filename": "CyclingPower.swagger.json",
+    "rt": [
+      "oic.r.cyclingpower"
+    ],
+    "title": "Cycling Power"
+  },
+  {
     "filename": "DelayDefrostResURI.swagger.json",
     "rt": [
       "oic.r.delaydefrost"
     ],
     "title": "Delay Defrost"
+  },
+  {
+    "filename": "DeodorizationResURI.swagger.json",
+    "rt": [
+      "oic.r.deodorization"
+    ],
+    "title": "Deodorization"
   },
   {
     "filename": "DimmingResURI.swagger.json",
@@ -385,6 +487,13 @@
       "oic.r.glucose.exercise"
     ],
     "title": "Exercise for Glucose Meter"
+  },
+  {
+    "filename": "FaultInterrupterResURI.swagger.json",
+    "rt": [
+      "oic.r.switch.fault"
+    ],
+    "title": "Fault Interrupter Switch"
   },
   {
     "filename": "FoamingResURI.swagger.json",
@@ -473,7 +582,8 @@
   {
     "filename": "GlucoseMeterAMResURI.swagger.json",
     "rt": [
-      "oic.r.glucosemeter-am"
+      "oic.r.glucosemeter-am",
+      "oic.wk.atomicmeasurement"
     ],
     "title": "Glucose Meter Atomic Measurement"
   },
@@ -497,6 +607,28 @@
       "oic.r.grinder"
     ],
     "title": "Grinder"
+  },
+  {
+    "filename": "HVACCapacityResURI.swagger.json",
+    "rt": [
+      "oic.r.hvac.capacity"
+    ],
+    "title": "HVAC Capacity"
+  },
+  {
+    "filename": "HeartRate.swagger.json",
+    "rt": [
+      "oic.r.heartrate"
+    ],
+    "title": "Heart Rate"
+  },
+  {
+    "filename": "HeartRateMonitorAM.swagger.json",
+    "rt": [
+      "oic.r.heartratemonitor-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Heart Rate Monitor Atomic Measurement"
   },
   {
     "filename": "HeartRateZoneResURI.swagger.json",
@@ -535,6 +667,20 @@
     "title": "Humidity"
   },
   {
+    "filename": "IASZoneInfoResURI.swagger.json",
+    "rt": [
+      "oic.r.iaszoneinfo"
+    ],
+    "title": "IAS Zone Info"
+  },
+  {
+    "filename": "IASZoneCollectionResURI.swagger.json",
+    "rt": [
+      "oic.r.iaszone"
+    ],
+    "title": "IAS Zone Collection"
+  },
+  {
     "filename": "IceMakerResURI.swagger.json",
     "rt": [
       "oic.r.icemaker"
@@ -554,6 +700,20 @@
       "oic.r.impactsensor"
     ],
     "title": "Impact Sensor"
+  },
+  {
+    "filename": "InverterResURI.swagger.json",
+    "rt": [
+      "oic.r.inverter"
+    ],
+    "title": "Inverter"
+  },
+  {
+    "filename": "KeyCardSwitchResURI.swagger.json",
+    "rt": [
+      "oic.r.keycardswitch"
+    ],
+    "title": "KeyCard Switch"
   },
   {
     "filename": "KeyPadCharResURI.swagger.json",
@@ -598,6 +758,27 @@
     "title": "Media"
   },
   {
+    "filename": "MediaAudioResURI.swagger.json",
+    "rt": [
+      "oic.r.media.audio"
+    ],
+    "title": "Media (Audio)"
+  },
+  {
+    "filename": "MediaCoreResURI.swagger.json",
+    "rt": [
+      "oic.r.media.core"
+    ],
+    "title": "Media (Core)"
+  },
+  {
+    "filename": "MediaImageResURI.swagger.json",
+    "rt": [
+      "oic.r.media.image"
+    ],
+    "title": "Media (Image)"
+  },
+  {
     "filename": "mediaSourceInputResURI.swagger.json",
     "rt": [
       "oic.r.media.input"
@@ -626,6 +807,20 @@
     "title": "Media Source"
   },
   {
+    "filename": "MediaTextResURI.swagger.json",
+    "rt": [
+      "oic.r.media.text"
+    ],
+    "title": "Media (Text)"
+  },
+  {
+    "filename": "MediaVideoResURI.swagger.json",
+    "rt": [
+      "oic.r.media.video"
+    ],
+    "title": "Media (Video)"
+  },
+  {
     "filename": "ModeResURI.swagger.json",
     "rt": [
       "oic.r.mode"
@@ -645,6 +840,13 @@
       "oic.r.movement.linear"
     ],
     "title": "Movement"
+  },
+  {
+    "filename": "muscleoxygensaturation.swagger.json",
+    "rt": [
+      "oic.r.muscleoxygensaturation"
+    ],
+    "title": "Muscle Oxygen Saturation"
   },
   {
     "filename": "NightModeResURI.swagger.json",
@@ -689,6 +891,13 @@
     "title": "Optical RFID Tag"
   },
   {
+    "filename": "PVArraySystemConnectionTerminalResURI.swagger.json",
+    "rt": [
+      "oic.r.pvconnectionterminal"
+    ],
+    "title": "PV Connection Terminal"
+  },
+  {
     "filename": "PanTiltZoomResURI.swagger.json",
     "rt": [
       "oic.r.ptz"
@@ -717,6 +926,27 @@
     "title": "Print Queue"
   },
   {
+    "filename": "PulsatileCharacteristic.swagger.json",
+    "rt": [
+      "oic.r.pulsatilecharacteristic"
+    ],
+    "title": "Pulsatile Characteristic for Pulse Oximeter"
+  },
+  {
+    "filename": "PulsatileOccurrence.swagger.json",
+    "rt": [
+      "oic.r.pulsatileoccurrence"
+    ],
+    "title": "Pulsatile Occurrence for Pulse Oximeter"
+  },
+  {
+    "filename": "PulseOximeterAM.swagger.json",
+    "rt": [
+      "oic.r.pulseoximeter-am"
+    ],
+    "title": "Pulse Oximeter Atomic Measurement"
+  },
+  {
     "filename": "PulseRateResURI.swagger.json",
     "rt": [
       "oic.r.pulserate"
@@ -736,6 +966,13 @@
       "oic.r.refrigeration"
     ],
     "title": "Refrigeration"
+  },
+  {
+    "filename": "RestrictedSwitchResURI.swagger.json",
+    "rt": [
+      "oic.r.switch.restricted"
+    ],
+    "title": "Restricted Switch"
   },
   {
     "filename": "SelectableLevelsResURI.swagger.json",
@@ -759,6 +996,21 @@
     "title": "Signal Strength"
   },
   {
+    "filename": "Sleep.swagger.json",
+    "rt": [
+      "oic.r.sleep"
+    ],
+    "title": "Sleep"
+  },
+  {
+    "filename": "SleepMonitorAM.swagger.json",
+    "rt": [
+      "oic.r.sleepmonitor-am",
+      "oic.wk.atomicmeasurement"
+    ],
+    "title": "Sleep Monitor Atomic Measurement"
+  },
+  {
     "filename": "SleepSensorResURI.swagger.json",
     "rt": [
       "oic.r.sensor.sleep"
@@ -778,6 +1030,20 @@
       "oic.r.speech.tts"
     ],
     "title": "Speech Synthesis-TTS"
+  },
+  {
+    "filename": "Speed.swagger.json",
+    "rt": [
+      "oic.r.speed"
+    ],
+    "title": "Speed"
+  },
+  {
+    "filename": "SpO2.swagger.json",
+    "rt": [
+      "oic.r.spo2"
+    ],
+    "title": "SpO2 for Pulse Oximeter"
   },
   {
     "filename": "TemperatureResURI.swagger.json",
@@ -806,6 +1072,13 @@
       "oic.r.time.stamp"
     ],
     "title": "Time Stamp"
+  },
+  {
+    "filename": "Torque.swagger.json",
+    "rt": [
+      "oic.r.torque"
+    ],
+    "title": "Torque"
   },
   {
     "filename": "TouchResURI.swagger.json",
@@ -857,10 +1130,24 @@
     "title": "Water Sensor"
   },
   {
+    "filename": "WaterInfoResURI.swagger.json",
+    "rt": [
+      "oic.r.waterinfo"
+    ],
+    "title": "Water Info"
+  },
+  {
     "filename": "WeightResURI.swagger.json",
     "rt": [
       "oic.r.weight"
     ],
     "title": "Weight"
+  },
+  {
+    "filename": "WindowCoveringResURI.swagger.json",
+    "rt": [
+      "oic.r.windowcovering"
+    ],
+    "title": "Window Covering"
   }
 ]

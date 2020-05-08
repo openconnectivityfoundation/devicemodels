@@ -1,9 +1,290 @@
 {
-  "supportedenumerations": ["aborted","active","airDry","armedAway","armedInstant","armedMaximum","armedNightStay","armedStay","boiling","brewing","cancelled","completed","down","dry","disabled","enabled","filterMaterial","grinding","idle","ink","inkBlack","inkCyan","inkMagenta","inkTricolour","inkYellow","keepwarm","notsupported","pause","pending","pendingHeld","preWash","processing","rinse","stopped","spin","testing","toner","tonerBlack","tonerCyan","tonerMagenta","tonerYellow","wash","wrinklePrevent"],
+  "supportedenumerations": [
+    {"aborted": "An internal device, communication or security error"},
+    {"active": "Unit is active"},
+    {"airClean": "unit is in air clean mode or state"},
+    {"airDry": "unit is air drying"},
+    {"airfilterconsumable": "identifies the main air filter consumable (\"oic.r.consumable\") Resource of the Device"},
+    {"airflow": "Identifies the main airflow (\"oic.r.airflow\") Resource of the Device"},
+    {"airpurifierswitch": "identifies that the switch (\"oic.r.switch.binary\") can turn on/off the air purifying function of the Device"},
+    {"airqualityairpollution": "identifies the air quality (\"oic.r.airquality\") Resource measuring (total) air pollution"},
+    {"airqualityodor": "identifies the air quality (\"oic.r.airquality\") Resource measuring odor"},
+    {"airqualitypm1": "identifies the air quality (\"oic.r.airquality\") Resource measuring pm1"},
+    {"airqualitypm10": "identifies the air quality (\"oic.r.airquality\") Resource measuring pm10"},
+    {"airqualitypm2.5": "identifies the air quality (\"oic.r.airquality\") Resource measuring pm2.5"},
+    {"ambient": "unit is in ambient mode or state"},
+    {"alarmtimeperiod": "identifies the duration time for an alarm (\"oic.r.time.period\")"},
+    {"armedAway": "unit is armed for away"},
+    {"armedInstant": "unit is armed instantly"},
+    {"armedMaximum": "unit is armed at maximum level"},
+    {"armedNightStay": "unit is armed in night stay"},
+    {"armedStay": "unit is armed in stay mode"},
+    {"aroma": "unit is armed in aroma mode"},
+    {"artificialintelligence": "unit is in artificial intelligence mode"},
+    {"auto": "unit is in auto mode or state"},
+    {"awning": "identifies that the instance of \"oic.r.windowcovering\" represents an awning"},
+    {"babyCare": "unit is in baby care mode or state"},
+    {"baking": "unit is in baking mode or state"},
+    {"battery": "identifies the main battery (\"oic.r.battery\") Resource of the Device"},
+    {"boiling": "unit is in boiling state or mode"},
+    {"brewing": "unit is in brewing state or mode"},
+    {"cancelled": "the job was cancelled either by the remote client or by the user"},
+    {"changeCondition": "the unit has experienced a change in condition, mode or state"},
+    {"charging": "the unit is in charging mode or state"},
+    {"checkingTurbidity": "unit is in checking turbidity state"},
+    {"circulating": "unit is in circulating model or state"},
+    {"cleaning": "unit is in cleaning mode or state"},
+    {"clothes": "unit is in clothes mode"},
+    {"completed": "job finished successfully"},
+    {"contactsensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of contact sensor"},
+    {"convenientroomdoor": "identifies the convenient room door (\"oic.r.door\") of the refrigerator (\"oic.d.refrigerator\")"},
+    {"convertible": "unit is for a convertible part (among compartments of a refrigerator). User can configure the parts as desired"},
+    {"convBake": "unit is in convection bake mode"},
+    {"convRoast": "unit is in convection roast mode"},
+    {"cool": "unit is in cooling mode or state"},
+    {"coolingtargettemperature": "identifies the target cooling temperature (\"oic.r.temperature\") Resource of the air conditioner (\"oic.d.airconditioner\")"},
+    {"coolerdoor": "identifies the cooler door (\"oic.r.door\") of the Device"},
+    {"coolermeasuredtemperature": "identifies the measured cooler temperature (\"oic.r.temperature\") Resource of the Device"},
+    {"coolertargettemperature": "identifies the target cooler temperature (\"oic.r.temperature\") Resource of the Device"},
+    {"cosensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of carbon monoxide sensor"},
+    {"currenttemperature": "identifies the current measured temperature (\"oic.r.temperature\") Resource of the Device"},
+    {"delicate": "unit is in delicate mode or state"},
+    {"deodorization": "identifies the main deodorization (\"oic.r.deodorization\") Resource of the Device"},
+    {"diagnosis": "unit is in diagnosis mode or state; when an error occurs, a Device is in diagnosis mode (state) for identifying causes and finding solutions"},
+    {"disabled": "unit's current operational mode is disabled"},
+    {"dishwasherdoor": "identifies the main door (\"oic.r.door\") Resource of the Dish Washer (\"oic.d.dishwasher\")"},
+    {"down": "unit is unavailable"},
+    {"drapery": "identifies that the instance of \"oic.r.windowcovering\" represents drapery"},
+    {"dry": "unit is dry mode"},
+    {"dual": "unit is in dual mode"},
+    {"ecomode": "identifies the main (overall) ecomode (\"oic.r.ecomode\") Resource of the Device"},
+    {"edge": "unit is edge mode or state"},
+    {"enabled": "unit's current operational mode is enabled"},
+    {"express": "unit is in express mode or state"},
+    {"extended": "unit is in extended mode or state"},
+    {"fan": "unit is in fan mode or state"},
+    {"fast": "unit is in fast mode or state"},
+    {"filterMaterial": "filter material that is used by a Device"},
+    {"firesensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of fire sensor"},
+    {"focused": "unit is in focused mode or state"},
+    {"foot": "unit is in foot mode or state"}, 
+    {"freezePrevent": "unit is in freeze prevent mode or state"},
+    {"freezePreventPending": "unit is pending freeze prevent mode"},
+    {"freezePreventPause": "unit is in the paused state while in freeze prevent mode"},
+    {"freezer": "unit is for a freezer part (among compartments of a refrigerator"},
+    {"freezerdoor": "identifies the freezer room door (\"oic.r.door\") Resource of the Device"},
+    {"freezermeasuredtemperature": "identifies the measured freezer temperature (\"oic.r.temperature\") of the Device"},
+    {"freezertargettemperature": "identifies the target freezer temperature (\"oic.r.temperature\") of the Device"},
+    {"fridge": "unit is for a fridge part (among compartments of a refrigerator"},
+    {"glassbreaksensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of glass break sensor"},
+    {"grinding": "unit is in grinding state or mode"},
+    {"healing": "unit is in healing mdoe or state"},
+    {"heating": "unit is in heating mode or state"},
+    {"heatingtargettemperature": "identifies the target heating temperature (\"oic.r.temperature\") of the Device"},
+    {"heavy": "unit is in heavy mode or state"},
+    {"homing": "unit is in homing state, Device produces a special signal so that it can be found using electronic equipment"},
+    {"hot": "unit is in hot mode or state"},
+    {"humidify": "unit is in humidify mode or state"},
+    {"humidity": "identifies the main humidity (\"oic.r.humidity\") Resource of the Device"},
+    {"ice": "unit is in ice mode or state"},
+    {"idle": "new jobs can start processing without waiting"},
+    {"initializing": "unit is in initializing state, a Device resets its values set by a Client to initial values set by manufacturer"},
+    {"ink": "generic ink cartridge for a Device"},
+    {"inkBlack": "black ink cartridge for a Device"},
+    {"inkCyan": "cyan ink cartridge for a Device"},
+    {"inkMagenta": "magenta ink cartridge for a Device"},
+    {"inkTricolour": "tricolour ink cartridge for a Device"},
+    {"inkYellow": "yellow ink cartridge for a Device"},
+    {"invalid": "unit is in an invalid mode, state, or setting"},
+    {"keepwarm": "unit is in keep warm state or mode"},
+    {"keyfob": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of key fob"},
+    {"keypad": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of keypad"},
+    {"localtime": "identifies the clock (\"oic.r.clock\") time representing the local time zone"},
+    {"macro": "unit is in macro mode or state, Client manually inputs a rule or pattern of operation"},
+    {"main": "unit is part of the main device or is the main device"},
+    {"mapping": "unit is in mapping mode or state"},
+    {"mineral": "unit is in mineral mode"},
+    {"monitoring": "unit is in monitoring mode or state; such as security functions detecting unusual movements in an empty place for a camera-mounted Device"},
+    {"monitoringInitializing": "unit is in initializing state in monitoring mode; a Device resets its values of monitoring mode to initial values set by manufacturer"},
+    {"monitoringMoving": "unit is in moving state in monitoring mode; following a specific target that client select while the Device is in monitoring mode"},
+    {"monitoringPreparation": "unit is in preparation state in monitoring mode; a Device is getting ready for its monitoring operation"},
+    {"morning": "unit is in morning mode or state"},
+    {"motionsensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of motion sensor"},
+    {"moving": "unit is in moving state; the action of going to a different place"},
+    {"night": "unit is in night-time mode or state"},
+    {"nightDry": "unit is in night-time drying mode or state"},
+    {"none": "unit is in an undefined mode or state"},
+    {"normal": "unit is in a normal operational state"},
+    {"notsupported": "ability to set a specific operational mode by a Client is not supported"},
+    {"onedoorfridgedoor": "identifies the single door (\"oic.r.door\") of the Device"},
+    {"operationalstate": "identifies the main (overall) operational state (\"oic.r.operational.state\") of the Device"},
+    {"operationalmode": "identifies the main (overall) mode (\"oic.r.mode\") of the Device"},
+    {"pause": "unit is paused (by user)"},
+    {"ped": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of personal emergency device"},
+    {"pending": "job initiated, engine is preparing"},
+    {"pendingHeld": "job is not a candidate for processing for any number of reasons, will return to pending state if reasons are solved"},
+    {"permapress": "unit is in permanent press mode or state"},
+    {"powerswitch": "identifies the Resource that is the main power switch (\"oic.r.switch.binary\"), e.g. on/off of the Device"},
+    {"preHeat": "unit is in pre-heat mode or state"},
+    {"preparation": "unit is in preparation mode or state; a Device is getting ready for its operation"},
+    {"preSteam": "unit is in pre-steam mode or state"},
+    {"preWash": "unit is pre wash mode"},
+    {"processing": "processing the job"},
+    {"projectorscreen": "identifies that the instance of \"oic.r.windowcovering\" represents a projector screen"},
+    {"pure": "unit is in pure mode or state"},
+    {"quick": "unit is in quick mode or state"},
+    {"quiet": "unit is in quiet mode"},
+    {"refresh": "unit is in refresh mode or state"},
+    {"refrigeration": "identifies the main (\"oic.r.refrigeration\") Resource of the Device"},
+    {"relativeremainingtimeperiod": "identifies the Resource as (overall) relative remaining time period (\"oic.r.time.period\")"},
+    {"relax": "unit is in relax mode or state"},
+    {"remainingtimeperiod": "identifies the Resource as (overall) absolute remaining time period (\"oic.r.time.period\")"},
+    {"remotecontrol": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of remote control"},
+    {"remotecontrolenable": "identifies the Resource for remote control enable (\"oic.r.switch.binary\"), e.g. remote enablement of the Device"},
+    {"reserve": "unit is in reserve mode or state"},
+    {"reserving": "unit is in reserving state"},
+    {"restart": "unit is in re-start mode or state"},
+    {"ringing": "unit is in ringing state to indicate alarm, emergency, caution, and so on"},
+    {"rinse": "unit is in rinse mode or state"},
+    {"rollershade": "identifies that the instance of \"oic.r.windowcovering\" represents a roller shade"},
+    {"rollershade2": "identifies that the instance of \"oic.r.windowcovering\" represents a two motor roller shade"},
+    {"rollershadeext": "identifies that the instance of \"oic.r.windowcovering\" represents an exterior roller shade"},
+    {"rollershadeext2": "identifies that the instance of \"oic.r.windowcovering\" represents an exterior two moto roller shade"},
+    {"sectored": "unit is in sectored mode or state"},
+    {"select": "unit is in select mode or state"},
+    {"securityrepeater": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of security repeater"},
+    {"setOption": "unit is in a state whereby device options may be set"},
+    {"shake": "unit is in shake mode or state"},
+    {"shoesDry": "unit is in shoes dry mode or state"},
+    {"shutter": "identifies that the instance of \"oic.r.windowcovering\" represents a shutter"},
+    {"silent": "unit is in silent mode or state"},
+    {"sleep": "unit is in sleep mode or state"},
+    {"sleepreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as sleep reservation time"},
+    {"smart": "unit is in smart mode or state"},
+    {"soaking": "unit is in soaking mode or state"},
+    {"soda": "unit is in soda mode"},
+    {"spin": "unit is in spin mode or state"},
+    {"spot": "unit is in spot mode or state"},
+    {"spray": "unit is in spray mode or state"},
+    {"standardcie": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of standard control and indicator equipment"},
+    {"start": "unit is in start mode or state"},
+    {"startreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as start of reservation time"},
+    {"steam": "unit is in steam mode or state"},
+    {"steamSoftening": "unit is in steam softening mode or state, whereby the fabric is softened using only water and no softening additives"},
+    {"sterilize": "unit is in sterilize mode or state"},
+    {"stopreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as stop of reservation time"},
+    {"stopped": "error condition occurred"},
+    {"stretching": "unit is in stretching mode or state"},
+    {"subDevice": "unit is for a sub-device that makes up part of a main device"},
+    {"swd": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of standard warning device"},
+    {"targettemperature": "identifies the target (setpoint) temperature (\"oic.r.temperature\") of the Device"},
+    {"testing": "calibrating, preparing the unit"},
+    {"tiltblind": "identifies that the instance of \"oic.r.windowcovering\" represents a tilt only tilt blind"},
+    {"tiltblind2mode": "identifies that the instance of \"oic.r.windowcovering\" represents a tilt and lift tilt blind"},
+    {"toner": "generic toner cartridge for a Device"},
+    {"tonerBlack": "black toner cartridge for a Device"},
+    {"tonerCyan": "cyan toner cartridge for a Device"},
+    {"tonerMagenta": "magenta toner cartridge for a Device"},
+    {"tonerYellow": "yellow toner cartridge for a Device"},
+    {"turbo": "unit is in turbo mode or state"},
+    {"update": "unit is in update mode or state"},
+    {"vendorspecific": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type that is specific to the manufacturer"},
+    {"vibrationsensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of vibration sensor"},
+    {"waiting": "unit is in waiting mode or state"},
+    {"wakeup": "unit is in wakeup state just after sleep mode"},
+    {"warm": "unit is in warm mode or state"},
+    {"wash": "unit is in wash mode or state"},
+    {"waterinfo": "identifies the main water information (\"oic.r.waterinfo\") of the Device"},
+    {"waterfilterconsumable": "identifies the main water filter consumable (\"oic.r.consumable\") of the Device"},
+    {"waterproofing": "unit is in waterproofing mode or state"},
+    {"watersensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of water sensor"},
+    {"wet": "unit is in wet mode or state"},
+    {"wind": "unit is in wind mode"},
+    {"wrinklePrevent": "unit is in winkle prevent mode"},
+    {"zigzag": "unit is in zigzag mode or state"}
+  ],
   "perresourceenumerations": [
     {
       "resourcetype": "oic.r.mode",
       "enumsupport": [
+        {
+          "targetdevicetype": "oic.d.airconditioner",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "energySaving", "fan"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "energySaving", "fan"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.airpurifier",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["auto", "babyCare", "circulating", "cleaning", "dual", "humidity", "silent", "sleep"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["auto", "babyCare", "circulating", "cleaning", "dual", "humidity", "silent", "sleep"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.dishwasher",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["auto", "cleaning", "delicate", "energySaving", "express", "fast", "heavy", "normal", "quick", "refresh", "rinse", "spray", "steam", "turbo", "update"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["auto", "cleaning", "delicate", "energySaving", "express", "fast", "heavy", "normal", "quick", "refresh", "rinse", "spray", "steam", "turbo", "update"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.oven",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["baking", "convBake", "convRoast"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["baking", "convBake", "convRoast"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.mattress",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["customer","foot","healing","morning","night","relax","stretching","waiting"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["customer","foot","healing","morning","night","relax","stretching","waiting"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.robotcleaner",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+            }
+          ]
+        },
         {
           "targetdevicetype": "oic.d.securitypanel",
           "propertydefinitions": [
@@ -22,6 +303,45 @@
     {
       "resourcetype": "oic.r.operational.state",
       "enumsupport": [
+        {
+          "targetdevicetype": "oic.d.dishwasher",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "airDry", "cancelled", "completed", "down", "nightDry", "pause", "pending", "reserve", "rinse", "wash"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.dryer",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "airDry", "completed", "coolDown", "diagnosis", "down", "pause", "pending", "processing", "reserve", "wrinklePrevent"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.oven",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["cleaning", "completed", "cool", "down", "idle", "pause", "pending", "preHeat", "processing", "setOption"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["completed", "preHeat", "start"]
+            }
+          ]
+        },
         {
           "targetdevicetype": "oic.d.printer",
           "propertydefinitions": [
@@ -49,6 +369,19 @@
           ]
         },
         {
+           "targetdevicetype": "oic.d.robotcleaner",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["charging", "cleaning", "diagnosis", "homing", "idle", "initializing", "macro", "mapping", "monitoring", "monitoringInitializing", "monitoringMoving", "monitoringPreparation", "moving", "pause", "preparation", "reserving", "setOption"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["homing", "pause", "restart", "start", "wakeUp"]
+            }
+          ]
+        },
+        {
           "targetdevicetype": "oic.d.scanner",
           "propertydefinitions": [
             {
@@ -58,6 +391,32 @@
             {
               "propertyname": "machineStates",
               "supportedenumeration": ["idle","processing","stopped","testing","down"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.steamcloset",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "airDry", "completed", "diagnosis", "down", "idle", "initializing", "nightDry", "pause", "pending", "preHeat", "preSteam", "processing", "reserve", "shake", "sleep", "steam", "sterilize", "update"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop", "wakeUp"]
+            }
+          ]
+        },
+        {
+           "targetdevicetype": "oic.d.washer",
+          "propertydefinitions": [
+            {
+              "propertyname": "jobStates",
+              "supportedenumeration": ["aborted", "changeCondition", "checkingTurbidity", "completed", "coolDown", "diagnosis", "down", "dry", "freezePrevent", "freezePreventPause", "freezePreventPending", "grinding", "idle", "pause", "pending", "preparation", "preWash", "processing", "refresh", "reserve", "rinse", "shoesDry", "sleep", "soaking", "spin", "steam", "steamSoftening", "testing", "update", "wash", "waterproofing", "wrinklePrevent"]
+            },
+            {
+              "propertyname": "machineStates",
+              "supportedenumeration": ["start", "stop", "wakeUp"]
             }
           ]
         }
@@ -84,6 +443,49 @@
             {
               "propertyname": "supportedconsumables",
               "supportedenumeration": ["toner","tonerBlack","tonerCyan", "tonerMagenta","tonerYellow","filterMaterial","ink","inkBlack","inkCyan","inkMagenta","inkYellow","inkTricolour"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.iaszoneinfo",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "zonetype",
+              "supportedenumeration": ["standardcie","motionsensor","contactsensor","firesensor","watersensor","cosensor","ped","vibrationsensor","remotecontrol","keyfob","keypad","swd","glassbreaksensor","securityrepeater","vendorspecific","invalid"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.windowcovering",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "windowcoveringtype",
+              "supportedenumeration": ["rollershade","rollershade2","rollershadeext","rollershadeext2","drapery","awning","shutter","tiltblind","tiltblind2mode","projectorscreen"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "resourcetype": "oic.r.waterinfo",
+      "enumsupport": [
+        {
+          "propertydefinitions": [
+            {
+              "propertyname": "supportedwatertypes",
+              "supportedenumeration": ["cold","hot","ambient", "ice"]
+            },
+            {
+              "propertyname": "supportedadditivetypes",
+              "supportedenumeration": ["none","soda","mineral"]
             }
           ]
         }
