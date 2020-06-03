@@ -67,7 +67,7 @@
     {"filterMaterial": "filter material that is used by a Device"},
     {"firesensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of fire sensor"},
     {"focused": "unit is in focused mode or state"},
-    {"foot": "unit is in foot mode or state"}, 
+    {"foot": "unit is in foot mode or state"},
     {"freezePrevent": "unit is in freeze prevent mode or state"},
     {"freezePreventPending": "unit is pending freeze prevent mode"},
     {"freezePreventPause": "unit is in the paused state while in freeze prevent mode"},
@@ -173,7 +173,7 @@
     {"steamSoftening": "unit is in steam softening mode or state, whereby the fabric is softened using only water and no softening additives"},
     {"sterilize": "unit is in sterilize mode or state"},
     {"stopreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as stop of reservation time"},
-    {"stopped": "error condition occurred"},
+    {"stopped": "error condition occurred or the unit is stationary for other reasons"},
     {"stretching": "unit is in stretching mode or state"},
     {"subDevice": "unit is for a sub-device that makes up part of a main device"},
     {"swd": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of standard warning device"},
@@ -277,11 +277,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "stopped", "zigzag"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "stopped", "zigzag"]
             }
           ]
         },
