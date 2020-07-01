@@ -42,7 +42,6 @@
     {"convBake": "unit is in convection bake mode"},
     {"convRoast": "unit is in convection roast mode"},
     {"cool": "unit is in cooling mode or state"},
-    {"coolClean": "unit is in cool-clean mode or state"},
     {"coolingtargettemperature": "identifies the target cooling temperature (\"oic.r.temperature\") Resource of the air conditioner (\"oic.d.airconditioner\")"},
     {"coolerdoor": "identifies the cooler door (\"oic.r.door\") of the Device"},
     {"coolermeasuredtemperature": "identifies the measured cooler temperature (\"oic.r.temperature\") Resource of the Device"},
@@ -57,7 +56,6 @@
     {"down": "unit is unavailable"},
     {"drapery": "identifies that the instance of \"oic.r.windowcovering\" represents drapery"},
     {"dry": "unit is dry mode"},
-    {"dryClean": "unit is in dry-clean mode or state"},
     {"dual": "unit is in dual mode"},
     {"ecomode": "identifies the main (overall) ecomode (\"oic.r.ecomode\") Resource of the Device"},
     {"edge": "unit is edge mode or state"},
@@ -104,7 +102,6 @@
     {"localtime": "identifies the clock (\"oic.r.clock\") time representing the local time zone"},
     {"macro": "unit is in macro mode or state, Client manually inputs a rule or pattern of operation"},
     {"main": "unit is part of the main device or is the main device"},
-    {"manual": "unit is in manual mode or state"},
     {"mapping": "unit is in mapping mode or state"},
     {"mineral": "unit is in mineral mode"},
     {"monitoring": "unit is in monitoring mode or state; such as security functions detecting unusual movements in an empty place for a camera-mounted Device"},
@@ -122,7 +119,6 @@
     {"onedoorfridgedoor": "identifies the single door (\"oic.r.door\") of the Device"},
     {"operationalstate": "identifies the main (overall) operational state (\"oic.r.operational.state\") of the Device"},
     {"operationalmode": "identifies the main (overall) mode (\"oic.r.mode\") of the Device"},
-    {"part": "unit is in part mode or state, typically seen on a robot cleaner, analagous to spot cleaning"},
     {"pause": "unit is paused (by user)"},
     {"ped": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of personal emergency device"},
     {"pending": "job initiated, engine is preparing"},
@@ -145,7 +141,6 @@
     {"remainingtimeperiod": "identifies the Resource as (overall) absolute remaining time period (\"oic.r.time.period\")"},
     {"remotecontrol": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of remote control"},
     {"remotecontrolenable": "identifies the Resource for remote control enable (\"oic.r.switch.binary\"), e.g. remote enablement of the Device"},
-    {"repeat": "unit is in repeat mode or state"},
     {"reserve": "unit is in reserve mode or state"},
     {"reserving": "unit is in reserving state"},
     {"restart": "unit is in re-start mode or state"},
@@ -217,11 +212,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "coolClean", "dry", "dryClean", "energySaving", "fan", "wind"]
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "dry", "energySaving", "fan", "wind"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "coolClean", "dry", "dryClean", "energySaving", "fan", "wind"]
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "dry", "energySaving", "fan", "wind"]
             }
           ]
         },
@@ -282,11 +277,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["auto", "edge", "macro", "manual", "mapping", "part", "repeat", "sectored", "select", "spot", "stopped", "zigzag"]
+              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stopped", "zigzag"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["auto", "edge", "macro", "manual", "mapping", "part", "repeat", "sectored", "select", "spot", "stopped", "zigzag"]
+              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stopped", "zigzag"]
             }
           ]
         },
