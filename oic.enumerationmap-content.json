@@ -54,6 +54,7 @@
     {"disabled": "unit's current operational mode is disabled"},
     {"dishwasherdoor": "identifies the main door (\"oic.r.door\") Resource of the Dish Washer (\"oic.d.dishwasher\")"},
     {"down": "unit is unavailable"},
+    {"downWard":"identifies that the instance of \"oic.r.movement.linear\" represents downward"},
     {"drapery": "identifies that the instance of \"oic.r.windowcovering\" represents drapery"},
     {"dry": "unit is dry mode"},
     {"dual": "unit is in dual mode"},
@@ -172,6 +173,7 @@
     {"steam": "unit is in steam mode or state"},
     {"steamSoftening": "unit is in steam softening mode or state, whereby the fabric is softened using only water and no softening additives"},
     {"sterilize": "unit is in sterilize mode or state"},
+    {"stop":"identifies that the instance of \"oic.r.movement.linear\" represents stop"},
     {"stopreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as stop of reservation time"},
     {"stopped": "error condition occurred"},
     {"stretching": "unit is in stretching mode or state"},
@@ -188,6 +190,7 @@
     {"tonerYellow": "yellow toner cartridge for a Device"},
     {"turbo": "unit is in turbo mode or state"},
     {"update": "unit is in update mode or state"},
+    {"upWard":"identifies that the instance of \"oic.r.movement.linear\" represents upward"},
     {"vendorspecific": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type that is specific to the manufacturer"},
     {"vibrationsensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of vibration sensor"},
     {"waiting": "unit is in waiting mode or state"},
@@ -217,6 +220,19 @@
             {
               "propertyname": "supportedmodes",
               "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "energySaving", "fan"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.airer",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["airDry","dry","none"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["airDry","dry","none"]
             }
           ]
         },
@@ -299,6 +315,24 @@
           ]
         }
       ]
+    },
+    {
+      "resourcetype": "oic.r.movement.linear",
+      "enumsupport": [
+        {
+          "targetdevicetype": "oic.d.airer",
+          "propertydefinitions": [
+            {
+              "propertyname": "movement",
+              "supportedenumeration": ["downWard","stop","upWard"]
+            },
+            {
+              "propertyname": "movementSettings",
+              "supportedenumeration": ["downWard","stop","upWard"]
+            }
+          ]
+        }
+	    ]
     },
     {
       "resourcetype": "oic.r.operational.state",
