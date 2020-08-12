@@ -173,7 +173,7 @@
     {"steamSoftening": "unit is in steam softening mode or state, whereby the fabric is softened using only water and no softening additives"},
     {"sterilize": "unit is in sterilize mode or state"},
     {"stopreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as stop of reservation time"},
-    {"stopped": "error condition occurred or the unit is stationary for other reasons"},
+    {"stop": "error condition occurred or the unit is stationary for other reasons"},
     {"stretching": "unit is in stretching mode or state"},
     {"subDevice": "unit is for a sub-device that makes up part of a main device"},
     {"swd": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of standard warning device"},
@@ -277,11 +277,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stopped", "zigzag"]
+              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stop", "zigzag"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stopped", "zigzag"]
+              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stop", "zigzag"]
             }
           ]
         },
