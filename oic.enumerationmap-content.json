@@ -102,7 +102,7 @@
     {"localtime": "identifies the clock (\"oic.r.clock\") time representing the local time zone"},
     {"macro": "unit is in macro mode or state, Client manually inputs a rule or pattern of operation"},
     {"main": "unit is part of the main device or is the main device"},
-    {"mapping": "unit is in mapping mode or state"},
+    {"map": "unit is in mapping mode or state"},
     {"mineral": "unit is in mineral mode"},
     {"monitoring": "unit is in monitoring mode or state; such as security functions detecting unusual movements in an empty place for a camera-mounted Device"},
     {"monitoringInitializing": "unit is in initializing state in monitoring mode; a Device resets its values of monitoring mode to initial values set by manufacturer"},
@@ -277,11 +277,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stop", "zigzag"]
+              "supportedenumeration": ["auto", "charging", "cleaning", "edge", "homing", "idle", "macro", "map", "reserve", "sectored", "select", "spot", "stop", "zigzag"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["auto", "edge", "macro", "mapping", "sectored", "select", "spot", "stop", "zigzag"]
+              "supportedenumeration": ["auto", "charging", "cleaning", "edge", "homing", "idle", "macro", "map", "reserve", "sectored", "select", "spot", "stop", "zigzag"]
             }
           ]
         },
