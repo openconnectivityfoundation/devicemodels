@@ -2,6 +2,7 @@
   "supportedenumerations": [
     {"aborted": "An internal device, communication or security error"},
     {"active": "Unit is active"},
+    {"after": "unit is in a mode that is waiting for another trigger (after which)"},
     {"airClean": "unit is in air clean mode or state"},
     {"airDry": "unit is air drying"},
     {"airfilterconsumable": "identifies the main air filter consumable (\"oic.r.consumable\") Resource of the Device"},
@@ -12,8 +13,9 @@
     {"airqualitypm1": "identifies the air quality (\"oic.r.airquality\") Resource measuring pm1"},
     {"airqualitypm10": "identifies the air quality (\"oic.r.airquality\") Resource measuring pm10"},
     {"airqualitypm2.5": "identifies the air quality (\"oic.r.airquality\") Resource measuring pm2.5"},
-    {"ambient": "unit is in ambient mode or state"},
+    {"alarm": "unit is in an alarm mode or state"},
     {"alarmtimeperiod": "identifies the duration time for an alarm (\"oic.r.time.period\")"},
+    {"ambient": "unit is in ambient mode or state"},
     {"armedAway": "unit is armed for away"},
     {"armedInstant": "unit is armed instantly"},
     {"armedMaximum": "unit is armed at maximum level"},
@@ -105,7 +107,7 @@
     {"macro": "unit is in macro mode or state, Client manually inputs a rule or pattern of operation"},
     {"main": "unit is part of the main device or is the main device"},
     {"manual": "unit is in manual mode or state"},
-    {"mapping": "unit is in mapping mode or state"},
+    {"map": "unit is in mapping mode or state"},
     {"mineral": "unit is in mineral mode"},
     {"monitoring": "unit is in monitoring mode or state; such as security functions detecting unusual movements in an empty place for a camera-mounted Device"},
     {"monitoringInitializing": "unit is in initializing state in monitoring mode; a Device resets its values of monitoring mode to initial values set by manufacturer"},
@@ -128,6 +130,8 @@
     {"pending": "job initiated, engine is preparing"},
     {"pendingHeld": "job is not a candidate for processing for any number of reasons, will return to pending state if reasons are solved"},
     {"permapress": "unit is in permanent press mode or state"},
+    {"point": "unit is at a defined or specific point (with respect to movement)"},
+    {"powerOff": "unit is powered off (standby)"},
     {"powerswitch": "identifies the Resource that is the main power switch (\"oic.r.switch.binary\"), e.g. on/off of the Device"},
     {"preHeat": "unit is in pre-heat mode or state"},
     {"preparation": "unit is in preparation mode or state; a Device is getting ready for its operation"},
@@ -178,7 +182,7 @@
     {"steamSoftening": "unit is in steam softening mode or state, whereby the fabric is softened using only water and no softening additives"},
     {"sterilize": "unit is in sterilize mode or state"},
     {"stopreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as stop of reservation time"},
-    {"stopped": "error condition occurred"},
+    {"stop": "error condition occurred"},
     {"stretching": "unit is in stretching mode or state"},
     {"subDevice": "unit is for a sub-device that makes up part of a main device"},
     {"swd": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of standard warning device"},
@@ -282,11 +286,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["edge", "macro", "manual", "part", "repeat", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["after", "alarm", "edge", "macro", "manual", "part", "point", "powerOff", "repeat", "sectored", "select", "spot", "zigzag"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["edge", "macro", "manual", "part", "repeat", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["after", "alarm", "edge", "macro", "manual", "part", "point", "powerOff", "repeat", "sectored", "select", "spot", "zigzag"]
             }
           ]
         },
