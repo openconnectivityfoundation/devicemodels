@@ -8,7 +8,7 @@
     {"airflow": "Identifies the main airflow (\"oic.r.airflow\") Resource of the Device"},
     {"airpurifierswitch": "identifies that the switch (\"oic.r.switch.binary\") can turn on/off the air purifying function of the Device"},
     {"airqualityairpollution": "identifies the air quality (\"oic.r.airquality\") Resource measuring (total) AirPollution"},
-    {"airqualitych20": "identifies the air quality (\"oic.r.airquality\") Resource measuring measuring Methanol (also known as Formaldehyde): (CHO2)"},
+    {"airqualitych20": "identifies the air quality (\"oic.r.airquality\") Resource measuring measuring Methanol (also known as Formaldehyde): (CH2O)"},
     {"airqualityco": "identifies the air quality (\"oic.r.airquality\") Resource measuring carbon monoxide (CO)"},  
     {"airqualityco2": "identifies the air quality (\"oic.r.airquality\") Resource measuring carbon dioxide (CO2)"},
     {"airqualityno2": "identifies the air quality (\"oic.r.airquality\") Resource measuring nitrogen dioxide (NO2)"},   
