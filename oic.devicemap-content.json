@@ -112,6 +112,26 @@
     ]
   },
   {
+    "devicename": "Airer",
+    "devicetype": "oic.d.airer",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Linear Movement", "resourcetypeid": "oic.r.movement.linear"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Mode", "resourcetypeid": "oic.r.mode"}
+    ]
+  },
+  {
+    "devicename": "Arc Fault Circuit Interrupter",
+    "devicetype": "oic.d.afci",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle": "Fault Interrupter Switch", "resourcetypeid": "oic.r.switch.fault"}
+    ]
+  },
+  {
     "devicename": "Battery",
     "devicetype": "oic.d.battery",
     "vertical":   "Smart Home",
@@ -624,6 +644,14 @@
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"}
+     ]
+   },
+   {
+     "devicename": "Ground Fault Circuit Interrupter",
+     "devicetype": "oic.d.gfci",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Fault Interrupter Switch", "resourcetypeid": "oic.r.switch.fault"}
      ]
    },
    {

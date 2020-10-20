@@ -989,6 +989,48 @@
     "title": "Sensor Properties"
   },
   {
+    "filename": "SettingsAccessibility.swagger.json",
+    "rt": [
+      "oic.r.settings.accessibility"
+    ],
+    "title": "Device Settings-Accessibility"
+  },
+  {
+    "filename": "SettingsBroadcasting.swagger.json",
+    "rt": [
+      "oic.r.settings.broadcasting"
+    ],
+    "title": "Device Settings-Broadcasting"
+  },
+  {
+    "filename": "SettingsPicture.swagger.json",
+    "rt": [
+      "oic.r.settings.picture"
+    ],
+    "title": "Device Settings-Picture"
+  },
+  {
+    "filename": "SettingsSound.swagger.json",
+    "rt": [
+      "oic.r.settings.sound"
+    ],
+    "title": "Device Settings-Sound"
+  },
+  {
+    "filename": "SettingsSupport.swagger.json",
+    "rt": [
+      "oic.r.settings.support"
+    ],
+    "title": "Device Settings-Support"
+  },
+  {
+    "filename": "SettingsSystem.swagger.json",
+    "rt": [
+      "oic.r.settings.system"
+    ],
+    "title": "Device Settings-System"
+  },
+  {
     "filename": "SignalStrengthResURI.swagger.json",
     "rt": [
       "oic.r.signalstrength"

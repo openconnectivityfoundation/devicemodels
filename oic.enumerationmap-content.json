@@ -36,6 +36,7 @@
     {"checkingTurbidity": "unit is in checking turbidity state"},
     {"circulating": "unit is in circulating model or state"},
     {"cleaning": "unit is in cleaning mode or state"},
+    {"clearVoice": "type is in sound mode"},
     {"clothes": "unit is in clothes mode"},
     {"completed": "job finished successfully"},
     {"contactsensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of contact sensor"},
@@ -51,16 +52,19 @@
     {"coolertargettemperature": "identifies the target cooler temperature (\"oic.r.temperature\") Resource of the Device"},
     {"cosensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of carbon monoxide sensor"},
     {"currenttemperature": "identifies the current measured temperature (\"oic.r.temperature\") Resource of the Device"},
+    {"custom": "type is in sound mode"},
     {"delicate": "unit is in delicate mode or state"},
     {"deodorization": "identifies the main deodorization (\"oic.r.deodorization\") Resource of the Device"},
     {"diagnosis": "unit is in diagnosis mode or state; when an error occurs, a Device is in diagnosis mode (state) for identifying causes and finding solutions"},
     {"disabled": "unit's current operational mode is disabled"},
     {"dishwasherdoor": "identifies the main door (\"oic.r.door\") Resource of the Dish Washer (\"oic.d.dishwasher\")"},
     {"down": "unit is unavailable"},
+    {"downWard":"identifies that the instance of \"oic.r.movement.linear\" represents downward"},
     {"drapery": "identifies that the instance of \"oic.r.windowcovering\" represents drapery"},
     {"dry": "unit is dry mode"},
     {"dryClean": "unit is in dry-clean mode or state"},
     {"dual": "unit is in dual mode"},
+    {"dynamic": "type is in picture mode"},
     {"ecomode": "identifies the main (overall) ecomode (\"oic.r.ecomode\") Resource of the Device"},
     {"edge": "unit is edge mode or state"},
     {"enabled": "unit's current operational mode is enabled"},
@@ -71,7 +75,7 @@
     {"filterMaterial": "filter material that is used by a Device"},
     {"firesensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of fire sensor"},
     {"focused": "unit is in focused mode or state"},
-    {"foot": "unit is in foot mode or state"},
+    {"foot": "unit is in foot mode or state, typically seen as a mode on a Smart Mattress"},
     {"freezePrevent": "unit is in freeze prevent mode or state"},
     {"freezePreventPending": "unit is pending freeze prevent mode"},
     {"freezePreventPause": "unit is in the paused state while in freeze prevent mode"},
@@ -115,7 +119,10 @@
     {"monitoringPreparation": "unit is in preparation state in monitoring mode; a Device is getting ready for its monitoring operation"},
     {"morning": "unit is in morning mode or state"},
     {"motionsensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of motion sensor"},
+    {"movie": "type is in picture mode"},
     {"moving": "unit is in moving state; the action of going to a different place"},
+    {"music": "type is in sound mode"},
+    {"natural": "type is in picture mode"},
     {"night": "unit is in night-time mode or state"},
     {"nightDry": "unit is in night-time drying mode or state"},
     {"none": "unit is in an undefined mode or state"},
@@ -175,6 +182,7 @@
     {"spin": "unit is in spin mode or state"},
     {"spot": "unit is in spot mode or state"},
     {"spray": "unit is in spray mode or state"},
+    {"standard": "type is in picture or sound mode"},
     {"standardcie": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of standard control and indicator equipment"},
     {"start": "unit is in start mode or state"},
     {"startreservationtimeperiod": "identifies the Resource (\"oic.r.time.period\") as start of reservation time"},
@@ -198,6 +206,7 @@
     {"tonerYellow": "yellow toner cartridge for a Device"},
     {"turbo": "unit is in turbo mode or state"},
     {"update": "unit is in update mode or state"},
+    {"upWard":"identifies that the instance of \"oic.r.movement.linear\" represents upward"},
     {"vendorspecific": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type that is specific to the manufacturer"},
     {"vibrationsensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of vibration sensor"},
     {"waiting": "unit is in waiting mode or state"},
@@ -222,11 +231,24 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "coolClean", "dryClean", "energySaving", "fan"]
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "coolClean", "dryClean", "dry", "energySaving", "fan", "wind"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "coolClean", "dryClean", "energySaving", "fan"]
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "coolClean", "dryClean", "dry", "energySaving", "fan", "wind"]
+            }
+          ]
+        },
+        {
+          "targetdevicetype": "oic.d.airer",
+          "propertydefinitions": [
+            {
+              "propertyname": "modes",
+              "supportedenumeration": ["airDry","dry","none"]
+            },
+            {
+              "propertyname": "supportedmodes",
+              "supportedenumeration": ["airDry","dry","none"]
             }
           ]
         },
@@ -287,11 +309,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["after", "alarm", "edge", "macro", "manual", "part", "point", "powerOff", "repeat", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["after", "alarm", "auto", "charging", "cleaning", "edge", "homing", "idle", "macro", "manual", "map", "part", "point", "powerOff", "repeat", "reserve", "sectored", "select", "spot", "stop", "zigzag"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["after", "alarm", "edge", "macro", "manual", "part", "point", "powerOff", "repeat", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["after", "alarm", "auto", "charging", "cleaning", "edge", "homing", "idle", "macro", "manual", "map", "part", "point", "powerOff", "repeat", "reserve", "sectored", "select", "spot", "stop", "zigzag"]
             }
           ]
         },
@@ -309,6 +331,24 @@
           ]
         }
       ]
+    },
+    {
+      "resourcetype": "oic.r.movement.linear",
+      "enumsupport": [
+        {
+          "targetdevicetype": "oic.d.airer",
+          "propertydefinitions": [
+            {
+              "propertyname": "movement",
+              "supportedenumeration": ["downWard","stop","upWard"]
+            },
+            {
+              "propertyname": "movementSettings",
+              "supportedenumeration": ["downWard","stop","upWard"]
+            }
+          ]
+        }
+	    ]
     },
     {
       "resourcetype": "oic.r.operational.state",
