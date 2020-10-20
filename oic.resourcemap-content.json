@@ -21,13 +21,6 @@
     "title": "Activity Count"
   },
   {
-    "filename": "ActivityCountResURI.swagger.json",
-    "rt": [
-      "oic.r.sensor.activity.count"
-    ],
-    "title": "Activity Count"
-  },
-  {
     "filename": "ActivityTrackerAM.swagger.json",
     "rt": [
       "oic.r.activitytracker-am",
@@ -277,6 +270,13 @@
     "title": "Circuit Breaker"
   },
   {
+    "filename": "CivicLocationResURI.swagger.json",
+    "rt": [
+      "oic.r.location.civic"
+    ],
+    "title": "Civic Location"
+  },
+  {
     "filename": "ClockResURI.swagger.json",
     "rt": [
       "oic.r.clock"
@@ -303,6 +303,13 @@
       "oic.r.colour.rgb"
     ],
     "title": "Colour RGB"
+  },
+  {
+    "filename": "ColourRenderingIndexResURI.swagger.json",
+    "rt": [
+      "oic.r.colour.renderingindex"
+    ],
+    "title": "Colour Rendering Index"
   },
   {
     "filename": "ColourSaturationResURI.swagger.json",
@@ -515,6 +522,13 @@
       "oic.r.gas.usage"
     ],
     "title": "Gas Usage"
+  },
+  {
+    "filename": "genericmeasurement.swagger.json",
+    "rt": [
+      "oic.r.sensor.measurement"
+    ],
+    "title": "Generic Measurement Sensor"
   },
   {
     "filename": "GenericSensorResURI.swagger.json",
@@ -1067,6 +1081,20 @@
     "title": "Smoke Sensor"
   },
   {
+    "filename": "soundPressureResURI.swagger.json",
+    "rt": [
+      "oic.r.sound.pressure"
+    ],
+    "title": "Sound Pressure in Pascal"
+  },
+  {
+    "filename": "soundPressureLevelResURI.swagger.json",
+    "rt": [
+      "oic.r.sound.pressurelevel"
+    ],
+    "title": "Sound Pressure Level in dB"
+  },
+  {
     "filename": "SpeechTTSResURI.swagger.json",
     "rt": [
       "oic.r.speech.tts"
@@ -1149,6 +1177,20 @@
       "oic.r.sensor.radiation.uv"
     ],
     "title": "UV Radiation"
+  },
+  {
+    "filename": "UVARadiationResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.radiation.uva"
+    ],
+    "title": "UVA Radiation"
+  },
+  {
+    "filename": "UVBRadiationResURI.swagger.json",
+    "rt": [
+      "oic.r.sensor.radiation.uvb"
+    ],
+    "title": "UVB Radiation"
   },
   {
     "filename": "ValueConditionalResURI.swagger.json",
