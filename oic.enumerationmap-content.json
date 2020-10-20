@@ -71,7 +71,7 @@
     {"filterMaterial": "filter material that is used by a Device"},
     {"firesensor": "identifies an \"Intruder Alert Zone\" (\"oic.r.iaszoneinfo\") type of fire sensor"},
     {"focused": "unit is in focused mode or state"},
-    {"foot": "unit is in foot mode or state"}, 
+    {"foot": "unit is in foot mode or state, typically seen as a mode on a Smart Mattress"},
     {"freezePrevent": "unit is in freeze prevent mode or state"},
     {"freezePreventPending": "unit is pending freeze prevent mode"},
     {"freezePreventPause": "unit is in the paused state while in freeze prevent mode"},
@@ -106,7 +106,7 @@
     {"localtime": "identifies the clock (\"oic.r.clock\") time representing the local time zone"},
     {"macro": "unit is in macro mode or state, Client manually inputs a rule or pattern of operation"},
     {"main": "unit is part of the main device or is the main device"},
-    {"mapping": "unit is in mapping mode or state"},
+    {"map": "unit is in mapping mode or state"},
     {"mineral": "unit is in mineral mode"},
     {"monitoring": "unit is in monitoring mode or state; such as security functions detecting unusual movements in an empty place for a camera-mounted Device"},
     {"monitoringInitializing": "unit is in initializing state in monitoring mode; a Device resets its values of monitoring mode to initial values set by manufacturer"},
@@ -222,11 +222,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "energySaving", "fan"]
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "dry", "energySaving", "fan", "wind"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "energySaving", "fan"]
+              "supportedenumeration": ["airClean", "airDry", "aroma", "auto", "cool", "dry", "energySaving", "fan", "wind"]
             }
           ]
         },
@@ -300,11 +300,11 @@
           "propertydefinitions": [
             {
               "propertyname": "modes",
-              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["auto", "charging", "cleaning", "edge", "homing", "idle", "macro", "map", "reserve", "sectored", "select", "spot", "stop", "zigzag"]
             },
             {
               "propertyname": "supportedmodes",
-              "supportedenumeration": ["edge", "macro", "sectored", "select", "spot", "zigzag"]
+              "supportedenumeration": ["auto", "charging", "cleaning", "edge", "homing", "idle", "macro", "map", "reserve", "sectored", "select", "spot", "stop", "zigzag"]
             }
           ]
         },
