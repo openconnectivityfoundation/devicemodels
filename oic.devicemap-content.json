@@ -739,6 +739,30 @@
      ]
    },
    {
+     "devicename": "Light - DALI Application Controller",
+     "devicetype": "oic.d.dali.ac",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"}
+     ]
+   },
+    {
+     "devicename": "Light - DALI Bus",
+     "devicetype": "oic.d.dali.bus",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"}
+     ]
+   },
+   {
+     "devicename": "Light - DALI Device",
+     "devicetype": "oic.d.dali",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"}
+     ]
+   },
+   {
      "devicename": "Mattress",
      "devicetype": "oic.d.mattress",
      "vertical":   "Smart Home",
