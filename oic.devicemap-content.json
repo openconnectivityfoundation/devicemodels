@@ -81,6 +81,22 @@
     ]
   },
   {
+    "devicename": "Air Conditioner Assistant",
+    "devicetype": "oic.d.acassistant",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+      {"resourcetypetitle": "Vendor List", "resourcetypeid": "oic.r.vendorlist"}
+    ],
+    "recommendedresources": [
+      {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
+      {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
+      {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
+      {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
+    ]
+  },
+  {
     "devicename": "Air Purifier",
     "devicetype": "oic.d.airpurifier",
     "vertical":   "Smart Home",
