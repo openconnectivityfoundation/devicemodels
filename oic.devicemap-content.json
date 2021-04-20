@@ -92,6 +92,7 @@
       {"resourcetypetitle": "Energy Consumption", "resourcetypeid": "oic.r.energy.consumption"},
       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"},
       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+      {"resourcetypetitle": "Operational State", "resourcetypeid": "oic.r.operational.state"},
       {"resourcetypetitle": "Time Period", "resourcetypeid": "oic.r.time.period"}
     ]
   },
