@@ -1091,7 +1091,7 @@
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
        {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
-       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Colour Temperature", "resourcetypeid": "oic.r.colour.colourtemperature"},
