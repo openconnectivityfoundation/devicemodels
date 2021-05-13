@@ -967,6 +967,21 @@
     ]
    },
    {
+     "devicename": "Smart Light",
+     "devicetype": "oic.d.light.smart",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Dimming", "resourcetypeid": "oic.r.light.dimming"}
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Colour Hue Saturation", "resourcetypeid": "oic.r.colour.hs"},
+       {"resourcetypetitle": "Colour Space Co-ordinates", "resourcetypeid": "oic.r.colour.csc"},
+       {"resourcetypetitle": "Colour Temperature", "resourcetypeid": "oic.r.colour.colourtemperature"},
+       {"resourcetypetitle": "Ramp Time", "resourcetypeid": "oic.r.light.ramptime"}
+     ]
+   },
+   {
      "devicename": "Smart Lock",
      "devicetype": "oic.d.smartlock",
      "vertical":   "Smart Home",
@@ -1067,6 +1082,20 @@
      ],
      "recommendedresources": [
        {"resourcetypetitle": "Depends on the Device Type being bridged", "resourcetypeid": ""}
+     ]
+   },
+   {
+     "devicename": "Wallpad",
+     "devicetype": "oic.d.wallpad",
+     "vertical":   "Smart Home",
+     "resources": [
+       {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},
+       {"resourcetypetitle": "Temperature (Sensor)", "resourcetypeid": "oic.r.temperature"},
+       {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"},
+     ],
+     "recommendedresources": [
+       {"resourcetypetitle": "Colour Temperature", "resourcetypeid": "oic.r.colour.colourtemperature"},
+       {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
      ]
    },
    {
