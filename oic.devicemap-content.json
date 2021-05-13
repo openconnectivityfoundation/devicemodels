@@ -1094,7 +1094,6 @@
        {"resourcetypetitle": "Temperature (Actuator)", "resourcetypeid": "oic.r.temperature"}
      ],
      "recommendedresources": [
-       {"resourcetypetitle": "Colour Temperature", "resourcetypeid": "oic.r.colour.colourtemperature"},
        {"resourcetypetitle": "Humidity", "resourcetypeid": "oic.r.humidity"}
      ]
    },
