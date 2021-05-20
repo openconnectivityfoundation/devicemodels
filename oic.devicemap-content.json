@@ -969,6 +969,7 @@
    {
      "devicename": "Smart Light",
      "devicetype": "oic.d.light.smart",
+     "devicetype2": "oic.d.light",
      "vertical":   "Smart Home",
      "resources": [
        {"resourcetypetitle": "Binary Switch", "resourcetypeid": "oic.r.switch.binary"},

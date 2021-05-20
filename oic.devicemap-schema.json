@@ -16,6 +16,11 @@
           "description": "OCF defined device id in the form oic.d.*",
           "pattern": "oic.d.*"
         },
+        "devicetype2": {
+          "type": "string",
+          "description": "OCF defined device id in the form oic.d.*",
+          "pattern": "oic.d.*"
+        },
         "vertical": {
           "type": "string",
           "enum": ["Smart Home","Healthcare","Industrial","Framework","PVSystem"]
