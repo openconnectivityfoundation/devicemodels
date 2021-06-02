@@ -743,7 +743,8 @@
      "devicetype": "oic.d.dali.ac",
      "vertical":   "Smart Home",
      "resources": [
-       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"}
+       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"},
+       {"resourcetypetitle": "dali config", "resourcetypeid": "oic.r.dali.conf"}
      ]
    },
     {
@@ -751,7 +752,8 @@
      "devicetype": "oic.d.dali.bus",
      "vertical":   "Smart Home",
      "resources": [
-       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"}
+       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"},
+       {"resourcetypetitle": "dali config", "resourcetypeid": "oic.r.dali.conf"}
      ]
    },
    {
@@ -759,7 +761,8 @@
      "devicetype": "oic.d.dali",
      "vertical":   "Smart Home",
      "resources": [
-       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"}
+       {"resourcetypetitle": "dali", "resourcetypeid": "oic.r.dali"},
+       {"resourcetypetitle": "dali config", "resourcetypeid": "oic.r.dali.conf"}
      ]
    },
    {
