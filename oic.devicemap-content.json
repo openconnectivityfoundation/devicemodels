@@ -311,6 +311,15 @@
     ]
   },
   {
+    "devicename": "Cloud proxy",
+    "devicetype": "oic.d.cloudproxy",
+    "vertical":   "Smart Home",
+    "resources": [
+      {"resourcetypetitle": "D2Dserverlist", "resourcetypeid": "oic.r.d2dserverlist"},
+      {"resourcetypetitle": "Cloud configuration", "resourcetypeid": "oic.r.coapcloudconf"}
+    ]
+  },
+  {
     "devicename": "Clothes Washer Dryer",
     "devicetype": "oic.d.washerdryer",
     "vertical":   "Smart Home",
