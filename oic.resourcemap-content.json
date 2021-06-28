@@ -419,7 +419,7 @@
     "title": "Dali"
   },
   {
-    "filename": "DaliConf.swagger.json",
+    "filename": "DaliConfig.swagger.json",
     "rt": [
       "oic.r.dali.conf"
     ],
