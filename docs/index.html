@@ -80,7 +80,18 @@ http://stackoverflow.com/questions/36880849/select-a-row-highlight-from-html-tab
         },
         "columns": [
           { "data": "devicename" },
-          { "data": "devicetype" },
+          { "data": null,
+            "render" : function ( data, type, row ) {
+              var returnstring = ""
+              if (typeof data.devicetype2 != "undefined") {
+                returnstring =  data.devicetype + ", " + data.devicetype2
+              }
+              else {
+                returnstring = data.devicetype
+              }
+              return returnstring;
+            }
+          },
           { "data": "vertical" },
           { "data": null,
             // required resources title

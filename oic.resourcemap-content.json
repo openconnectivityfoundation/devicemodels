@@ -419,6 +419,20 @@
     "title": "D2D server list"
   },
   {
+    "filename": "dali.swagger.json",
+    "rt": [
+      "oic.r.dali"
+    ],
+    "title": "Dali"
+  },
+  {
+    "filename": "DaliConfig.swagger.json",
+    "rt": [
+      "oic.r.dali.conf"
+    ],
+    "title": "Dali configuration"
+  },
+  {
     "filename": "DelayDefrostResURI.swagger.json",
     "rt": [
       "oic.r.delaydefrost"
@@ -1212,6 +1226,13 @@
       "oic.r.vehicle.connector"
     ],
     "title": "Vehicle Connector"
+  },
+  {
+    "filename": "VendorListResURI.swagger.json",
+    "rt": [
+      "oic.r.vendorlist"
+    ],
+    "title": "Vendor List"
   },
   {
     "filename": "WaterResURI.swagger.json",
