@@ -1207,6 +1207,13 @@
     "title": "Vehicle Connector"
   },
   {
+    "filename": "VendorListResURI.swagger.json",
+    "rt": [
+      "oic.r.vendorlist"
+    ],
+    "title": "Vendor List"
+  },
+  {
     "filename": "WaterResURI.swagger.json",
     "rt": [
       "oic.r.sensor.water"
