@@ -412,6 +412,13 @@
     "title": "Cycling Power"
   },
   {
+    "filename": "oic.r.d2dserverlist.swagger.json",
+    "rt": [
+      "oic.r.d2dserverlist"
+    ],
+    "title": "D2D server list"
+  },
+  {
     "filename": "dali.swagger.json",
     "rt": [
       "oic.r.dali"
