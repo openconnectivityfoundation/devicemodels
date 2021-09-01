@@ -412,6 +412,20 @@
     "title": "Cycling Power"
   },
   {
+    "filename": "dali.swagger.json",
+    "rt": [
+      "oic.r.dali"
+    ],
+    "title": "Dali"
+  },
+  {
+    "filename": "DaliConfig.swagger.json",
+    "rt": [
+      "oic.r.dali.conf"
+    ],
+    "title": "Dali configuration"
+  },
+  {
     "filename": "DelayDefrostResURI.swagger.json",
     "rt": [
       "oic.r.delaydefrost"
