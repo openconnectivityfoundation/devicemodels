@@ -933,7 +933,7 @@
     "title": "Pan Tilt Zoom Movement"
   },
   {
-    "filename": "PowerSourceResURI.swagger.json",
+    "filename": "PowerSourcesResourceURI.swagger.json",
     "rt": [
       "oic.r.powersource"
     ],
@@ -994,6 +994,13 @@
       "oic.r.refrigeration"
     ],
     "title": "Refrigeration"
+  },
+  {
+    "filename": "Remotecontrol.swagger.json",
+    "rt": [
+      "oic.r.remotecontrol"
+    ],
+    "title": "Remote Control"
   },
   {
     "filename": "RestrictedSwitchResURI.swagger.json",
@@ -1128,6 +1135,13 @@
       "oic.r.spo2"
     ],
     "title": "SpO2 for Pulse Oximeter"
+  },
+  {
+    "filename": "TVApps.swagger.json",
+    "rt": [
+      "oic.r.tv.apps"
+    ],
+    "title": "TV Applications"
   },
   {
     "filename": "TemperatureResURI.swagger.json",
